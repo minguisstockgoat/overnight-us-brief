@@ -56,6 +56,27 @@ py scripts/pipeline.py --env-file "..\\..\\와이즈리포트봇\\.env"
    평일 07:10(Mac 시간대 기준)에 실행됩니다. Mac 시간대가 KST 여야 합니다.
    슬립 상태였다면 wake 직후 실행됩니다.
 
+## 자동 실행 — 두 가지 방법 (하나만 쓰세요)
+
+### A. Mac mini launchd (위 5단계) — 기본
+아카이브가 로컬이라 네트워크 이슈 없음.
+
+### B. GitHub Actions 크론 (`.github/workflows/brief.yml`) — 클라우드 24/7
+PC/Mac 무관하게 돌지만, 아카이브(`macmini.taila0cca3.ts.net`)가 **Tailscale tailnet 전용**이라
+클라우드에서 바로 못 닿습니다(공개 DNS 미해석). Actions가 tailnet에 조인해야 함:
+
+1. Tailscale admin → [Auth keys](https://login.tailscale.com/admin/settings/keys) → **Generate auth key**
+   (Reusable + Ephemeral 권장, 태그 부여).
+2. 시크릿 등록:
+   ```bash
+   gh secret set TS_AUTHKEY --repo minguisstockgoat/overnight-us-brief
+   # (ARCHIVE_TOKEN / GEMINI_API_KEY / ANTHROPIC_API_KEY 는 이미 등록됨)
+   ```
+3. 등록 즉시 평일 07:10 KST(22:10 UTC 일~목) 자동 실행. 수동: `gh workflow run brief.yml`.
+
+`TS_AUTHKEY` 가 없으면 워크플로우는 **실패 없이 스킵**(경고만) — 그때는 방법 A를 쓰세요.
+두 방법을 동시에 켜면 둘 다 push 하므로 **하나만** 활성화하세요.
+
 ## GitHub Pages
 
 - Source = `main` / `root`. 빌드 없는 정적 사이트 → `data.json` push 시 ~1분 내 반영.
