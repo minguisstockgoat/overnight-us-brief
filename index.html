@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>전날 미장 시황 브리핑</title>
+<style>
+  :root{
+    --bg:#0b0e14; --card:#151d2e; --card2:#111725; --border:#233048; --border-h:#3a5178;
+    --text:#e6edf6; --muted:#8ba0bd; --sub:#6b7f9e; --accent:#5b9dff;
+    --core:#ff6b6b; --core-bg:rgba(255,107,107,.14);
+    --major:#5b9dff; --major-bg:rgba(91,157,255,.14);
+    --minor:#8ba0bd; --minor-bg:rgba(139,160,189,.12);
+    --line:#2a3852;
+  }
+  @media (prefers-color-scheme: light){
+    :root{
+      --bg:#f4f6fb; --card:#ffffff; --card2:#eef2f8; --border:#e0e6f0; --border-h:#b9ccf0;
+      --text:#131a26; --muted:#5a6b85; --sub:#8493a8; --accent:#2f6fe0;
+      --core:#e0483f; --core-bg:rgba(224,72,63,.10);
+      --major:#2f6fe0; --major-bg:rgba(47,111,224,.10);
+      --minor:#7688a0; --minor-bg:rgba(118,136,160,.10);
+      --line:#dbe3ef;
+    }
+  }
+  :root[data-theme="dark"]{ color-scheme:dark; }
+  :root[data-theme="light"]{ color-scheme:light; }
+  *{box-sizing:border-box;margin:0;padding:0}
+  body{
+    font-family:-apple-system,BlinkMacSystemFont,"Segoe UI","Malgun Gothic","Apple SD Gothic Neo",sans-serif;
+    background:
+      radial-gradient(1100px 600px at 85% -10%, rgba(91,157,255,.12), transparent 60%),
+      var(--bg);
+    color:var(--text); min-height:100vh; -webkit-font-smoothing:antialiased;
+    padding:clamp(20px,4vw,44px) 18px 80px;
+  }
+  .wrap{max-width:860px;margin:0 auto}
+  a{color:var(--accent);text-decoration:none}
+
+  header{margin-bottom:22px}
+  .eyebrow{display:inline-flex;align-items:center;gap:8px;font-size:12px;font-weight:600;
+    letter-spacing:.12em;text-transform:uppercase;color:var(--muted);margin-bottom:10px}
+  .dot{width:7px;height:7px;border-radius:50%;background:var(--accent);box-shadow:0 0 12px var(--accent)}
+  h1{font-size:clamp(24px,4.5vw,34px);font-weight:750;letter-spacing:-.02em;line-height:1.15}
+  .meta{margin-top:10px;color:var(--muted);font-size:13.5px;line-height:1.6}
+  .meta b{color:var(--text);font-weight:600}
+
+  .headline{background:var(--card);border:1px solid var(--border);border-radius:16px;
+    padding:20px 22px;margin:20px 0 26px}
+  .headline h2{font-size:13px;font-weight:700;letter-spacing:.04em;color:var(--muted);
+    text-transform:uppercase;margin-bottom:14px}
+  .headline ul{list-style:none;display:flex;flex-direction:column;gap:11px}
+  .headline li{position:relative;padding-left:22px;font-size:15px;line-height:1.55}
+  .headline li::before{content:"";position:absolute;left:2px;top:8px;width:7px;height:7px;
+    border-radius:50%;background:var(--accent)}
+
+  .filters{display:flex;flex-wrap:wrap;gap:8px;margin-bottom:18px}
+  .chip{border:1px solid var(--border);background:var(--card2);color:var(--muted);
+    border-radius:999px;padding:6px 14px;font-size:13px;font-weight:600;cursor:pointer;
+    transition:all .14s}
+  .chip.on{background:var(--accent);border-color:var(--accent);color:#fff}
+  .chip:hover{border-color:var(--border-h)}
+
+  .topic{background:var(--card);border:1px solid var(--border);border-radius:16px;
+    padding:20px 22px;margin-bottom:16px}
+  .topic-head{display:flex;align-items:center;gap:10px;flex-wrap:wrap;margin-bottom:8px}
+  .badge{font-size:11.5px;font-weight:700;padding:3px 9px;border-radius:7px;letter-spacing:.02em}
+  .b-핵심{color:var(--core);background:var(--core-bg)}
+  .b-주요{color:var(--major);background:var(--major-bg)}
+  .b-참고{color:var(--minor);background:var(--minor-bg)}
+  .region{font-size:11.5px;color:var(--sub);border:1px solid var(--border);border-radius:6px;padding:2px 7px}
+  .topic-head h3{font-size:17.5px;font-weight:680;letter-spacing:-.01em;line-height:1.3;flex:1;min-width:60%}
+  .topic-sum{color:var(--muted);font-size:14px;line-height:1.62;margin-bottom:16px}
+
+  .timeline{position:relative;padding-left:20px}
+  .timeline::before{content:"";position:absolute;left:4px;top:4px;bottom:4px;width:2px;background:var(--line)}
+  .ev{position:relative;padding-bottom:15px}
+  .ev:last-child{padding-bottom:0}
+  .ev::before{content:"";position:absolute;left:-19px;top:5px;width:9px;height:9px;border-radius:50%;
+    background:var(--accent);border:2px solid var(--card)}
+  .ev-top{display:flex;align-items:baseline;gap:9px;flex-wrap:wrap;margin-bottom:3px}
+  .ev-time{font-size:12.5px;font-weight:700;color:var(--text);font-variant-numeric:tabular-nums}
+  .ev-chat{font-size:11.5px;color:var(--sub)}
+  .ev-sum{font-size:14px;line-height:1.55;color:var(--text)}
+  .ev-sum a.src{margin-left:6px;font-size:12px;white-space:nowrap}
+  .tickers{margin-top:4px;display:flex;flex-wrap:wrap;gap:5px}
+  .tk{font-size:11px;color:var(--accent);background:var(--major-bg);border-radius:5px;padding:1px 6px;
+    font-family:ui-monospace,Menlo,monospace}
+
+  .empty{background:var(--card);border:1px solid var(--border);border-radius:16px;padding:40px 22px;
+    text-align:center;color:var(--muted);font-size:15px;line-height:1.6}
+  footer{margin-top:34px;color:var(--sub);font-size:12.5px;text-align:center;line-height:1.7}
+  .toggle{position:fixed;top:16px;right:16px;background:var(--card);border:1px solid var(--border);
+    color:var(--muted);border-radius:9px;padding:7px 12px;font-size:12.5px;cursor:pointer;font-weight:600}
+</style>
+</head>
+<body>
+<button class="toggle" id="themeBtn" type="button">테마</button>
+<div class="wrap">
+  <header>
+    <span class="eyebrow"><span class="dot"></span>Overnight US Market Brief</span>
+    <h1>전날 미장 시황 브리핑</h1>
+    <div class="meta" id="meta">불러오는 중…</div>
+  </header>
+  <div id="content"></div>
+  <footer id="foot"></footer>
+</div>
+
+<script>
+const esc = s => (s==null?"":String(s)).replace(/[&<>"]/g,c=>({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;"}[c]));
+const hm = iso => { const m=/T(\d{2}:\d{2})/.exec(iso||""); return m?m[1]:""; };
+const dstr = iso => { if(!iso) return ""; const d=new Date(iso);
+  return new Intl.DateTimeFormat("ko-KR",{month:"long",day:"numeric",hour:"2-digit",minute:"2-digit"}).format(d); };
+
+// theme toggle
+const root=document.documentElement, btn=document.getElementById("themeBtn");
+const saved=localStorage.getItem("brief-theme"); if(saved) root.dataset.theme=saved;
+btn.onclick=()=>{ const cur=root.dataset.theme||(matchMedia("(prefers-color-scheme:dark)").matches?"dark":"light");
+  const next=cur==="dark"?"light":"dark"; root.dataset.theme=next; localStorage.setItem("brief-theme",next); };
+
+let DATA=null, filter="전체";
+
+function render(){
+  const meta=document.getElementById("meta"), content=document.getElementById("content"), foot=document.getElementById("foot");
+  if(!DATA){ meta.textContent="데이터를 불러오지 못했습니다."; return; }
+  const w=DATA.window||{};
+  const range = `${dstr(w.startKst)} → ${dstr(w.endKst)}`;
+  meta.innerHTML = `밤사이 미국장 전후 <b>${esc(range)}</b>`
+    + (DATA.generatedAt?` · 생성 ${esc(dstr(DATA.generatedAt))}`:"");
+
+  if(DATA.status==="휴장"){
+    content.innerHTML=`<div class="empty">오늘은 국내 증시 휴장일입니다.<br>다음 영업일 오전에 브리핑이 갱신됩니다.</div>`;
+    foot.textContent=""; return;
+  }
+  const topics=DATA.topics||[];
+  let html="";
+  if((DATA.headline||[]).length){
+    html+=`<div class="headline"><h2>한눈에</h2><ul>`+
+      DATA.headline.map(h=>`<li>${esc(h)}</li>`).join("")+`</ul></div>`;
+  }
+  // importance filter chips
+  const imps=["전체","핵심","주요","참고"];
+  html+=`<div class="filters">`+imps.map(i=>{
+    const n=i==="전체"?topics.length:topics.filter(t=>t.importance===i).length;
+    return `<button class="chip ${filter===i?"on":""}" data-f="${i}">${i}${i!=="전체"?` ${n}`:""}</button>`;
+  }).join("")+`</div>`;
+
+  const shown = topics.filter(t=>filter==="전체"||t.importance===filter);
+  if(!shown.length){
+    html+=`<div class="empty">표시할 항목이 없습니다.</div>`;
+  }
+  for(const t of shown){
+    html+=`<div class="topic"><div class="topic-head">`
+      +`<span class="badge b-${esc(t.importance)}">${esc(t.importance)}</span>`
+      +`<span class="region">${esc(t.region)}</span>`
+      +`<h3>${esc(t.title)}</h3></div>`;
+    if(t.summary) html+=`<div class="topic-sum">${esc(t.summary)}</div>`;
+    html+=`<div class="timeline">`;
+    for(const e of (t.events||[])){
+      html+=`<div class="ev"><div class="ev-top">`
+        +`<span class="ev-time">${esc(hm(e.timeKst))}</span>`
+        +`<span class="ev-chat">${esc(e.chat)}</span></div>`
+        +`<div class="ev-sum">${esc(e.summary)}`
+        +(e.link?` <a class="src" href="${esc(e.link)}" target="_blank" rel="noreferrer">원문↗</a>`:"")
+        +`</div>`;
+      if((e.tickers||[]).length)
+        html+=`<div class="tickers">`+e.tickers.map(x=>`<span class="tk">${esc(x)}</span>`).join("")+`</div>`;
+      html+=`</div>`;
+    }
+    html+=`</div></div>`;
+  }
+  content.innerHTML=html;
+  content.querySelectorAll(".chip").forEach(c=>c.onclick=()=>{filter=c.dataset.f;render();});
+
+  const s=DATA.stats;
+  foot.innerHTML = (s?`수집 ${s.collected}건 · 요약 ${s.geminiItems}건 · `:"")
+    + `Gemini 1차요약 + Opus 4.8 큐레이션 · <a href="https://minguisstockgoat.github.io/">대시보드 허브</a>`;
+}
+
+fetch("data.json?"+Date.now()).then(r=>r.json()).then(d=>{DATA=d;render();})
+  .catch(()=>{document.getElementById("meta").textContent="데이터를 불러오지 못했습니다.";});
+</script>
+</body>
+</html>

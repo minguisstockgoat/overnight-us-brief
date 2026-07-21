@@ -1,0 +1,8 @@
+.env
+.venv/
+__pycache__/
+*.pyc
+scripts/__pycache__/
+inspect.py
+inspect_out.txt
+brief.log

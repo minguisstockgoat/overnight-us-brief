@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+  launchd 정의: 평일(월~금) 07:10 KST 에 run.sh 실행.
+  ⚠ 설치 전 아래 경로 3곳(REPO_PATH)을 실제 clone 경로로 바꾸세요. 예: /Users/minguis/overnight-us-brief
+  설치:  cp com.minguis.overnightbrief.plist ~/Library/LaunchAgents/
+         launchctl load ~/Library/LaunchAgents/com.minguis.overnightbrief.plist
+  Mac 시간대가 KST 여야 07:10 KST 에 실행됩니다(그 외 시간대면 시각을 환산).
+-->
+<plist version="1.0">
+<dict>
+  <key>Label</key>
+  <string>com.minguis.overnightbrief</string>
+
+  <key>ProgramArguments</key>
+  <array>
+    <string>/bin/bash</string>
+    <string>REPO_PATH/scripts/run.sh</string>
+  </array>
+
+  <key>WorkingDirectory</key>
+  <string>REPO_PATH</string>
+
+  <key>StartCalendarInterval</key>
+  <array>
+    <dict><key>Weekday</key><integer>1</integer><key>Hour</key><integer>7</integer><key>Minute</key><integer>10</integer></dict>
+    <dict><key>Weekday</key><integer>2</integer><key>Hour</key><integer>7</integer><key>Minute</key><integer>10</integer></dict>
+    <dict><key>Weekday</key><integer>3</integer><key>Hour</key><integer>7</integer><key>Minute</key><integer>10</integer></dict>
+    <dict><key>Weekday</key><integer>4</integer><key>Hour</key><integer>7</integer><key>Minute</key><integer>10</integer></dict>
+    <dict><key>Weekday</key><integer>5</integer><key>Hour</key><integer>7</integer><key>Minute</key><integer>10</integer></dict>
+  </array>
+
+  <key>StandardOutPath</key>
+  <string>REPO_PATH/launchd.out.log</string>
+  <key>StandardErrorPath</key>
+  <string>REPO_PATH/launchd.err.log</string>
+
+  <key>EnvironmentVariables</key>
+  <dict>
+    <key>PATH</key>
+    <string>/usr/local/bin:/opt/homebrew/bin:/usr/bin:/bin:/usr/sbin:/sbin</string>
+  </dict>
+</dict>
+</plist>
