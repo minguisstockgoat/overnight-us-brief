@@ -1,8 +1,13 @@
 name: Overnight US Market Brief
 
-# 평일 07:10 KST(= 22:10 UTC 일~목)에 파이프라인 실행 → data.json 갱신 → Pages 반영.
-# 아카이브가 Funnel로 외부 공개돼 있어 클라우드(Actions)에서 Bearer 토큰만으로 접근.
-# KRX 휴장일은 파이프라인이 status:"휴장" 으로 no-op 처리.
+# 평일 07:10 KST(= 22:10 UTC 일~목) 자동 실행 → data.json 갱신 → Pages 반영.
+#
+# 아카이브(macmini.taila0cca3.ts.net)는 Tailscale tailnet 전용 주소라 클라우드에서 바로 못 닿음.
+# → Actions가 tailnet에 조인해야 함. 그러려면 Tailscale 인증키를 시크릿 TS_AUTHKEY 로 추가:
+#   Tailscale admin(https://login.tailscale.com/admin/settings/keys) → Generate auth key
+#   (Reusable + Ephemeral 권장, tag 부여) → 아래 명령으로 등록:
+#     gh secret set TS_AUTHKEY --repo minguisstockgoat/overnight-us-brief
+#   TS_AUTHKEY 가 없으면 이 워크플로우는 '실패 없이' 스킵됩니다(경고만). 그 경우 Mac launchd로 실행.
 on:
   schedule:
     - cron: "10 22 * * 0-4"
@@ -20,11 +25,35 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
+
+      - name: Gate on Tailscale key
+        id: gate
+        env:
+          TS: ${{ secrets.TS_AUTHKEY }}
+        run: |
+          if [ -n "$TS" ]; then
+            echo "run=true" >> "$GITHUB_OUTPUT"
+          else
+            echo "run=false" >> "$GITHUB_OUTPUT"
+            echo "::warning::TS_AUTHKEY 시크릿이 없어 클라우드 실행을 건너뜁니다. Tailscale 인증키를 추가하거나 Mac mini launchd로 실행하세요."
+          fi
+
+      - name: Connect to Tailscale
+        if: steps.gate.outputs.run == 'true'
+        uses: tailscale/github-action@v3
+        with:
+          authkey: ${{ secrets.TS_AUTHKEY }}
+
       - uses: actions/setup-python@v5
+        if: steps.gate.outputs.run == 'true'
         with:
           python-version: "3.12"
+
       - run: pip install -r requirements.txt
+        if: steps.gate.outputs.run == 'true'
+
       - name: Run pipeline
+        if: steps.gate.outputs.run == 'true'
         env:
           ARCHIVE_URL: https://macmini.taila0cca3.ts.net/
           ARCHIVE_TOKEN: ${{ secrets.ARCHIVE_TOKEN }}
@@ -33,7 +62,9 @@ jobs:
           ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}
           OPUS_MODEL: claude-opus-4-8
         run: python scripts/pipeline.py --out data.json
+
       - name: Commit & push if changed
+        if: steps.gate.outputs.run == 'true'
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
