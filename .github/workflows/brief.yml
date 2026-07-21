@@ -1,0 +1,42 @@
+name: Overnight US Market Brief
+
+# 평일 07:10 KST(= 22:10 UTC 일~목)에 파이프라인 실행 → data.json 갱신 → Pages 반영.
+# 아카이브가 Funnel로 외부 공개돼 있어 클라우드(Actions)에서 Bearer 토큰만으로 접근.
+# KRX 휴장일은 파이프라인이 status:"휴장" 으로 no-op 처리.
+on:
+  schedule:
+    - cron: "10 22 * * 0-4"
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+concurrency:
+  group: brief
+  cancel-in-progress: false
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - run: pip install -r requirements.txt
+      - name: Run pipeline
+        env:
+          ARCHIVE_URL: https://macmini.taila0cca3.ts.net/
+          ARCHIVE_TOKEN: ${{ secrets.ARCHIVE_TOKEN }}
+          GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
+          GEMINI_MODEL: gemini-2.5-flash
+          ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}
+          OPUS_MODEL: claude-opus-4-8
+        run: python scripts/pipeline.py --out data.json
+      - name: Commit & push if changed
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add data.json
+          git diff --cached --quiet || git commit -m "brief: $(date -u +%F)"
+          git push
