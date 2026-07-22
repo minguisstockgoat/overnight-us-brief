@@ -92,6 +92,16 @@
   footer{margin-top:34px;color:var(--sub);font-size:12.5px;text-align:center;line-height:1.7}
   .toggle{position:fixed;top:16px;right:16px;background:var(--card);border:1px solid var(--border);
     color:var(--muted);border-radius:9px;padding:7px 12px;font-size:12.5px;cursor:pointer;font-weight:600}
+  .tools{display:flex;flex-wrap:wrap;align-items:center;gap:8px;margin-top:14px}
+  .tbtn{display:inline-flex;align-items:center;gap:6px;background:var(--card);border:1px solid var(--border);
+    color:var(--text);border-radius:9px;padding:7px 13px;font-size:13px;font-weight:600;cursor:pointer;
+    text-decoration:none;transition:border-color .14s,background .14s}
+  .tbtn:hover{border-color:var(--border-h)}
+  .tbtn[aria-busy="true"]{opacity:.6;pointer-events:none}
+  .tbtn .spin{display:inline-block;animation:spin 1s linear infinite}
+  @keyframes spin{to{transform:rotate(360deg)}}
+  .tnote{font-size:12px;color:var(--sub)}
+  .flash{color:var(--accent);font-weight:600}
 </style>
 </head>
 <body>
@@ -101,6 +111,12 @@
     <span class="eyebrow"><span class="dot"></span>Overnight US Market Brief</span>
     <h1>전날 미장 시황 브리핑</h1>
     <div class="meta" id="meta">불러오는 중…</div>
+    <div class="tools">
+      <button class="tbtn" id="refreshBtn" type="button" title="최신 data.json 다시 불러오기">🔄 새로고침</button>
+      <a class="tbtn" id="runBtn" href="https://github.com/minguisstockgoat/overnight-us-brief/actions/workflows/brief.yml"
+         target="_blank" rel="noreferrer" title="GitHub에서 'Run workflow' 클릭 → 새로 생성(3~5분 뒤 자동 반영)">⟳ 수동 생성 ↗</a>
+      <span class="tnote" id="tnote"></span>
+    </div>
   </header>
   <div id="content"></div>
   <footer id="foot"></footer>
@@ -177,8 +193,46 @@ function render(){
     + `Gemini 1차요약 + Opus 4.8 큐레이션 · <a href="https://minguisstockgoat.github.io/">대시보드 허브</a>`;
 }
 
-fetch("data.json?"+Date.now()).then(r=>r.json()).then(d=>{DATA=d;render();})
-  .catch(()=>{document.getElementById("meta").textContent="데이터를 불러오지 못했습니다.";});
+const tnote=document.getElementById("tnote");
+const refreshBtn=document.getElementById("refreshBtn");
+const runBtn=document.getElementById("runBtn");
+const nowhm=()=>new Intl.DateTimeFormat("ko-KR",{hour:"2-digit",minute:"2-digit",second:"2-digit"}).format(new Date());
+
+async function load(manual){
+  if(manual){ refreshBtn.setAttribute("aria-busy","true"); refreshBtn.innerHTML='<span class="spin">🔄</span> 불러오는 중'; }
+  try{
+    const prevGen = DATA && DATA.generatedAt;
+    const r = await fetch("data.json?ts="+Date.now(), {cache:"no-store"});
+    const d = await r.json();
+    const changed = !prevGen || d.generatedAt !== prevGen;
+    DATA=d; render();
+    if(changed && prevGen){
+      tnote.innerHTML=`<span class="flash">✓ 갱신됨</span> · 확인 ${nowhm()}`;
+    }else{
+      tnote.textContent=`확인 ${nowhm()}`+(manual?" · 변화 없음":"");
+    }
+  }catch(e){
+    tnote.textContent="불러오기 실패 — 잠시 후 재시도";
+  }finally{
+    if(manual){ refreshBtn.removeAttribute("aria-busy"); refreshBtn.innerHTML="🔄 새로고침"; }
+  }
+}
+
+refreshBtn.onclick=()=>load(true);
+
+// 수동 생성 클릭 후 5분간은 20초 간격으로 빠르게 폴링(생성 완료 감지), 평소엔 90초.
+let boostUntil=0, lastLoad=Date.now();
+runBtn.addEventListener("click",()=>{
+  boostUntil=Date.now()+5*60*1000;
+  tnote.textContent="GitHub에서 'Run workflow' 클릭하세요 · 생성 후 자동 반영(최대 5분)";
+});
+setInterval(()=>{
+  const interval = Date.now()<boostUntil ? 20000 : 90000;
+  if(Date.now()-lastLoad >= interval){ lastLoad=Date.now(); load(false); }
+}, 5000);
+document.addEventListener("visibilitychange",()=>{ if(!document.hidden){ lastLoad=Date.now(); load(false); } });
+
+load(false);
 </script>
 </body>
 </html>

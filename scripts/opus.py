@@ -95,7 +95,8 @@ def curate(items, window):
     }
     r = httpx.post(ENDPOINT, json=payload, headers=headers,
                    timeout=httpx.Timeout(600.0, read=590.0, connect=10.0))
-    r.raise_for_status()
+    if r.status_code >= 400:
+        raise RuntimeError(f"Anthropic {r.status_code}: {r.text[:800]}")
     data = r.json()
     if data.get("stop_reason") == "refusal":
         raise RuntimeError(f"Opus refusal: {data.get('stop_details')}")
