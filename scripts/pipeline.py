@@ -26,8 +26,27 @@ import opus
 KST = timezone(timedelta(hours=9))
 
 
-def run(run_date: date, out_path: str):
+def _already_current(out_path, win, run_date) -> bool:
+    """오늘(KST) 이미 이번 창으로 생성됐으면 True — 중복 크론이 API 안 부르고 스킵."""
+    if not os.path.isfile(out_path):
+        return False
+    try:
+        with open(out_path, encoding="utf-8") as f:
+            prev = json.load(f)
+    except Exception:
+        return False
+    same_window = prev.get("window", {}).get("prevTradingDay") == win["prev_trading_day"]
+    gen_today = (prev.get("generatedAt", "")[:10] == run_date.isoformat())
+    return bool(same_window and gen_today)
+
+
+def run(run_date: date, out_path: str, force: bool = False):
     win = cal.window_for(run_date)
+
+    if not force and _already_current(out_path, win, run_date):
+        print(f"[skip] {run_date} 이미 이번 창(prev={win['prev_trading_day']})으로 생성됨 — 중복 실행 건너뜀")
+        return None
+
     generated = datetime.now(timezone.utc).astimezone(KST).isoformat()
 
     base = {
@@ -84,6 +103,7 @@ def main():
     ap = argparse.ArgumentParser()
     ap.add_argument("--date", help="YYYY-MM-DD (KST 실행일). 미지정 시 오늘.")
     ap.add_argument("--out", default=os.path.join(ROOT, "data.json"))
+    ap.add_argument("--force", action="store_true", help="이미 오늘 생성됐어도 강제 재생성")
     ap.add_argument("--env-file", action="append", default=[], help="추가 .env 경로(개발용)")
     args = ap.parse_args()
 
@@ -105,7 +125,7 @@ def main():
         print(f"[에러] 누락된 키: {', '.join(missing)} (.env 확인)", file=sys.stderr)
         sys.exit(2)
 
-    run(rd, args.out)
+    run(rd, args.out, force=args.force)
 
 
 if __name__ == "__main__":

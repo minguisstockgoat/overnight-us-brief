@@ -10,7 +10,12 @@ name: Overnight US Market Brief
 #   TS_AUTHKEY 가 없으면 이 워크플로우는 '실패 없이' 스킵됩니다(경고만). 그 경우 Mac launchd로 실행.
 on:
   schedule:
-    - cron: "10 22 * * 0-4"
+    # GitHub 예약 크론은 지연·누락이 잦아 아침에 여러 번 재시도(모두 07:00 KST 이후, 09:00 개장 전).
+    # 이미 오늘 생성됐으면 pipeline이 API 안 부르고 스킵하므로 중복은 무해.
+    # 분(minute)을 정각에서 비켜 혼잡을 회피. UTC 기준.
+    - cron: "13 22 * * 0-4"   # 07:13 KST
+    - cron: "38 22 * * 0-4"   # 07:38 KST
+    - cron: "8 23 * * 0-4"    # 08:08 KST (백업)
   workflow_dispatch:
 
 permissions:
