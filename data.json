@@ -1,102 +1,68 @@
 {
-  "generatedAt": "2026-07-27T07:15:53.621146+09:00",
+  "generatedAt": "2026-07-28T07:42:20.585825+09:00",
   "window": {
-    "startKst": "2026-07-24T20:00:00+09:00",
-    "endKst": "2026-07-27T07:00:00+09:00",
-    "prevTradingDay": "2026-07-24"
+    "startKst": "2026-07-27T20:00:00+09:00",
+    "endKst": "2026-07-28T07:00:00+09:00",
+    "prevTradingDay": "2026-07-27"
   },
   "status": "ok",
   "headline": [
-    "나스닥 -0.64%·필라델피아 반도체 -4.25% 급락하며 혼조 마감, S&P·다우는 소폭 상승",
-    "미 국채 10년물 4.7% 돌파(2023년 10월 이후 최고)…FOMC 앞두고 금리 인상 확률 13%→38% 급등",
-    "중동: 트럼프 대이란 공습 일시 중단·오만 중재 협상 진전, 주말 유가 4.5% 하락",
-    "한미 빅테크 AI·반도체 초대형 계약 총 ~9,500억 달러(엔비디아-SK $5,000억, 삼성-브로드컴 $2,000억)",
-    "이번 주 MSFT·META·AAPL·AMZN 등 빅테크 실적과 FOMC·PCE 집중, AI CapEx 회수 우려가 핵심 변수"
+    "미 증시 혼조 마감: S&P500 +0.02%, 다우 +0.51%, 나스닥 -0.18%, 필라델피아반도체 -2.23%",
+    "중국 자체 DUV 노광장비 양산 착수 보도에 ASML -5.8%(유럽장 -8%)·반도체 장비주 급락",
+    "엔비디아 7,500억달러 규모 'AI 순환금융' 논란 재부각으로 NVDA -4.99%, CDS 프리미엄 급등",
+    "미-이란 협상 기대·군사충돌 일시 중단에 WTI 8%대 급락, 국채금리 하락·달러 약세",
+    "애플 사상 최고가 경신하며 시총 5조달러 근접, 엔비디아 제치고 글로벌 시총 1위 탈환"
   ],
   "topics": [
     {
-      "title": "미 증시 마감: 반도체 급락 주도 혼조세",
+      "title": "미 증시 마감 및 매크로 동향",
       "importance": "핵심",
       "region": "US",
-      "summary": "7월 24일 미 증시는 미-이란 불확실성과 주간 옵션 만기 수급 부담, 반도체 약세로 혼조 마감. S&P500 +0.05%, 다우 +0.46%, 나스닥 -0.64%, 필라델피아 반도체 지수 -4.25% 급락. 마이크론·인텔·샌디스크 등이 큰 폭 하락했고 유가는 3% 내외 하락.",
+      "summary": "미 증시는 미-이란 갈등 완화 기대에 상승 출발했으나 중국 DUV 장비 양산 소식과 엔비디아 순환금융 논란으로 반도체가 급락하며 혼조 마감. FOMC와 빅테크 실적을 앞두고 대형 기술주 차익실현·금융/산업재 순환매가 나타남.",
       "events": [
         {
-          "timeKst": "2026-07-25T05:48:01+09:00",
-          "summary": "미-이란 충돌 장기화 우려·옵션 만기 부담으로 혼조. 다우·S&P 소폭 상승, 나스닥 -0.64%, SOX -4.25%. 마이크론 -6.99%, 인텔 -7.89%, AMD -3.29%, 엔비디아 -0.92%",
-          "chat": "사제콩이_서상영",
-          "link": null,
-          "tickers": [
-            "INTC",
-            "AMD",
-            "NVDA",
-            "MU",
-            "WDC",
-            "BRCM",
-            "GEV",
-            "CEG",
-            "VST"
-          ]
-        },
-        {
-          "timeKst": "2026-07-25T08:16:37+09:00",
-          "summary": "S&P500 +0.05%, 다우 +0.46%, 나스닥 -0.64% 혼조 마감. WTI -1.87% 90.47달러, 비트코인 하락",
-          "chat": "미국 주식 인사이더",
-          "link": null,
-          "tickers": [
-            "SPY",
-            "DIA",
-            "QQQ",
-            "IWM"
-          ]
-        },
-        {
-          "timeKst": "2026-07-25T08:19:47+09:00",
-          "summary": "기술주 약세 속 에너지·경기민감주 강세로 업종 순환매. S&P500 실적발표 기업 27% 중 EPS 서프라이즈 86%였으나 주가 반응 부진, FOMC 앞두고 포지션 조정",
-          "chat": "미국 주식 인사이더",
-          "link": "https://t.me/insidertracking",
-          "tickers": [
-            "XLE",
-            "NVDA",
-            "MSFT",
-            "META",
-            "TSLA",
-            "QCOM",
-            "INTC"
-          ]
-        },
-        {
-          "timeKst": "2026-07-25T08:54:17+09:00",
-          "summary": "미·이란 협상 기대에 유가 장중 5%+ 급락, SOX 4% 급락. 나스닥 3거래일 연속 하락으로 약 3개월래 최저. 샌디스크 -10%+, 인텔 -8% 근접, 테슬라 주간 -18%",
-          "chat": "하나 중국/신흥국 전략 김경환",
-          "link": "https://wallstreetcn.com/articles/3777833#from=ios",
-          "tickers": [
-            "SOX",
-            "WDC",
-            "INTC",
-            "TSLA"
-          ]
-        },
-        {
-          "timeKst": "2026-07-25T08:40:45+09:00",
-          "summary": "S&P500 평균 종목은 52주 최고가 대비 약 18% 하락, 지수 강세에도 개별 종목 조정 진행",
-          "chat": "미국 주식 인사이더",
-          "link": null,
-          "tickers": [
-            "SPY",
-            "SPX"
-          ]
-        },
-        {
-          "timeKst": "2026-07-26T22:12:03+09:00",
-          "summary": "나스닥100 P/E 현재 24배로 2001년 5월 86배 대비 크게 낮아 기술주 버블 우려 일부 완화",
-          "chat": "프리라이프",
+          "timeKst": "2026-07-28T05:08:10+09:00",
+          "summary": "미 증시 혼조 마감: S&P500 +0.02%, 다우 +0.51%, 러셀2000 +0.66%, 나스닥 -0.18%. VIX +1.61% 18.88, WTI -8.22% 81.97달러.",
+          "chat": "미국 주식 인사이더 🇺🇸 (US Stocks Insider)",
           "link": null,
           "tickers": []
         },
         {
-          "timeKst": "2026-07-27T07:00:14+09:00",
-          "summary": "주말 나스닥 소폭 상승 마감",
-          "chat": "미국 주식 인사이더",
+          "timeKst": "2026-07-28T05:10:25+09:00",
+          "summary": "FOMC·빅테크 실적 앞두고 대형 기술주 차익실현, 금융·산업재로 순환매 확대. 중동 리스크 완화로 브렌트유 하루 10% 급락.",
+          "chat": "미국 주식 인사이더 🇺🇸 (US Stocks Insider)",
+          "link": "https://t.me/insidertracking",
+          "tickers": [
+            "XLF",
+            "VIX",
+            "SMH",
+            "XLK",
+            "NVDA",
+            "MSFT",
+            "META",
+            "AAPL",
+            "AMZN",
+            "AMD",
+            "ASML"
+          ]
+        },
+        {
+          "timeKst": "2026-07-28T05:32:27+09:00",
+          "summary": "미-이란 대화 기대에 상승 출발했으나 중국 DUV 양산·엔비디아 순환금융 논란으로 반도체 급락, 나스닥 하락 전환. 필라델피아 반도체 -2.23%, SOXX 풋/콜 비율 3.09.",
+          "chat": "사제콩이_서상영",
+          "link": null,
+          "tickers": [
+            "ASML",
+            "NVDA",
+            "SOXX",
+            "AMAT",
+            "LRCX"
+          ]
+        },
+        {
+          "timeKst": "2026-07-28T05:37:26+09:00",
+          "summary": "나스닥종합지수 장중 2만5,000선 하회하며 5월 이후 최저치 기록.",
+          "chat": "미국 주식 인사이더 🇺🇸 (US Stocks Insider)",
           "link": null,
           "tickers": [
             "^IXIC"
@@ -105,693 +71,525 @@
       ]
     },
     {
-      "title": "국채금리 급등·FOMC·금리 인상 우려",
+      "title": "중국 자체 DUV 노광장비 양산과 ASML 급락",
       "importance": "핵심",
-      "region": "US",
-      "summary": "미 국채 10년물 금리가 4.7%를 돌파해 2023년 10월 이후 최고치 기록. 중동 지정학·유가 상승으로 기대 인플레이션 자극되며 Fed 금리 인상 확률이 13%에서 38%로 급등. 30일 새벽 FOMC 결과, 저녁 2Q GDP·근원 PCE 발표로 변동성 확대 예상.",
+      "region": "글로벌",
+      "summary": "중국이 자체 개발 침지형 DUV 노광장비 양산에 착수해 SMIC·화홍·CXMT 등에 올해 첫 출하 예정이라는 보도에 ASML·BESI가 급락(거래 일시 중단)하고 반도체 장비주 전반이 하락. 미국 대중국 장비 규제 무력화 및 장기 독점 지위 약화 우려가 부각됨.",
       "events": [
         {
-          "timeKst": "2026-07-25T01:25:51+09:00",
-          "summary": "BofA 하트넷: 30년물 실질금리 2008년 이후 최고인 3%까지 상승, Fed 선제적 금리 인상 가능성. 방어주·장기 듀레이션 선호, 은행·기술·산업주 회피 권고",
-          "chat": "하나 중국/신흥국 전략 김경환",
-          "link": "https://wallstreetcn.com/articles/3777894#from=ios",
-          "tickers": []
-        },
-        {
-          "timeKst": "2026-07-25T05:54:30+09:00",
-          "summary": "10년물 금리 4.7% 돌파, 2023년 10월 이후 최고치. 중동 리스크·유가 상승이 기대 인플레 자극. 이번 주 2Q GDP·6월 PCE·FOMC 집중",
-          "chat": "사제콩이_서상영",
-          "link": null,
-          "tickers": [
-            "MSFT",
-            "META",
-            "AAPL",
-            "AMZN"
-          ]
-        },
-        {
-          "timeKst": "2026-07-25T08:39:05+09:00",
-          "summary": "골드만삭스: 10년·2년물 금리 약 40bp 추가 변동 시 주식시장에 상당한 압력 근접",
-          "chat": "미국 주식 인사이더",
-          "link": null,
-          "tickers": []
-        },
-        {
-          "timeKst": "2026-07-25T08:46:44+09:00",
-          "summary": "CME 페드워치: 7월 FOMC 금리 동결 확률 62.1%, 25bp 인상 확률 37.9%",
-          "chat": "미국 주식 인사이더",
-          "link": null,
-          "tickers": []
-        },
-        {
-          "timeKst": "2026-07-26T11:26:15+09:00",
-          "summary": "금주 Fed 금리 인상 가능성 13%→38% 급등, 브렌트유 100달러 돌파로 인플레 우려. 신임 의장 워시 포워드 가이던스 폐지로 예측 어려워짐",
-          "chat": "하나 중국/신흥국 전략 김경환",
-          "link": null,
-          "tickers": []
-        },
-        {
-          "timeKst": "2026-07-26T16:03:26+09:00",
-          "summary": "Citi: 7월 FOMC 금리 동결 전망, SEP 없고 워시 의장 가이던스 미제공. 둔화된 6월 근원 CPI 감안 시 동결 시 금리 하락·달러 약세 예상",
+          "timeKst": "2026-07-27T22:09:09+09:00",
+          "summary": "중국, 자국산 DUV 반도체 제조장비 양산 개시(The Information 보도).",
           "chat": "에테르의 일본&미국 리서치",
-          "link": null,
+          "link": "https://www.theinformation.com/articles/china-starts-mass-producing-homegrown-duv-chipmaking-tools-advance-local-chip-industry",
           "tickers": []
         },
         {
-          "timeKst": "2026-07-26T06:55:31+09:00",
-          "summary": "BofA: 올해 미국 재정적자 2조 달러, 국가부채 이자비용 1조 달러 확대 전망",
-          "chat": "미국 주식 인사이더",
-          "link": null,
-          "tickers": []
-        }
-      ]
-    },
-    {
-      "title": "중동 지정학·유가: 트럼프 이란 공습 중단",
-      "importance": "핵심",
-      "region": "글로벌",
-      "summary": "트럼프 대통령이 13일 연속 이어진 대이란 공습을 중단하고 외교 협상에 무게. 오만 중재로 호르무즈 해협 재개방 협상 진전, 이란도 보복 공격 일시 중단. 다만 후티 반군의 사우디 아람코 시설 공격 등 홍해 긴장은 지속. 주말 유가는 4.5% 하락.",
-      "events": [
-        {
-          "timeKst": "2026-07-24T22:36:50+09:00",
-          "summary": "JP모건: 중동 분쟁 1개월 지속 시 브렌트유 월평균 94달러, 3개월 지속 시 114달러 상승 가능",
+          "timeKst": "2026-07-27T23:50:43+09:00",
+          "summary": "ASML·BESI 주가 8~8.7% 하락 후 자동 거래 중단.",
           "chat": "하나 중국/신흥국 전략 김경환",
-          "link": "https://wallstreetcn.com/articles/3777881#from=ios",
-          "tickers": []
-        },
-        {
-          "timeKst": "2026-07-25T11:05:36+09:00",
-          "summary": "후티 반군, 사우디 아람코 자잔 석유 터미널 공격으로 대규모 화재 발생",
-          "chat": "미국 주식 인사이더",
-          "link": null,
+          "link": "https://www.reuters.com/world/china/china-begins-making-homegrown-duv-chipmaking-tools-information-reports-2026-07-27/",
           "tickers": [
-            "ARAMCO"
+            "ASML",
+            "BESI"
           ]
         },
         {
-          "timeKst": "2026-07-25T11:23:22+09:00",
-          "summary": "Signum 'TACO 지수': 브렌트유·미 국채금리·호르무즈 통행량·S&P500 종합, 트럼프의 긴장완화 조치 시점 7월 26일 유력 전망",
-          "chat": "하나 중국/신흥국 전략 김경환",
-          "link": null,
-          "tickers": []
-        },
-        {
-          "timeKst": "2026-07-26T07:23:54+09:00",
-          "summary": "악시오스: 트럼프, 금요일 미군에 이란 공습 중단 지시로 13일 연속 공습 종료. 오만이 호르무즈 재개방 협상 중",
-          "chat": "미국 주식 인사이더",
-          "link": null,
-          "tickers": []
-        },
-        {
-          "timeKst": "2026-07-26T09:16:40+09:00",
-          "summary": "NYT: 트럼프, 미군 수뇌부가 패트리엇 요격미사일 재고 급감 경고하자 공습 확대 계획 보류",
-          "chat": "미국 주식 인사이더",
-          "link": null,
-          "tickers": []
-        },
-        {
-          "timeKst": "2026-07-26T18:26:49+09:00",
-          "summary": "이란군, 미국 이틀 연속 공습 중단에 보복 공격 중단 발표",
-          "chat": "루팡",
-          "link": null,
-          "tickers": []
-        },
-        {
-          "timeKst": "2026-07-26T20:00:10+09:00",
-          "summary": "주말 유가 5% 하락 확대",
-          "chat": "미국 주식 인사이더",
-          "link": null,
-          "tickers": []
-        },
-        {
-          "timeKst": "2026-07-26T21:44:05+09:00",
-          "summary": "하나증권: 후티의 아람코 정제설비 공격으로 단기 유가 급등 가능성. WTI 100달러 이상 상승 시 글로벌 매크로·수요에 부정적",
-          "chat": "하나증권/에너지화학/윤재성",
-          "link": "https://bit.ly/4bfmrvE",
+          "timeKst": "2026-07-28T00:05:17+09:00",
+          "summary": "중국 자체 이머전 DUV 노광장비 생산 시작, 2026년 SMIC 등에 5대 공급 예정. ASML 주가 4.6~7%대 급락.",
+          "chat": "타점 읽어주는 여자(타자)",
+          "link": "https://www.reuters.com/world/china/china-begins-making-homegrown-duv-chipmaking-tools-information-reports-2026-07-27/",
           "tickers": [
-            "Saudi Aramco"
+            "ASML"
           ]
         },
         {
-          "timeKst": "2026-07-27T05:56:16+09:00",
-          "summary": "주말 유가 4.5% 하락. 중동 외교 진전과 이란 보복 중단이 안도 요인",
-          "chat": "미국 주식 인사이더",
-          "link": null,
-          "tickers": []
-        }
-      ]
-    },
-    {
-      "title": "한미 빅테크 AI·반도체 초대형 계약 ~9,500억 달러",
-      "importance": "핵심",
-      "region": "글로벌",
-      "summary": "샌프란시스코 AI 서밋 계기 한미 기업이 총 ~9,500억 달러 규모 AI·반도체 협력 발표. 엔비디아-SK그룹 5,000억 달러 파트너십(2GW AI 데이터센터, Vera Rubin+HBM4), 삼성전자-브로드컴 2,000억 달러 협력(HBM·2nm 파운드리), 네이버·현대차 협력, 앤스로픽·오픈AI 공급 계약 포함.",
-      "events": [
-        {
-          "timeKst": "2026-07-24T20:42:59+09:00",
-          "summary": "이재명 대통령 순방 계기 삼성·SK와 엔비디아·오픈AI·앤스로픽·브로드컴 간 대규모 AI 반도체 장기공급계약(LTA) 임박",
-          "chat": "루팡",
-          "link": "https://www.sedaily.com/article/20071608",
-          "tickers": [
-            "삼성전자",
-            "SK하이닉스",
-            "NVDA",
-            "BRCM"
-          ]
-        },
-        {
-          "timeKst": "2026-07-25T08:39:02+09:00",
-          "summary": "젠슨 황, 엔비디아-SK그룹 5,000억 달러 규모 AI 파트너십 발표",
-          "chat": "루팡",
-          "link": "https://www.newsis.com/view/NISX20260725_0003722948",
-          "tickers": [
-            "NVDA",
-            "SK Hynix"
-          ]
-        },
-        {
-          "timeKst": "2026-07-25T08:50:34+09:00",
-          "summary": "엔비디아, SK그룹 5,000억+ 협력. SKT는 Vera Rubin+HBM4 2GW 데이터센터 구축. 네이버·엔비디아·브룩필드 최대 100억 달러 조달, 엔비디아 네이버에 10억 달러 투자",
-          "chat": "하나 중국/신흥국 전략 김경환",
+          "timeKst": "2026-07-28T05:31:26+09:00",
+          "summary": "ASML 유럽장 8% 하락 마감.",
+          "chat": "미국 주식 인사이더 🇺🇸 (US Stocks Insider)",
           "link": null,
           "tickers": [
-            "NVIDIA",
-            "SK Hynix",
-            "SK Telecom",
-            "BN"
+            "ASML"
           ]
         },
         {
-          "timeKst": "2026-07-25T14:02:23+09:00",
-          "summary": "한미 총 9,500억 달러 협력 정리: 엔비디아-SK 5,000억, 삼성-브로드컴 2,000억, SK 7,500억 반도체 공급, 네이버 데이터센터, 현대차 자율주행",
-          "chat": "미국 주식 인사이더",
-          "link": "https://t.me/insidertracking",
+          "timeKst": "2026-07-28T06:34:26+09:00",
+          "summary": "CXMT, 상하이 위량성 테크놀로지로부터 중국산 DUV 장비 우선 공급받아 미국 MATCH Act 무력화, 3D DRAM 개발 가속.",
+          "chat": "민구의 뉴스",
+          "link": "https://wccftech.com/cxmt-gets-one-of-the-first-homegrown-duv-machines-in-china-neutralizing-the-us-match-act-and-bolstering-its-big-bet-on-3d-dram/",
           "tickers": [
-            "NVDA",
-            "AVGO",
-            "GOOGL"
+            "CXMT",
+            "SMIC"
           ]
         },
         {
-          "timeKst": "2026-07-25T18:24:32+09:00",
-          "summary": "삼성전자-브로드컴 292조원 규모 AI 반도체 MOU: HBM·2nm 이하 파운드리·첨단 패키징 원스톱 턴키 솔루션",
-          "chat": "루팡",
-          "link": "https://www.etnews.com/20260725000019",
-          "tickers": [
-            "삼성전자",
-            "AVGO"
-          ]
-        },
-        {
-          "timeKst": "2026-07-26T00:06:22+09:00",
-          "summary": "젠슨 황, 한국을 AI 인프라 핵심 파트너로 평가. HBM 공동개발 로드맵 제시, 반도체 산업 10년 내 10배 성장 전망",
-          "chat": "루팡",
-          "link": "https://youtu.be/N5UhBCbxdIA",
-          "tickers": [
-            "NVDA",
-            "SK하이닉스",
-            "네이버"
-          ]
-        },
-        {
-          "timeKst": "2026-07-26T20:27:22+09:00",
-          "summary": "SK그룹-엔비디아 5,000억 달러 협력, 2027년 첫 AI 팩토리 가동 목표. SKT가 Vera Rubin DSX+HBM4 탑재 2GW 센터 구축",
-          "chat": "하나 중국/신흥국 전략 김경환",
+          "timeKst": "2026-07-28T06:38:00+09:00",
+          "summary": "중국, 자체 DUV 양산 개시 및 올해 첫 출하. 2026년 5대·2027년 20대 공급 목표.",
+          "chat": "미국 주식 인사이더 🇺🇸 (US Stocks Insider)",
           "link": null,
           "tickers": [
-            "NVDA",
-            "SK Hynix",
-            "SK Telecom"
+            "SMIC",
+            "CXMT",
+            "ASML"
           ]
         }
       ]
     },
     {
-      "title": "AI CapEx 회수 우려·빅테크 실적 시즌",
+      "title": "엔비디아 'AI 순환금융' 논란과 반도체주 하락",
       "importance": "핵심",
       "region": "US",
-      "summary": "이번 주 MSFT·META·AAPL·AMZN 등 빅테크와 반도체 기업 실적 집중. 무디스·골드만삭스 등은 막대한 AI 인프라 투자가 잉여현금흐름을 잠식하고 재무 부담을 키운다고 경고. 시장 초점이 AI 수요·CapEx에서 실제 수익화(ROI)로 이동하며 기술주 압박.",
+      "summary": "엔비디아가 OpenAI 데이터센터에 최대 2,500억달러 금융보증, SK그룹과 5,000억달러 협력, SSI 약 50억달러 투자 등 7,500억달러 규모 AI 딜을 추진하면서 공급자·투자자·보증자 역할을 동시 수행하는 순환금융 구조 우려가 재점화. NVDA -4.99%, CDS 프리미엄 급등.",
       "events": [
         {
-          "timeKst": "2026-07-25T08:30:48+09:00",
-          "summary": "다음 주 FOMC·PCE·2Q GDP 및 페이팔·보잉·코카콜라·MSFT·META·AAPL·AMZN 등 실적 집중",
-          "chat": "루팡",
-          "link": null,
-          "tickers": [
-            "PYPL",
-            "BA",
-            "KO",
-            "MSFT",
-            "META",
-            "AAPL",
-            "AMZN"
-          ]
-        },
-        {
-          "timeKst": "2026-07-25T09:36:47+09:00",
-          "summary": "무디스: MSFT·AMZN·GOOGL·META 등 AI 투자 확대가 FCF 잠식·재무 부담 가중. 6개 기업 CapEx 2026년 약 7,850억 달러, 2027년 1조 달러 근접 전망",
-          "chat": "미국 주식 인사이더",
-          "link": null,
-          "tickers": [
-            "MSFT",
-            "AMZN",
-            "GOOGL",
-            "META",
-            "ORCL"
-          ]
-        },
-        {
-          "timeKst": "2026-07-25T17:02:56+09:00",
-          "summary": "AI 투자 부담이 기술주 압박, 시장은 CapEx보다 수익성에 주목. 인텔 호실적에도 -8%, 다음 주 빅테크 CapEx 가이던스가 핵심 변수",
+          "timeKst": "2026-07-27T20:19:55+09:00",
+          "summary": "엔비디아, OpenAI의 소프트뱅크 5,000억달러 AI 허브 컴퓨팅 임차에 최대 2,500억달러 금융보증 검토(WSJ).",
           "chat": "프리라이프",
-          "link": "https://www.wsj.com/finance/stocks/spending-worries-weigh-on-tech-shares-5a6ba62e",
+          "link": "https://www.bloomberg.com/news/articles/2026-07-26/nvidia-in-talks-on-250-billion-backing-for-openai-hub-wsj-says",
           "tickers": [
-            "INTC",
-            "TSLA",
-            "META",
-            "MSFT",
-            "AMZN",
-            "AAPL"
-          ]
-        },
-        {
-          "timeKst": "2026-07-25T21:21:05+09:00",
-          "summary": "블룸버그: 빅테크 AI 투자 확대가 대규모 회사채 발행으로 이어져 미국 회사채 시장 핵심 리스크. 상위 6개 빅테크 DTS 비중 8.6%로 대형 은행(7.3%) 추월",
-          "chat": "미국 주식 인사이더",
-          "link": null,
-          "tickers": [
-            "GOOG",
-            "META",
-            "AMZN",
-            "MSFT",
-            "AAPL",
             "NVDA"
           ]
         },
         {
-          "timeKst": "2026-07-25T22:38:22+09:00",
-          "summary": "모건스탠리: 4대 빅테크 CapEx 2025년 4,130억→2027년 1조 1,590억 달러로 약 2.8배 증가 전망, 구글이 3,500억으로 1위",
-          "chat": "플렉서블 리서치",
-          "link": "http://t.me/Wave_Research",
+          "timeKst": "2026-07-27T22:11:53+09:00",
+          "summary": "엔비디아, 일리야 수츠케버의 SSI에 투자 및 Vera Rubin 시스템 공급 장기 파트너십 체결, 컴퓨팅 10배 확대.",
+          "chat": "올바른",
+          "link": "https://nvidianews.nvidia.com/news/ilya-sutskevers-safe-superintelligence-inc-and-nvidia-announce-long-term-strategic-partnership",
           "tickers": [
-            "GOOGL",
-            "AMZN",
-            "MSFT",
-            "META"
+            "NVDA"
           ]
         },
         {
-          "timeKst": "2026-07-26T16:18:41+09:00",
-          "summary": "골드만삭스: 모멘텀 전략 5주 연속 붕괴, 레버리지 ETF 타격. 시장 심리가 FOMO에서 '보유 두려움'으로 전환, 3분기 높은 변동성 전망",
+          "timeKst": "2026-07-27T22:54:32+09:00",
+          "summary": "엔비디아 7,500억달러 규모 AI 거래(SK 5,000억+OpenAI 2,500억)로 순환금융·시스템 리스크 우려 제기.",
           "chat": "하나 중국/신흥국 전략 김경환",
-          "link": "https://wallstreetcn.com/articles/3777942#from=ios",
-          "tickers": []
+          "link": "https://wallstreetcn.com/articles/3778049#from=ios",
+          "tickers": [
+            "NVDA"
+          ]
         },
         {
-          "timeKst": "2026-07-26T19:12:03+09:00",
-          "summary": "골드만삭스: AI 투자 논리가 인프라 CapEx에서 애플리케이션 수익화로 이동, 빅테크의 실제 매출·이익 창출이 관건",
-          "chat": "하나 중국/신흥국 전략 김경환",
-          "link": "https://wallstreetcn.com/charts/41959460#from=ios",
+          "timeKst": "2026-07-27T23:29:46+09:00",
+          "summary": "엔비디아, 대규모 AI 인프라 딜에도 순환거래 우려로 주가 하락.",
+          "chat": "타점 읽어주는 여자(타자)",
+          "link": "https://www.newspim.com/news/view/20260727001362",
           "tickers": [
-            "META",
-            "MSFT",
-            "AMZN",
-            "GOOGL"
+            "NVDA"
+          ]
+        },
+        {
+          "timeKst": "2026-07-28T05:05:26+09:00",
+          "summary": "엔비디아, SSI에 약 50억달러 투자 및 OpenAI 오하이오 10GW 데이터센터 금융지원 논의로 신용위험 확대 우려.",
+          "chat": "미국 주식 인사이더 🇺🇸 (US Stocks Insider)",
+          "link": "https://t.me/insidertracking",
+          "tickers": [
+            "NVDA"
+          ]
+        },
+        {
+          "timeKst": "2026-07-28T05:33:14+09:00",
+          "summary": "SK하이닉스 ADR -7.47%, 마이크론 -2.25%, ASML -5.80%, AMAT -3.61%, 엔비디아 -4.99%. CDS 프리미엄 급등.",
+          "chat": "사제콩이_서상영",
+          "link": null,
+          "tickers": [
+            "MU",
+            "ASML",
+            "AMAT",
+            "NVDA",
+            "AVGO"
+          ]
+        },
+        {
+          "timeKst": "2026-07-28T06:36:58+09:00",
+          "summary": "채권시장에서도 엔비디아 순환금융 리스크 경고음 확산, 재무 건전성 우려 증폭.",
+          "chat": "타점 읽어주는 여자(타자)",
+          "link": "https://n.news.naver.com/article/018/0006337819",
+          "tickers": [
+            "NVDA"
           ]
         }
       ]
     },
     {
-      "title": "메모리 반도체·HBM 공급부족과 CXMT 상장",
-      "importance": "주요",
+      "title": "미-이란 협상 기대와 유가 급락",
+      "importance": "핵심",
       "region": "글로벌",
-      "summary": "AI 수요로 메모리 공급부족 심화 전망 우세. 모건스탠리는 2026년 공급이 수요보다 약 17% 부족, Citi는 재고 극도로 낮아 업사이클 지속 전망. 중국 CXMT가 7월 27일 상하이 과창판 상장(약 98억 달러 IPO)으로 글로벌 메모리 시장 재편 가능성. SK하이닉스 2Q 영업이익 사상 최고 전망.",
+      "summary": "주말 미-이란 군사충돌 일시 중단 및 협상 진전 소식에 WTI가 8%대 급락. 물가 불안 완화로 국채금리 하락·달러 약세가 나타남. 다만 이란은 협상을 부인하고 사우디 아람코 시설 드론 공격 의혹 등 중동 긴장은 상존.",
       "events": [
         {
-          "timeKst": "2026-07-25T13:30:56+09:00",
-          "summary": "모건스탠리: 2026년부터 DRAM·HBM 공급부족 심화, 2026년 공급이 수요보다 약 17% 부족, 2027년까지 지속 전망",
+          "timeKst": "2026-07-27T20:16:24+09:00",
+          "summary": "이란 외무부, 미국과 협상 진행 부인 및 휴전 구속력 부인.",
           "chat": "프리라이프",
           "link": null,
           "tickers": []
         },
         {
-          "timeKst": "2026-07-25T17:43:07+09:00",
-          "summary": "Citi: NAND·DRAM 재고 극도로 낮아 AI 수요로 업사이클 지속. 삼성전자·SK하이닉스 매수 유지",
+          "timeKst": "2026-07-27T22:53:01+09:00",
+          "summary": "미-이란 협상 신호 혼선 속 사우디 아람코 아부카이크 시설 드론 공격 의혹·화재 발생, 유가 상승 압력 우려.",
+          "chat": "하나 중국/신흥국 전략 김경환",
+          "link": null,
+          "tickers": []
+        },
+        {
+          "timeKst": "2026-07-28T00:19:49+09:00",
+          "summary": "트럼프, 이란과 심도 깊은 협상 진행·합의 가능성 언급, 실패 시 군사행동 재개 경고. 연준 금리 인하 재차 주장.",
+          "chat": "하나 중국/신흥국 전략 김경환",
+          "link": null,
+          "tickers": []
+        },
+        {
+          "timeKst": "2026-07-28T05:34:06+09:00",
+          "summary": "미-이란 갈등 완화 기대에 WTI 8%대 급락, 국채금리 하락·달러 약세. FOMC 매파 동결 가능성·부진한 내구재로 하락폭 제한.",
+          "chat": "사제콩이_서상영",
+          "link": null,
+          "tickers": [
+            "WTI"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "애플 사상 최고가·글로벌 시총 1위 탈환",
+      "importance": "주요",
+      "region": "US",
+      "summary": "애플이 1% 이상 상승하며 사상 최고가를 경신, 시총 5조달러에 근접하며 엔비디아를 제치고 15개월 만에 글로벌 시총 1위 탈환. 3M·BofA·JPM 등 다수 대형주도 52주 신고가.",
+      "events": [
+        {
+          "timeKst": "2026-07-28T05:17:52+09:00",
+          "summary": "3M, 애플, BofA, JPM, Merck, RTX 등 다수 대형주 52주 신고가 경신.",
+          "chat": "미국 주식 인사이더 🇺🇸 (US Stocks Insider)",
+          "link": "https://t.me/insidertracking",
+          "tickers": [
+            "MMM",
+            "AAPL",
+            "BAC",
+            "JPM",
+            "MRK",
+            "RTX"
+          ]
+        },
+        {
+          "timeKst": "2026-07-28T05:32:58+09:00",
+          "summary": "애플 1%+ 상승 사상 최고가, 시총 5조달러 근접·글로벌 1위 복귀. 샌디스크 -11%, 키옥시아·SK하이닉스 -7% 약세.",
+          "chat": "미국 주식 인사이더 🇺🇸 (US Stocks Insider)",
+          "link": null,
+          "tickers": [
+            "AAPL",
+            "NVDA",
+            "SNDK",
+            "WDC",
+            "STX"
+          ]
+        },
+        {
+          "timeKst": "2026-07-28T06:30:55+09:00",
+          "summary": "애플, 15개월 만에 종가 기준 세계 시총 1위 탈환.",
+          "chat": "타점 읽어주는 여자(타자)",
+          "link": "https://n.news.naver.com/mnews/article/001/0016217936",
+          "tickers": [
+            "AAPL"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "FOMC·경제지표 프리뷰",
+      "importance": "주요",
+      "region": "US",
+      "summary": "7월 FOMC와 마이크로소프트·메타·애플·아마존 실적 발표를 앞둠. 골드만삭스는 7월 금리 동결을 예상하나 최종 금리 인상 가능성을 25%→35%로 상향. 6월 내구재주문은 예상치를 하회.",
+      "events": [
+        {
+          "timeKst": "2026-07-27T21:32:12+09:00",
+          "summary": "6월 근원 내구재주문 +0.6%(예상 0.9%)·전체 +0.3%(예상 1.6%) 하회. 기업 설비투자 둔화 신호, 금리 인하 기대 일부 강화.",
+          "chat": "미국 주식 인사이더 🇺🇸 (US Stocks Insider)",
+          "link": null,
+          "tickers": []
+        },
+        {
+          "timeKst": "2026-07-28T05:38:57+09:00",
+          "summary": "골드만삭스, 7월 FOMC 동결 예상하나 최소 1명 인상 소수의견 가능성, 최종 금리 인상 확률 25%→35% 상향.",
+          "chat": "미국 주식 인사이더 🇺🇸 (US Stocks Insider)",
+          "link": null,
+          "tickers": []
+        },
+        {
+          "timeKst": "2026-07-28T05:45:42+09:00",
+          "summary": "금일 23:00 7월 미국 CB 소비자신뢰지수 발표 예정.",
+          "chat": "미국 주식 인사이더 🇺🇸 (US Stocks Insider)",
+          "link": null,
+          "tickers": []
+        }
+      ]
+    },
+    {
+      "title": "AI 데이터센터 자본지출과 하이퍼스케일러 채권 우려",
+      "importance": "주요",
+      "region": "US",
+      "summary": "JP모건은 AI 인프라 수요는 견조하나 전력·부품 공급 병목과 하이퍼스케일러 채권 발행 물량 우려로 스프레드가 확대되고 있다고 분석. AI가 기술 문제에서 자금조달 문제로 전환되고 있다는 관측이 확산됨.",
+      "events": [
+        {
+          "timeKst": "2026-07-27T20:20:10+09:00",
+          "summary": "AI 산업, 인프라 확장에 막대한 자본 요구되며 기술 문제에서 금융 문제로 전환 관측.",
+          "chat": "프리라이프",
+          "link": null,
+          "tickers": []
+        },
+        {
+          "timeKst": "2026-07-27T20:44:14+09:00",
+          "summary": "JP모건, 데이터센터 수요 견조하나 전력이 최대 제약. 2030년 미 데이터센터 전력 수요 118GW 전망, 부품 공급 병목 심화.",
+          "chat": "에테르의 일본&미국 리서치",
+          "link": null,
+          "tickers": []
+        },
+        {
+          "timeKst": "2026-07-27T23:14:33+09:00",
+          "summary": "JP모건, 하이퍼스케일러 채권 스프레드 16bp 확대된 151bp. 대규모 발행 예상에 투자자 매수 주저, AI 투자 흐름은 지속 전망.",
+          "chat": "하나 중국/신흥국 전략 김경환",
+          "link": null,
+          "tickers": []
+        },
+        {
+          "timeKst": "2026-07-27T21:48:24+09:00",
+          "summary": "JP모건, 하이퍼스케일러 최대 500억달러 채권 발행 여력 보유. 2030년 AI capex 6조달러·AI 매출 S&P500의 8.5% 수준 가능.",
           "chat": "에테르의 일본&미국 리서치",
           "link": null,
           "tickers": [
-            "삼성전자",
-            "SK하이닉스"
-          ]
-        },
-        {
-          "timeKst": "2026-07-26T18:08:08+09:00",
-          "summary": "중국 최대 DRAM 업체 CXMT 98억 달러 IPO 앞두고 AI 메모리 열풍. 공모가 8.66위안, 상장 직후 중국 시총 1위 도약 가능성",
-          "chat": "프리라이프",
-          "link": "https://www.bloomberg.com/news/articles/2026-07-26/memory-frenzy-primes-china-champion-cxmt-for-historic-debut",
-          "tickers": [
-            "CXMT"
-          ]
-        },
-        {
-          "timeKst": "2026-07-26T15:38:16+09:00",
-          "summary": "SK하이닉스 2Q 영업이익 6.4조원 돌파 사상 최고 전망, 영업이익률 75~77%로 3개 분기 연속 TSMC 상회 예상. 실적 발표 7월 29일",
-          "chat": "하나 중국/신흥국 전략 김경환",
-          "link": "https://wallstreetcn.com/articles/3777948#from=ios",
-          "tickers": [
-            "SK Hynix"
-          ]
-        },
-        {
-          "timeKst": "2026-07-26T20:31:30+09:00",
-          "summary": "트렌드포스: AI 수요로 NAND 공급부족 2026년 지속, 2027년 하반기부터 점진적 완화 전망",
-          "chat": "하나 중국/신흥국 전략 김경환",
-          "link": "https://www.ctee.com.tw/news/20260726700548-430702",
-          "tickers": []
-        },
-        {
-          "timeKst": "2026-07-26T23:23:02+09:00",
-          "summary": "CXMT, 7월 27일 상하이 과창판 상장. 약 12.5조원 조달, 시총 약 125조원으로 올해 아시아 최대 IPO. 삼성·SK하이닉스 영향 주목",
-          "chat": "타점 읽어주는 여자",
-          "link": "https://www.joongang.co.kr/article/25448251",
-          "tickers": [
-            "CXMT",
-            "삼성전자",
-            "SK하이닉스"
-          ]
-        },
-        {
-          "timeKst": "2026-07-27T05:54:52+09:00",
-          "summary": "CXMT DDR5-5600 64GB 모듈이 삼성·SK하이닉스 대비 약 2.2% 높은 가격에 판매, 가격 인하 효과 제한적",
-          "chat": "미국 주식 인사이더",
-          "link": null,
-          "tickers": [
-            "CXMT",
-            "005930",
-            "000660"
+            "SPX"
           ]
         }
       ]
     },
     {
-      "title": "테슬라 실적 부진·머스크 자산 급감",
+      "title": "메모리 반도체·HBM 산업 동향",
       "importance": "주요",
-      "region": "US",
-      "summary": "테슬라가 2Q 매출은 예상 상회했으나 순이익 감소와 11억 달러 자유현금흐름 적자로 주가 급락. 주간 약 18~20% 하락하며 2022년 이후 최대 낙폭. 스페이스X도 IPO 이후 최저. AI·로봇 투자 확대에 따른 수익성 악화 우려 지배적.",
+      "region": "글로벌",
+      "summary": "삼성·SK하이닉스의 대규모 초장기 공급계약으로 AI 공급망이 '생산능력 선점 시대'로 전환. 번스타인은 메모리주 조정을 매수 기회로 평가. 삼성은 HBM5에 2나노 GAA 적용을 공식화하고, 마이크론은 애플의 가격 압박에 반발하며 힘의 균형 변화를 시사.",
       "events": [
         {
-          "timeKst": "2026-07-25T08:35:25+09:00",
-          "summary": "테슬라 주간 18% 급락, 2022년 이후 최대 주간 낙폭. 스페이스X도 약 7% 하락 IPO 이후 최저 종가. Argus '보유' 유지",
-          "chat": "하나 중국/신흥국 전략 김경환",
-          "link": "https://wallstreetcn.com/articles/3777911#from=ios",
-          "tickers": [
-            "TSLA",
-            "SPCE"
-          ]
-        },
-        {
-          "timeKst": "2026-07-26T10:42:38+09:00",
-          "summary": "머스크 개인 자산 5거래일간 약 1,300억 달러 감소. 테슬라 주간 약 20% 하락 313.03달러 마감",
-          "chat": "미국 주식 인사이더",
-          "link": null,
-          "tickers": [
-            "TSLA"
-          ]
-        },
-        {
-          "timeKst": "2026-07-27T05:17:50+09:00",
-          "summary": "테슬라 2Q 매출 예상 상회에도 순이익 감소·FCF 적자로 수익성 압박. 로봇택시 올랜도·탐파 배치, FSD 가입자 150만 근접. 토요타 RAV4가 EV 수요 대체 신호",
-          "chat": "플렉서블 리서치",
-          "link": null,
-          "tickers": [
-            "TSLA"
-          ]
-        }
-      ]
-    },
-    {
-      "title": "마이클 버리, 반도체·테슬라 공매도 확대",
-      "importance": "참고",
-      "region": "US",
-      "summary": "마이클 버리가 마이크론·엔비디아·반도체 ETF(SOXX) 공매도 포지션을 확대하고 테슬라·팔란티어 공매도 유지. 엔비디아 수요가 비공개 금융조달에 의존한다고 주장.",
-      "events": [
-        {
-          "timeKst": "2026-07-25T08:40:10+09:00",
-          "summary": "마이클 버리, 마이크론·엔비디아·SOXX 공매도 포지션 확대",
-          "chat": "미국 주식 인사이더",
-          "link": null,
-          "tickers": [
-            "MU",
-            "NVDA",
-            "SOXX"
-          ]
-        },
-        {
-          "timeKst": "2026-07-26T09:28:30+09:00",
-          "summary": "버리, MU·NVDA·SOXX 공매도 확대, TSLA·PLTR 공매도 유지. Caterpillar·Tesla 공매도로 수익, Flutter·DraftKings 지분 확대",
-          "chat": "하나 중국/신흥국 전략 김경환",
-          "link": "https://money.udn.com/money/story/123398/9651077",
-          "tickers": [
-            "MU",
-            "NVDA",
-            "SOXX",
-            "TSLA",
-            "PLTR",
-            "CAT"
-          ]
-        }
-      ]
-    },
-    {
-      "title": "애플·마이크론 중국산 메모리 로비 갈등",
-      "importance": "참고",
-      "region": "US",
-      "summary": "애플이 미국 외 판매 제품에 중국산 메모리(CXMT·YMTC) 사용 허용을 트럼프 행정부에 로비, 마이크론은 미국 메모리 산업 타격을 우려하며 강력 반대. 물가 안정과 미국 반도체 육성이라는 상충 목표 사이에서 행정부가 고심.",
-      "events": [
-        {
-          "timeKst": "2026-07-25T10:24:29+09:00",
-          "summary": "WSJ: 애플, 미국 외 판매 기기에 중국 CXMT·YMTC 메모리 사용 로비. 마이크론과 이해충돌 예상",
-          "chat": "미국 주식 인사이더",
-          "link": "https://www.wsj.com/tech/trump-apple-micron-china-chips-784bbd3d",
-          "tickers": [
-            "AAPL",
-            "MU"
-          ]
-        },
-        {
-          "timeKst": "2026-07-26T03:46:51+09:00",
-          "summary": "애플·마이크론 중국 메모리 로비로 트럼프 행정부가 '물가 잡기'와 '미국 제조업 부활' 사이 딜레마",
-          "chat": "타점 읽어주는 여자",
-          "link": "https://n.news.naver.com/mnews/article/421/0009078891",
-          "tickers": [
-            "AAPL",
-            "MU"
-          ]
-        }
-      ]
-    },
-    {
-      "title": "퀄컴 칩 가격 두 자릿수 인상",
-      "importance": "참고",
-      "region": "US",
-      "summary": "퀄컴이 부품 공급 부족과 협력업체 원가 상승을 이유로 9월 1일 출하분부터 고객사에 두 자릿수 가격 인상 통보. 스마트폰·PC 등 최종 제품 가격 상승 가능성.",
-      "events": [
-        {
-          "timeKst": "2026-07-25T16:09:13+09:00",
-          "summary": "퀄컴, 9월 1일 출하분부터 반도체 가격 두 자릿수 인상 통보. 삼성 폴더블폰 등 제조 비용 부담 가중",
-          "chat": "하나 중국/신흥국 전략 김경환",
-          "link": "https://www.ctee.com.tw/news/20260725700266-430704",
-          "tickers": [
-            "QCOM",
-            "005930"
-          ]
-        },
-        {
-          "timeKst": "2026-07-25T23:30:14+09:00",
-          "summary": "로이터: 퀄컴 원가 상승으로 9월 1일 이후 출하분부터 두 자릿수 가격 인상 통보, 메모리 품귀가 배경",
+          "timeKst": "2026-07-27T20:13:05+09:00",
+          "summary": "번스타인, 삼성·SK·엔비디아·브로드컴 수십억달러 AI 협약 후 메모리주 조정을 매수 기회로 재확인.",
           "chat": "루팡",
-          "link": "https://www.reuters.com/business/qualcomm-tells-customers-double-digit-price-increases-bloomberg-news-reports-2026-07-24/",
+          "link": null,
           "tickers": [
-            "QCOM"
+            "NVDA",
+            "AVGO",
+            "MU"
+          ]
+        },
+        {
+          "timeKst": "2026-07-27T20:53:07+09:00",
+          "summary": "JP모건, AI 인프라 수요 양호. DRAM·NAND 계약가 상승률 2Q26 두 자릿수에서 3Q26 약 15% q/q로 완화 전망.",
+          "chat": "에테르의 일본&미국 리서치",
+          "link": null,
+          "tickers": [
+            "NVDA"
+          ]
+        },
+        {
+          "timeKst": "2026-07-27T22:30:17+09:00",
+          "summary": "마이크론, 애플의 메모리 단가 후려치기에 반발. 서버 D램 우선·힘의 균형이 공급사 쪽으로 이동.",
+          "chat": "프리라이프",
+          "link": null,
+          "tickers": [
+            "MU",
+            "AAPL"
+          ]
+        },
+        {
+          "timeKst": "2026-07-28T05:41:51+09:00",
+          "summary": "노무라, 2030년 글로벌 D램 시장 매출 2조600억달러 돌파 전망, ASP 16~17달러 유지·구조적 공급 부족 지속.",
+          "chat": "미국 주식 인사이더 🇺🇸 (US Stocks Insider)",
+          "link": null,
+          "tickers": []
+        }
+      ]
+    },
+    {
+      "title": "중국 CXMT 상장 첫날 466% 급등",
+      "importance": "주요",
+      "region": "아시아",
+      "summary": "중국 창신메모리(CXMT)가 상하이 상장 첫날 465.82% 급등하며 시총 4,840억달러로 중국 본토 1위 등극. AI 수요로 DRAM 가격 급등 속 애플이 미국 외 판매 제품에 CXMT 칩 사용을 검토한다는 보도도 나옴.",
+      "events": [
+        {
+          "timeKst": "2026-07-28T06:52:38+09:00",
+          "summary": "CXMT, 상하이 상장 첫날 465.82% 급등, 시총 4,840억달러 본토 1위. 2027년 글로벌 점유율 12% 전망(SemiAnalysis).",
+          "chat": "민구의 뉴스",
+          "link": "https://www.wsj.com/tech/cxmts-strong-debut-boosts-chinas-bid-to-conquer-memory-chips-21e0e9f4",
+          "tickers": [
+            "CXMT",
+            "AAPL"
           ]
         }
       ]
     },
     {
-      "title": "인텔 CapEx 증액·실적 서프라이즈",
+      "title": "엔비디아 AI 인프라·오픈소스 이니셔티브",
       "importance": "참고",
       "region": "US",
-      "summary": "인텔이 2026년 CapEx를 200억 달러 이상으로 상향하며 AI·파운드리에 베팅. 2Q 실적 서프라이즈에 씨티·BofA는 매수 의견. 다만 자본시장 활용(유상증자 가능성) 시사로 주가는 약 8% 하락.",
+      "summary": "엔비디아가 차세대 이더넷 스위치 Spectrum-6 출시, CPO 스위치 소량 양산, 오픈 시큐어 AI 얼라이언스 출범 등 AI 인프라·생태계 주도권 확보에 나섬. Anthropic은 오픈소스 협약에 불참하며 논쟁 촉발.",
       "events": [
         {
-          "timeKst": "2026-07-24T22:37:41+09:00",
-          "summary": "씨티: 인텔 6월 분기 실적·9월 EPS 컨센 크게 상회, 파운드리 18A 양산·14A 고객 확대. 목표가 130달러 매수 유지",
-          "chat": "에테르의 일본&미국 리서치",
-          "link": null,
-          "tickers": [
-            "INTC"
-          ]
-        },
-        {
-          "timeKst": "2026-07-25T19:53:32+09:00",
-          "summary": "BofA: 인텔 2Q 서프라이즈·가이던스 상향에 매수 재확인. 데이터센터 매출 전년비 59% 급증, CY26/27/28 EPS 20~40% 상향",
-          "chat": "에테르의 일본&미국 리서치",
-          "link": null,
-          "tickers": [
-            "INTC"
-          ]
-        },
-        {
-          "timeKst": "2026-07-26T23:46:21+09:00",
-          "summary": "인텔, 재투자 위한 자본시장 활용 시사(유상증자 가능성)로 주주가치 희석 우려. 금리 상승이 AI 종목 모멘텀 약화 우려",
-          "chat": "에테르의 일본&미국 리서치",
-          "link": null,
-          "tickers": [
-            "INTC",
-            "ORCL"
-          ]
-        }
-      ]
-    },
-    {
-      "title": "Anthropic Claude Opus 5 출시·AI 모델 경쟁",
-      "importance": "참고",
-      "region": "글로벌",
-      "summary": "앤스로픽이 Claude Opus 5를 출시, 성능은 상위 모델에 근접하고 비용은 절반 수준. 코딩·지식 작업에서 SOTA 기록하며 AI 성능 평가 최상위권. AI 모델 간 성능·가격 경쟁 심화.",
-      "events": [
-        {
-          "timeKst": "2026-07-25T08:09:25+09:00",
-          "summary": "앤스로픽 Claude Opus 5 출시, Claude Fable 5 근접 성능을 절반 비용으로 제공. Intelligence Index 61점 공동 1위",
-          "chat": "프리라이프",
-          "link": "https://www.anthropic.com/news/claude-opus-5",
-          "tickers": []
-        },
-        {
-          "timeKst": "2026-07-25T12:42:08+09:00",
-          "summary": "앤트로픽 Opus 5: 논리 오류 검토 능력 향상, ARC-AGI-3 벤치마크 30.2%로 최고 기록 경신",
+          "timeKst": "2026-07-27T20:16:30+09:00",
+          "summary": "엔비디아, 차세대 이더넷 스위치 Spectrum-6(102.4T) 출시, MS·테슬라 채택. AI 인프라 군비 경쟁 가속.",
           "chat": "하나 중국/신흥국 전략 김경환",
-          "link": "https://wallstreetcn.com/articles/3777901#from=ios",
-          "tickers": []
-        }
-      ]
-    },
-    {
-      "title": "엔비디아 등 오픈 웨이트 AI 공동서한",
-      "importance": "참고",
-      "region": "US",
-      "summary": "젠슨 황이 첫 X 게시물로 '오픈 웨이트와 미국 AI 리더십' 공개서한 공유, 참여 기관이 25곳에서 50곳으로 확대. 오픈AI·구글·AMD·시스코 참여, 앤트로픽·아마존은 불참.",
-      "events": [
-        {
-          "timeKst": "2026-07-25T11:11:17+09:00",
-          "summary": "엔비디아 등 25개 기술기업, 개방형 AI 생태계 지지 공동성명. 올트먼·머스크도 지지 표명",
-          "chat": "프리라이프",
-          "link": "https://wallstreetcn.com/articles/3777898",
+          "link": "https://wallstreetcn.com/articles/3778026#from=ios",
           "tickers": [
             "NVDA",
             "MSFT",
-            "META",
-            "GOOG",
-            "AMZN",
-            "ORCL"
+            "TSLA"
           ]
         },
         {
-          "timeKst": "2026-07-26T12:42:52+09:00",
-          "summary": "오픈 웨이트 공개서한 참여 기관 25→50곳 확대, 오픈AI·구글·AMD·시스코 합류. 앤트로픽·아마존 불참",
-          "chat": "미국 주식 인사이더",
-          "link": null,
+          "timeKst": "2026-07-27T20:58:43+09:00",
+          "summary": "젠슨 황 주도 오픈소스 협약에 OpenAI·MS 등 70여곳 서명, Anthropic만 불참하며 논쟁 촉발.",
+          "chat": "하나 중국/신흥국 전략 김경환",
+          "link": "https://wallstreetcn.com/articles/3778034#from=ios",
           "tickers": [
             "NVDA",
-            "GOOGL",
-            "AMD",
-            "CSCO"
+            "MSFT"
+          ]
+        },
+        {
+          "timeKst": "2026-07-28T06:35:20+09:00",
+          "summary": "젠슨 황, 미 의회 방문해 AI 리더십·오픈소스 AI 주도권 논의 예정.",
+          "chat": "미국 주식 인사이더 🇺🇸 (US Stocks Insider)",
+          "link": null,
+          "tickers": [
+            "NVDA"
           ]
         }
       ]
     },
     {
-      "title": "글로벌 자금흐름·시장 심리·밸류에이션",
-      "importance": "참고",
-      "region": "글로벌",
-      "summary": "글로벌 주식 시가총액이 GDP 대비 137%로 사상 최고 근접(총 166조 달러). 스마트 머니는 신흥시장·원자재로 유입, 미국 증시엔 신중. 미국 기업 내부자 매도 상반기 776억 달러로 2021년 이후 최고. 금 4,000달러 지지.",
-      "events": [
-        {
-          "timeKst": "2026-07-24T21:38:50+09:00",
-          "summary": "스마트 머니, 신흥시장 주식(주간 296억 달러 순유입, 중국 213억 포함)·기술주·원자재로 집중, 미국·영국 증시엔 신중",
-          "chat": "하나 중국/신흥국 전략 김경환",
-          "link": null,
-          "tickers": []
-        },
-        {
-          "timeKst": "2026-07-25T09:59:06+09:00",
-          "summary": "미국 기업 내부자 상반기 776억 달러 매도, 전년비 20% 증가로 2021년 이후 최고 상반기",
-          "chat": "미국 주식 인사이더",
-          "link": null,
-          "tickers": []
-        },
-        {
-          "timeKst": "2026-07-26T09:51:13+09:00",
-          "summary": "글로벌 주식 시가총액 GDP 대비 137%로 사상 최고 근접, 총 166조 달러 중 미국 약 77조(46%)",
-          "chat": "프리라이프",
-          "link": null,
-          "tickers": []
-        },
-        {
-          "timeKst": "2026-07-26T11:35:46+09:00",
-          "summary": "골드만삭스: 미 증시 투자 난도 높다며 금 조정 시 분할 매수 권고, 온스당 4,000달러 지지",
-          "chat": "하나 중국/신흥국 전략 김경환",
-          "link": "https://wallstreetcn.com/articles/3777937#from=ios",
-          "tickers": []
-        },
-        {
-          "timeKst": "2026-07-26T22:36:50+09:00",
-          "summary": "블룸버그: 관세전쟁 이후 M7 주식에서 최대 규모 매도세 발생",
-          "chat": "미국 주식 인사이더",
-          "link": null,
-          "tickers": []
-        }
-      ]
-    },
-    {
-      "title": "트럼프 EU 관세·무역 정책",
+      "title": "아마존 위성통신 사업 확장(스타링크 도전)",
       "importance": "참고",
       "region": "US",
-      "summary": "트럼프가 EU의 미국 빅테크 과징금에 대한 보복으로 무역법 301조 조사 착수 및 대규모 관세 부과 경고. 한국은 미국 조선업에 1,500억 달러 투자 약속, 시진핑 9월 24일 방미 예정.",
+      "summary": "아마존이 2028년까지 저궤도 위성 5,105기 배치를 FCC에 신청, D2D 위성 모바일 서비스로 스페이스X 스타링크에 도전. 글로벌스타 자산 활용 계획.",
       "events": [
         {
-          "timeKst": "2026-07-25T08:13:19+09:00",
-          "summary": "트럼프, EU의 애플·메타·아마존·구글 과징금에 보복해 301조 조사 즉시 착수, EU에 상당한 관세 부과 경고",
-          "chat": "미국 주식 인사이더",
-          "link": null,
+          "timeKst": "2026-07-28T00:12:43+09:00",
+          "summary": "아마존, 5,000기 이상 위성으로 스타링크 겨냥 모바일 서비스 FCC 신청.",
+          "chat": "에테르의 일본&미국 리서치",
+          "link": "https://www.ft.com/content/83e93ce0-1ebd-4b04-a70c-82ff7b64a5f4?syn-25a6b1a6=1",
           "tickers": [
-            "AAPL",
-            "META",
-            "AMZN",
-            "GOOGL"
+            "AMZN"
           ]
         },
         {
-          "timeKst": "2026-07-25T09:32:03+09:00",
-          "summary": "미 상무부: 한미 무역협정으로 한국이 미국 조선업에 1,500억 달러 투자 약속",
-          "chat": "미국 주식 인사이더",
+          "timeKst": "2026-07-28T05:40:44+09:00",
+          "summary": "아마존 '레오' 프로젝트, 글로벌스타 주파수·위성 활용해 D2D 네트워크 구축, 2027년 인수 완료 후 가능.",
+          "chat": "미국 주식 인사이더 🇺🇸 (US Stocks Insider)",
+          "link": null,
+          "tickers": [
+            "AMZN",
+            "GSAT",
+            "IRDM"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "글로벌 자금흐름·통화 동향",
+      "importance": "참고",
+      "region": "글로벌",
+      "summary": "글로벌 자금이 아시아 신흥국 주식 펀드로 유입되고 미국 주식 펀드에서는 유출. 엔화는 40년 만의 최저 수준으로 BOJ 추가 인상 가능성이 거론되며, 인도 루피는 중앙은행 개입으로 강세.",
+      "events": [
+        {
+          "timeKst": "2026-07-27T20:13:04+09:00",
+          "summary": "엔화 40년 만 최저, BOJ 7월 31일 1% 동결 예상 속 연말까지 1.25% 인상 전망.",
+          "chat": "미국 주식 인사이더 🇺🇸 (US Stocks Insider)",
           "link": null,
           "tickers": []
         },
         {
-          "timeKst": "2026-07-25T17:40:59+09:00",
-          "summary": "트럼프, 네타냐후 다음 주·시진핑 9월 24일 방미 발표. EU 구글 제재 관련 301조 관세 경고",
-          "chat": "미국 주식 인사이더",
+          "timeKst": "2026-07-27T23:08:18+09:00",
+          "summary": "TD코웬, 아시아 신흥국 주식 펀드로 자금 유입(중국 3주 460억·한국 160억·대만 120억달러), 미국 주식 70억달러 유출.",
+          "chat": "에테르의 일본&미국 리서치",
+          "link": null,
+          "tickers": []
+        }
+      ]
+    },
+    {
+      "title": "중동 지정학 리스크",
+      "importance": "참고",
+      "region": "기타",
+      "summary": "네타냐후-트럼프 이란 논의 예정, 사우디의 이라크발 드론 요격, 이스라엘의 레바논 포격 등 중동 긴장이 지속. 유가·에너지 시장의 변동 요인.",
+      "events": [
+        {
+          "timeKst": "2026-07-27T20:27:44+09:00",
+          "summary": "네타냐후, 워싱턴 방문 앞두고 트럼프와 이란 등 주요 현안 논의 예정.",
+          "chat": "미국 주식 인사이더 🇺🇸 (US Stocks Insider)",
+          "link": null,
+          "tickers": []
+        },
+        {
+          "timeKst": "2026-07-27T21:13:18+09:00",
+          "summary": "사우디, 이라크 영토에서 발사된 석유시설 겨냥 드론 요격(이란 지원 민병대 추정).",
+          "chat": "미국 주식 인사이더 🇺🇸 (US Stocks Insider)",
+          "link": null,
+          "tickers": []
+        },
+        {
+          "timeKst": "2026-07-28T06:39:35+09:00",
+          "summary": "이라크 아르빌서 이란 지원 무장세력 드론 공격 추정 폭발 발생.",
+          "chat": "미국 주식 인사이더 🇺🇸 (US Stocks Insider)",
+          "link": null,
+          "tickers": []
+        }
+      ]
+    },
+    {
+      "title": "기타 기업·산업 동향",
+      "importance": "참고",
+      "region": "US",
+      "summary": "AT&T의 D-Wave 양자컴퓨팅 확대, 인텔 파운드리 자본지출 상향, 프리마켓 M&A(Forte-Argenx, Microchip-Hailo), 앤스로픽·오픈AI ARR 1,200억달러 등 개별 이슈.",
+      "events": [
+        {
+          "timeKst": "2026-07-27T20:14:25+09:00",
+          "summary": "AT&T, D-Wave와 계약해 네트워크 운영에 양자컴퓨팅 확대. QBTS 상승.",
+          "chat": "미국 주식 인사이더 🇺🇸 (US Stocks Insider)",
           "link": null,
           "tickers": [
-            "GOOG"
+            "T",
+            "QBTS"
+          ]
+        },
+        {
+          "timeKst": "2026-07-27T21:03:30+09:00",
+          "summary": "UBS, 인텔 2분기·3분기 가이던스 양호·파운드리 개선 평가하나 높은 capex로 '중립' 유지, 목표가 121달러.",
+          "chat": "하나 중국/신흥국 전략 김경환",
+          "link": null,
+          "tickers": [
+            "INTC"
+          ]
+        },
+        {
+          "timeKst": "2026-07-27T21:27:38+09:00",
+          "summary": "프리마켓 M&A: Forte-Argenx 인수 급등, Microchip이 엣지 AI 반도체 Hailo 인수 발표. CAPR은 FDA 문서에 -57%.",
+          "chat": "미국 주식 인사이더 🇺🇸 (US Stocks Insider)",
+          "link": null,
+          "tickers": [
+            "FBRX",
+            "ARGNX",
+            "MCHP",
+            "CAPR"
+          ]
+        },
+        {
+          "timeKst": "2026-07-28T05:45:20+09:00",
+          "summary": "테슬라, 2분기 차량 48만대 인도·로봇 부문 강화(Virtuix 시뮬레이션 구매·AI 미공개 인수).",
+          "chat": "플렉서블 리서치",
+          "link": null,
+          "tickers": [
+            "TSLA"
           ]
         }
       ]
     }
   ],
   "stats": {
-    "collected": 684,
-    "afterFilter": 642,
-    "geminiItems": 346
+    "collected": 180,
+    "afterFilter": 171,
+    "geminiItems": 95
   }
 }
