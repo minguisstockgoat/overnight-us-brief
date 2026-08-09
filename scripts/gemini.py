@@ -1,14 +1,19 @@
 """Gemini 1차 요약 — httpx REST 직접 호출(라이브러리 hang 회피, 메모리 교훈).
 
 밤사이 텔레그램 메시지를 청크로 나눠 각 메시지를 정규화 항목으로 요약/1차선별.
+청크끼리는 독립이므로 스레드풀로 병렬 호출(월요일 = 주말 3일치 창이라 청크가 30개 가까이 됨).
 """
 import json
+import os
+import time
+from concurrent.futures import ThreadPoolExecutor
 import httpx
 import config
 from krx_calendar import to_kst_iso
 
 CHAR_BUDGET = 12000   # 청크당 대략 문자 예산
 MSG_TRUNC = 1600      # 메시지 본문 절단
+MAX_WORKERS = int(os.getenv("GEMINI_CONCURRENCY", "6"))  # 동시 Gemini 호출 수
 
 SYS = (
     "너는 한국 증권사 리서치 데스크의 애널리스트다. 아래는 밤사이(전일 미국장 전후) 텔레그램 "
@@ -47,9 +52,20 @@ def _call_gemini(prompt):
         "generationConfig": {"responseMimeType": "application/json", "temperature": 0.2},
     }
     headers = {"x-goog-api-key": config.GEMINI_API_KEY(), "Content-Type": "application/json"}
-    r = httpx.post(_endpoint(), json=payload, headers=headers,
-                   timeout=httpx.Timeout(120.0, read=100.0, connect=10.0))
-    r.raise_for_status()
+    # 병렬 호출이라 429/5xx 가능성이 커짐 → 짧게 재시도
+    for attempt in range(3):
+        try:
+            r = httpx.post(_endpoint(), json=payload, headers=headers,
+                           timeout=httpx.Timeout(120.0, read=100.0, connect=10.0))
+            if r.status_code == 429 or r.status_code >= 500:
+                raise httpx.HTTPError(f"gemini {r.status_code}: {r.text[:200]}")
+            r.raise_for_status()
+            break
+        except httpx.HTTPError as e:
+            if attempt == 2:
+                print(f"      [warn] Gemini 청크 실패(재시도 소진): {e}")
+                return []
+            time.sleep(3 * (attempt + 1))
     data = r.json()
     try:
         text = data["candidates"][0]["content"]["parts"][0]["text"]
@@ -77,10 +93,17 @@ def summarize(messages):
         m["_line"] = f"[{idx}] ({kst} · {chat})\n{text}\n"
         enriched.append(m)
 
+    chunks = list(_chunk(enriched))
+    prompts = ["다음 메시지들을 처리하라:\n\n" + "".join(c["_line"] for c in ch) for ch in chunks]
+    workers = max(1, min(MAX_WORKERS, len(prompts)))
+    print(f"      Gemini 청크 {len(prompts)}개 · 동시 {workers}개")
+
+    with ThreadPoolExecutor(max_workers=workers) as ex:
+        results = list(ex.map(_call_gemini, prompts))  # 입력 순서 유지
+
     items = []
-    for chunk in _chunk(enriched):
-        prompt = "다음 메시지들을 처리하라:\n\n" + "".join(c["_line"] for c in chunk)
-        for it in _call_gemini(prompt):
+    for arr in results:
+        for it in arr:
             if not isinstance(it, dict):
                 continue
             i = it.get("i")
