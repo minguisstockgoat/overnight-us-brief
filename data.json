@@ -1,39 +1,38 @@
 {
-  "generatedAt": "2026-08-11T07:09:29.257395+09:00",
+  "generatedAt": "2026-08-12T07:58:56.935356+09:00",
   "window": {
-    "startKst": "2026-08-10T20:00:00+09:00",
-    "endKst": "2026-08-11T07:00:00+09:00",
-    "prevTradingDay": "2026-08-10"
+    "startKst": "2026-08-11T20:00:00+09:00",
+    "endKst": "2026-08-12T07:00:00+09:00",
+    "prevTradingDay": "2026-08-11"
   },
   "status": "ok",
   "headline": [
-    "미 증시 약보합 마감(S&P -0.06%·나스닥 -0.32%), 유가·금리 급등 부담",
-    "국제유가 5% 급등(WTI $82.28)…이란-호르무즈 지정학 긴장 고조",
-    "엔비디아, 월가 6대 금융사와 5,000억 달러 AI 인프라 금융 플랫폼 출범…'순환 자금' 우려에 반도체 약세",
-    "연준 해맥 매파 발언 '추가 금리 인상 필요'…10년물 4.7% 상회, CPI 대기",
-    "인텔 150억 달러 유상증자로 -4%, 애플 제프리스 투자의견 '언더퍼폼' 하향"
+    "미 증시, 7월 CPI 발표 앞두고 관망 속 이틀째 하락(S&P500 -0.32%, 나스닥 -0.60%, 러셀2000 +0.37%)",
+    "이란·호르무즈 해협 긴장 지속으로 WTI +1.6% 83달러대, 브렌트 89달러 근접",
+    "엔비디아, 6개 대형 금융사와 5000억 달러 AI 인프라 파이낸싱·오픈소스 'Nemotron' 공개…시장 반응은 미지근",
+    "연준 인사들(굴즈비·보스틱) '인플레이션 여전히 높다' 경고, CPI가 정책 향방 핵심 변수",
+    "인텔 200억 달러 증자(주당 95달러) 대규모 초과청약…메모리 슈퍼사이클에 SK하이닉스ADR·마이크론 강세"
   ],
   "topics": [
     {
-      "title": "미국 증시 마감: 유가·금리 급등에 약보합",
+      "title": "미 증시, CPI 대기 속 이틀째 하락·중소형주 순환매",
       "importance": "핵심",
       "region": "US",
-      "summary": "미 증시는 국제유가 5% 급등과 국채금리 상승, 연준 매파 발언, 반도체 부진 부담으로 약보합 마감. CPI 발표 대기 속 관망세로 낙폭은 제한됐다.",
+      "summary": "투자자들이 수요일 7월 CPI 발표를 앞두고 관망하며 주요 지수가 하락 마감했다. 나스닥·S&P·다우 모두 약세였으나 러셀2000은 상승하며 중소형주로 순환매가 나타났고, 장 마감 동시호가에서 대규모 매도 불균형이 발생했다.",
       "events": [
         {
-          "timeKst": "2026-08-10T22:31:27+09:00",
-          "summary": "개장 직후 주요 지수 소폭 하락(S&P -0.03%, 다우 -0.02%, 나스닥 -0.05%)",
-          "chat": "김치터미널",
+          "timeKst": "2026-08-11T20:36:34+09:00",
+          "summary": "장 초반 미 지수선물 상승(S&P500 +0.2%, 나스닥100 +0.5%)",
+          "chat": "하나 중국/신흥국 전략 김경환",
           "link": null,
           "tickers": [
-            "SPX",
-            "DJI",
-            "NDX"
+            "SPY",
+            "QQQ"
           ]
         },
         {
-          "timeKst": "2026-08-11T03:40:56+09:00",
-          "summary": "S&P500 보합, 에너지 강세가 기술주 약세 상쇄하며 CPI 촉매 대기",
+          "timeKst": "2026-08-12T01:52:10+09:00",
+          "summary": "CPI 대기·호르무즈 우려로 S&P500 소폭 하락, 유가 83달러 상회",
           "chat": "김치터미널",
           "link": null,
           "tickers": [
@@ -41,473 +40,525 @@
           ]
         },
         {
-          "timeKst": "2026-08-11T05:45:35+09:00",
-          "summary": "마감: S&P -0.06%(7,753.11), 다우 -0.11%, 나스닥 -0.32%, 러셀2000 -0.56%, VIX +3.76%(15.46)",
-          "chat": "미국 주식 인사이더",
+          "timeKst": "2026-08-12T04:51:26+09:00",
+          "summary": "장 마감 동시호가 대규모 MOC 매도 불균형(S&P -12.5억, 나스닥100 -6.4억)",
+          "chat": "김치터미널",
           "link": null,
           "tickers": [
             "SPX",
-            "DJI",
-            "IXIC",
-            "RUT"
+            "NDX",
+            "DJI"
           ]
         },
         {
-          "timeKst": "2026-08-11T05:52:13+09:00",
-          "summary": "에너지 급등·연준 매파에 기술·중소형주 부담…7월 핵심 소매판매 MoM +0.30%",
+          "timeKst": "2026-08-12T05:10:39+09:00",
+          "summary": "미 증시 하락 마감: S&P500 -0.32%, 다우 -0.34%, 나스닥 -0.60%, 러셀2000 +0.37%, VIX 15.34",
           "chat": "미국 주식 인사이더",
-          "link": "https://t.me/insidertracking",
+          "link": null,
           "tickers": [
             "^GSPC",
-            "^IXIC",
             "^DJI",
+            "^IXIC",
             "^RUT",
             "^VIX"
           ]
-        }
-      ]
-    },
-    {
-      "title": "국제유가 5% 급등·중동 지정학 긴장",
-      "importance": "핵심",
-      "region": "글로벌",
-      "summary": "이란의 호르무즈 해협 강경 입장과 미-이란 배상 요구 갈등으로 재개방 기대가 약화되며 유가가 5% 급등. WTI $82.28, 브렌트 $87.72. 리비아 정유시설 드론 피격, 미 전략비축유 1983년래 최저 등 공급 우려가 겹쳤다.",
-      "events": [
-        {
-          "timeKst": "2026-08-10T22:40:43+09:00",
-          "summary": "이란, 호르무즈 해협 전쟁 이전 상태 복귀 거부…자국 지정 항로만 인정",
-          "chat": "김치터미널",
-          "link": null,
-          "tickers": []
         },
         {
-          "timeKst": "2026-08-10T23:03:37+09:00",
-          "summary": "브렌트 $86.06(+3.0%), WTI $80.55(+3.0%)",
-          "chat": "하나 중국/신흥국 전략 김경환",
+          "timeKst": "2026-08-12T06:19:41+09:00",
+          "summary": "엔비디아 보합·일부 하이퍼스케일러 매물 출회, 거래량은 20일 평균 하회하며 하락폭 제한",
+          "chat": "타점 읽어주는 여자",
           "link": null,
-          "tickers": []
-        },
-        {
-          "timeKst": "2026-08-11T00:21:23+09:00",
-          "summary": "미 전략비축유 610만 배럴 감소한 2억9,870만 배럴로 1983년 이후 최저",
-          "chat": "김치터미널",
-          "link": null,
-          "tickers": []
-        },
-        {
-          "timeKst": "2026-08-11T03:31:29+09:00",
-          "summary": "WTI 9월물 $82.13(+5.05%) 마감",
-          "chat": "김치터미널",
-          "link": null,
-          "tickers": []
-        },
-        {
-          "timeKst": "2026-08-11T03:50:07+09:00",
-          "summary": "브렌트유 $87.72(+4.99%) 마감",
-          "chat": "김치터미널",
-          "link": null,
-          "tickers": []
-        },
-        {
-          "timeKst": "2026-08-11T04:14:29+09:00",
-          "summary": "리비아 자위야 정유시설 연료저장탱크 드론 공격 피격",
-          "chat": "김치터미널",
-          "link": null,
-          "tickers": []
-        },
-        {
-          "timeKst": "2026-08-11T02:33:56+09:00",
-          "summary": "트럼프, 이란에 USS콜 폭격 등 수십년 공격 배상 요구…협상 교착",
-          "chat": "김치터미널",
-          "link": null,
-          "tickers": []
-        },
-        {
-          "timeKst": "2026-08-11T04:33:50+09:00",
-          "summary": "트럼프 '호르무즈 해협 현재 열려 있고 미국이 통제…전체 기뢰 제거'",
-          "chat": "김치터미널",
-          "link": null,
-          "tickers": []
-        }
-      ]
-    },
-    {
-      "title": "엔비디아, 월가 6대 금융사와 5천억 달러 AI 인프라 금융 플랫폼",
-      "importance": "핵심",
-      "region": "US",
-      "summary": "엔비디아가 아폴로·블랙록·블랙스톤·브룩필드·골드만삭스·KKR과 5,000억 달러 이상 제3자 자본을 동원하는 AI 컴퓨팅 인프라 금융 플랫폼을 출범. '순환 자금 조달' 우려로 엔비디아는 장중 -3%대, CDS 급등, 반도체 지수 약 3% 하락.",
-      "events": [
-        {
-          "timeKst": "2026-08-11T01:28:52+09:00",
-          "summary": "FT 보도: 엔비디아, 월가 컨소시엄과 5천억 달러 AI 금융 이니셔티브 추진",
-          "chat": "김치터미널",
-          "link": null,
-          "tickers": [
-            "NVDA",
-            "APO",
-            "BX",
-            "BLK",
-            "BAM",
-            "GS",
-            "KKR"
-          ]
-        },
-        {
-          "timeKst": "2026-08-11T05:03:26+09:00",
-          "summary": "엔비디아 공식 발표: 6대 금융사와 AI 컴퓨팅 인프라 금융 플랫폼 구축",
-          "chat": "김치터미널",
-          "link": null,
-          "tickers": [
-            "NVDA",
-            "APO",
-            "BLK",
-            "BX",
-            "BAM",
-            "GS",
-            "KKR"
-          ]
-        },
-        {
-          "timeKst": "2026-08-11T05:23:08+09:00",
-          "summary": "엔비디아 컴퓨팅 장비를 '투자형 자산군'으로 표준화해 사모·민간 자본 조달",
-          "chat": "루팡",
-          "link": "https://nvidianews.nvidia.com/news/nvidia-partners-with-apollo-blackrock-blackstone-brookfield-goldman-sachs-and-kkr-to-establish-ai-compute-infrastructure-financing-platforms-to-mobilize-over-500-billion-of-third-party-capital",
           "tickers": [
             "NVDA"
           ]
         },
         {
-          "timeKst": "2026-08-11T06:44:36+09:00",
-          "summary": "'순환 자금 조달' 우려에 ARM -5.21%, AMD -2.86%, 엔비디아 -2.86%…반도체 지수 -3%",
-          "chat": "하나 중국/신흥국 전략 김경환",
-          "link": "https://wallstreetcn.com/articles/3779052#from=ios",
+          "timeKst": "2026-08-12T06:36:07+09:00",
+          "summary": "글로벌 시황: 알파벳 -3.84%, 오라클 -3.69%, 아마존 -2.09% 등 대형 기술주 약세, 미 10년물 4.68%",
+          "chat": "Ghost Research",
+          "link": null,
           "tickers": [
-            "ARM",
-            "MRVL",
-            "AMD",
-            "NVDA",
-            "MU",
-            "AVGO",
-            "SOXX"
+            "GOOG",
+            "ORCL",
+            "AMZN"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "이란·호르무즈 해협 지정학 긴장과 유가 상승",
+      "importance": "핵심",
+      "region": "글로벌",
+      "summary": "미군의 이란 봉쇄 강화와 이란의 호르무즈 해협 폐쇄 위협이 지속되며 유가가 변동성 속 상승했다. 오만-이란 협상 진전·미이란 합의 근접 신호와 이란의 강경 발언이 교차하며 유가가 급등·반락을 반복했고, EIA는 중동 공급 차질을 반영해 2026년 브렌트유 전망치를 82→87달러로 상향했다.",
+      "events": [
+        {
+          "timeKst": "2026-08-11T20:13:31+09:00",
+          "summary": "카타르 '오만-이란 협상 진전' 발언에 브렌트유 2% 상승분 반납, 마이너스 전환",
+          "chat": "김치터미널",
+          "link": null,
+          "tickers": [
+            "CL=F",
+            "BZ=F"
           ]
         },
         {
-          "timeKst": "2026-08-11T06:45:37+09:00",
-          "summary": "엔비디아 CDS 2주래 최대 일일 상승, 주가 한때 -3.2%",
-          "chat": "하나 중국/신흥국 전략 김경환",
-          "link": "https://wallstreetcn.com/articles/3779115#from=ios",
+          "timeKst": "2026-08-11T21:23:06+09:00",
+          "summary": "WSJ, 미군이 이란 봉쇄 돌파 시도 파나마 선박에 발포",
+          "chat": "김치터미널",
+          "link": null,
+          "tickers": []
+        },
+        {
+          "timeKst": "2026-08-11T23:57:52+09:00",
+          "summary": "미-이란 호르무즈 재개방 합의 임박 시사에 유가 상승분 3% 반납",
+          "chat": "김치터미널",
+          "link": null,
+          "tickers": []
+        },
+        {
+          "timeKst": "2026-08-12T00:28:34+09:00",
+          "summary": "이란, 요구조건 충족 전까지 호르무즈 해협 폐쇄 유지 경고",
+          "chat": "김치터미널",
+          "link": null,
+          "tickers": []
+        },
+        {
+          "timeKst": "2026-08-12T01:29:00+09:00",
+          "summary": "EIA, 호르무즈 혼란 반영해 2026년 브렌트유 전망 82→87달러 상향",
+          "chat": "김치터미널",
+          "link": null,
+          "tickers": []
+        },
+        {
+          "timeKst": "2026-08-12T02:32:13+09:00",
+          "summary": "이스라엘, 이란의 트럼프·에어포스원 미사일 공격 음모 미국에 경고(WSJ)",
+          "chat": "김치터미널",
+          "link": null,
+          "tickers": []
+        },
+        {
+          "timeKst": "2026-08-12T03:45:45+09:00",
+          "summary": "브렌트유 88.91달러(+1.36%), WTI 83.20달러(+1.3%) 마감",
+          "chat": "김치터미널",
+          "link": null,
+          "tickers": []
+        },
+        {
+          "timeKst": "2026-08-12T03:59:41+09:00",
+          "summary": "미 중부사령부, 봉쇄 위반 상선 VELA NOVA호에 헬파이어 미사일 발사해 무력화",
+          "chat": "김치터미널",
+          "link": null,
+          "tickers": []
+        },
+        {
+          "timeKst": "2026-08-12T05:05:23+09:00",
+          "summary": "EIA, 중동 원유 생산 차질 2027년 말까지 지속 전망·글로벌 유가 전망 상향",
+          "chat": "미국 주식 인사이더",
+          "link": null,
+          "tickers": []
+        }
+      ]
+    },
+    {
+      "title": "엔비디아, 5000억 달러 AI 파이낸싱·오픈소스 Nemotron 공개",
+      "importance": "핵심",
+      "region": "US",
+      "summary": "엔비디아가 아폴로·블랙스톤·블랙록·브룩필드·골드만·KKR 등 6개 기관과 500억 달러 이상(플랫폼 기준 최대 5000억 달러)의 AI 인프라 자금조달 파트너십을 발표하고, 1조 파라미터 오픈소스 모델 'Nemotron 4/3.5 Lightning'을 공개했다. 모건스탠리·웰스파고·BofA는 긍정 평가했으나 주가·시장 반응은 미지근했고 순환적 자금조달 우려가 남았다.",
+      "events": [
+        {
+          "timeKst": "2026-08-11T20:58:55+09:00",
+          "summary": "아폴로·블랙스톤·블랙록·골드만·KKR 등, 엔비디아와 500억 달러+ AI 인프라 자본 조성 MOU",
+          "chat": "민구의 뉴스",
+          "link": "https://www.ft.com/content/98a8fd17-15b6-4f67-9cb4-825722b11348",
           "tickers": [
             "NVDA",
             "APO",
             "BX",
             "BLK",
-            "BAM",
             "GS",
             "KKR"
           ]
+        },
+        {
+          "timeKst": "2026-08-11T21:37:18+09:00",
+          "summary": "모건스탠리, NVDA '비중확대'·목표가 288달러 유지…제3자 자본이 순환성 우려 완화",
+          "chat": "루팡",
+          "link": null,
+          "tickers": [
+            "NVDA"
+          ]
+        },
+        {
+          "timeKst": "2026-08-11T22:03:15+09:00",
+          "summary": "엔비디아, 세계 최고급 오픈소스 모델 'Nemotron 4' 개발 중",
+          "chat": "김치터미널",
+          "link": null,
+          "tickers": [
+            "NVDA"
+          ]
+        },
+        {
+          "timeKst": "2026-08-11T22:21:26+09:00",
+          "summary": "진 먼스터, 파트너십에도 시장 반응 미지근…투자자들 AI 빌드아웃 초기성 과소평가 지적",
+          "chat": "프리라이프",
+          "link": "https://www.cnbc.com/video/2026/08/10/deepwaters-gene-munster-tech-investors-not-appreciating-how-early-we-are-into-ai-buildout.html",
+          "tickers": [
+            "NVDA"
+          ]
+        },
+        {
+          "timeKst": "2026-08-11T22:56:54+09:00",
+          "summary": "BofA, NVDA 2분기 매출 가이던스 상회 전망·'Buy' 유지",
+          "chat": "에테르의 일본&미국 리서치",
+          "link": null,
+          "tickers": [
+            "NVDA"
+          ]
+        },
+        {
+          "timeKst": "2026-08-12T00:31:48+09:00",
+          "summary": "웰스파고·미즈호는 노출도·수요 정당성에 회의…월가 의견 분분",
+          "chat": "김치터미널",
+          "link": null,
+          "tickers": [
+            "NVDA"
+          ]
+        },
+        {
+          "timeKst": "2026-08-12T06:30:11+09:00",
+          "summary": "엔비디아, 오픈모델 Nemotron 3.5 Lightning·라우팅 도구 Nemo Switchyard 공개",
+          "chat": "민구의 뉴스",
+          "link": "https://www.wsj.com/cio-journal/nvidia-releases-new-open-model-ee66e6a3",
+          "tickers": [
+            "NVDA"
+          ]
         }
       ]
     },
     {
-      "title": "연준 매파 발언·CPI 대기, 금리 상승",
+      "title": "연준 인사 발언·CPI 전망: 인플레이션 우려 지속",
       "importance": "핵심",
       "region": "US",
-      "summary": "클리블랜드 연은 해맥은 인플레이션이 자연 하락하기 어렵고 노동시장에 문제가 없다며 추가 금리 인상 필요성을 시사. 10년물 금리 4.7% 상회, 2/10년 스프레드 5월래 최대. 7월 CPI 발표 대기.",
+      "summary": "애틀랜타 연은(베너블)과 시카고 연은 굴즈비 총재 모두 인플레이션이 여전히 높다고 평가했다. 굴즈비는 노동시장이 안정적이나 강하지 않다고 언급했으며, 연준은 추가 긴축 없이 물가가 2%로 복귀할 증거를 찾으며 7월 CPI에 촉각을 곤두세우고 있다. JP모건은 근원 CPI 결과에 따른 S&P500 변동폭을 제시했다.",
       "events": [
         {
-          "timeKst": "2026-08-10T20:48:48+09:00",
-          "summary": "CME FedWatch: 9월 FOMC 금리 동결 가능성 53.9%…이번주 CPI·PPI 발표",
+          "timeKst": "2026-08-11T20:02:46+09:00",
+          "summary": "JP모건, 근원 CPI 0.30%↑시 S&P500 1.5~2.5% 하락·0.15%↓시 1~2% 상승 전망",
+          "chat": "에테르의 일본&미국 리서치",
+          "link": null,
+          "tickers": [
+            "SPX"
+          ]
+        },
+        {
+          "timeKst": "2026-08-11T23:35:28+09:00",
+          "summary": "애틀랜타 연은 총재 '인플레이션 여전히 너무 높다' 경고",
+          "chat": "김치터미널",
+          "link": null,
+          "tickers": []
+        },
+        {
+          "timeKst": "2026-08-12T01:17:04+09:00",
+          "summary": "굴즈비 '현 경제 최대 문제는 인플레이션', 노동시장은 안정적",
+          "chat": "김치터미널",
+          "link": null,
+          "tickers": []
+        },
+        {
+          "timeKst": "2026-08-12T02:49:38+09:00",
+          "summary": "연준, 추가 긴축 없이 물가 2% 복귀 증거 모색하며 7월 CPI에 촉각(티미라오스)",
+          "chat": "김치터미널",
+          "link": null,
+          "tickers": []
+        }
+      ]
+    },
+    {
+      "title": "국채금리·가계부채 등 매크로 지표",
+      "importance": "주요",
+      "region": "US",
+      "summary": "로이터 설문은 10년물 국채금리가 3개월 후 4.50%, 1년 후 4.34%로 하락 예상했으나 전략가 다수는 단기 상승 가능성을 더 높게 봤다. 바클레이스는 개인투자자 의존도 증가로 장기금리가 고점 부근을 유지할 것으로 봤다. 2분기 가계부채는 소폭 감소했으나 자동차·신용카드 대출은 증가했다. 3년물 국채 경매 낙찰금리는 4.291%로 상승했다.",
+      "events": [
+        {
+          "timeKst": "2026-08-11T20:57:16+09:00",
+          "summary": "로이터 설문: 10년물 3개월 후 4.50%·1년 후 4.34% 하락 예상, 단기 상승 위험 우세",
+          "chat": "김치터미널",
+          "link": null,
+          "tickers": []
+        },
+        {
+          "timeKst": "2026-08-12T00:01:07+09:00",
+          "summary": "2분기 가계부채 0.1% 감소 18.8조 달러, 자동차대출 기록적 2110억 달러",
+          "chat": "김치터미널",
+          "link": null,
+          "tickers": []
+        },
+        {
+          "timeKst": "2026-08-12T01:49:10+09:00",
+          "summary": "바클레이스, 개인투자자 의존도↑로 장기 국채금리 고점 부근 유지 전망(30년물 5.28% 근접)",
+          "chat": "김치터미널",
+          "link": null,
+          "tickers": []
+        },
+        {
+          "timeKst": "2026-08-12T02:03:10+09:00",
+          "summary": "3년물 국채 경매 낙찰금리 4.291%로 상승, 응찰률 2.71배 개선",
+          "chat": "김치터미널",
+          "link": null,
+          "tickers": []
+        }
+      ]
+    },
+    {
+      "title": "인텔 200억 달러 증자, 초과청약 흥행",
+      "importance": "주요",
+      "region": "US",
+      "summary": "인텔이 주식 공모 규모를 200억 달러로 확대하고 주당 95달러에 발행하기로 했다. 수요가 공급을 크게 초과해 청약 투자자 약 3분의 1이 미배정됐으며, 상위 10개 투자자가 물량의 55%를 가져갔다. AI 열풍에 따른 서버·데이터센터 CPU 수요와 파운드리 확대 기대가 반영됐다.",
+      "events": [
+        {
+          "timeKst": "2026-08-11T20:33:29+09:00",
+          "summary": "인텔, 공모 규모 200억 달러로 확대·주당 95달러 발행",
+          "chat": "미국 주식 인사이더",
+          "link": null,
+          "tickers": [
+            "INTC"
+          ]
+        },
+        {
+          "timeKst": "2026-08-11T21:30:21+09:00",
+          "summary": "AI 열풍에 투자자 낙관…조달자금 파운드리 확대 투입 전망",
+          "chat": "민구의 뉴스",
+          "link": "https://www.ft.com/content/97812a6a-b8ae-4b53-9b67-397250bc5c80",
+          "tickers": [
+            "INTC"
+          ]
+        },
+        {
+          "timeKst": "2026-08-11T23:57:19+09:00",
+          "summary": "200억 달러 공모 과열, 청약자 약 33% 미배정·상위 10개 투자자가 55% 확보",
+          "chat": "김치터미널",
+          "link": null,
+          "tickers": [
+            "INTC"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "메모리 슈퍼사이클·반도체 강세",
+      "importance": "주요",
+      "region": "US",
+      "summary": "AI 수요에 따른 메모리 공급부족이 최소 2028년까지 지속될 것이란 전망(UBS·JPM) 속에 SK하이닉스 ADR(+4.70%), 마이크론, 샌디스크, 시게이트 등이 강세를 보였다. Cantor는 마이크론·샌디스크·SK하이닉스 매수를 권고했다. 다만 애플은 DRAM 부족으로 2026년 하드웨어 출하 축소가 전망된다.",
+      "events": [
+        {
+          "timeKst": "2026-08-11T22:05:34+09:00",
+          "summary": "애플, DRAM 부족으로 2026년 하드웨어 출하 축소 전망(궈밍치)",
+          "chat": "민구의 뉴스",
+          "link": "https://www.macrumors.com/2026/08/10/apple-cutting-2026-hardware-shipments/",
+          "tickers": [
+            "AAPL"
+          ]
+        },
+        {
+          "timeKst": "2026-08-11T23:28:54+09:00",
+          "summary": "UBS·JPM, 글로벌 DRAM 공급부족 최소 2028년까지 지속 전망",
+          "chat": "하나 중국/신흥국 전략 김경환",
+          "link": null,
+          "tickers": [
+            "MU"
+          ]
+        },
+        {
+          "timeKst": "2026-08-12T00:07:04+09:00",
+          "summary": "Cantor, AI 메모리 슈퍼사이클 지속 전망·마이크론·샌디스크·SK하이닉스 매수 권고",
+          "chat": "에테르의 일본&미국 리서치",
+          "link": null,
+          "tickers": [
+            "MU",
+            "WDC"
+          ]
+        },
+        {
+          "timeKst": "2026-08-12T06:19:46+09:00",
+          "summary": "SK하이닉스 ADR +4.70%, 마이크론 +0.87%, 샌디스크 +2.68%; 브로드컴 -1.50%",
           "chat": "타점 읽어주는 여자",
           "link": null,
-          "tickers": []
+          "tickers": [
+            "MU",
+            "AVGO"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "AI 인프라·클라우드 기업 실적 및 계약",
+      "importance": "주요",
+      "region": "US",
+      "summary": "CoreWeave가 2분기 매출·EBITDA 예상치를 상회하고 수주잔고 1040억 달러를 기록했으며, Super Micro는 EPS 상회·강력한 가이던스로 시간외 급등했다. 앤스로픽은 Riot Platforms와 20년 91억 달러 컴퓨팅 계약, IBM은 Together AI와 2.4억 달러 NVIDIA HGX B300 클러스터 계약을 체결했다.",
+      "events": [
+        {
+          "timeKst": "2026-08-11T21:08:34+09:00",
+          "summary": "IBM-Together AI, 2.4억 달러 규모 NVIDIA HGX B300 AI 추론 클러스터 계약",
+          "chat": "루팡",
+          "link": "https://www.prnewswire.com/news-releases/ibm-and-together-ai-sign-multi-year-agreement-to-scale-open-source-ai-inference-with-nvidia-ai-infrastructure-on-ibm-cloud-302847748.html",
+          "tickers": [
+            "IBM",
+            "NVDA"
+          ]
         },
         {
-          "timeKst": "2026-08-11T00:26:26+09:00",
-          "summary": "칼시 트레이더 7월 CPI 3.3% 예상, 9월 인상 확률 67%→46% 하락",
+          "timeKst": "2026-08-11T23:13:28+09:00",
+          "summary": "앤스로픽, Riot Platforms와 20년·91억 달러 컴퓨팅 캐파 계약(191MW)",
+          "chat": "Ghost Research",
+          "link": null,
+          "tickers": [
+            "RIOT"
+          ]
+        },
+        {
+          "timeKst": "2026-08-12T05:07:24+09:00",
+          "summary": "슈퍼마이크로, Q4 EPS 1.70달러로 상회·강력한 가이던스 제시(FY27 매출 650~720억)",
           "chat": "김치터미널",
           "link": null,
-          "tickers": []
+          "tickers": [
+            "SMCI"
+          ]
         },
         {
-          "timeKst": "2026-08-11T00:35:17+09:00",
-          "summary": "2/10년 국채 수익률 곡선 45.7bp로 5월말래 최대 스티프닝",
-          "chat": "김치터미널",
-          "link": null,
-          "tickers": []
-        },
-        {
-          "timeKst": "2026-08-11T03:46:48+09:00",
-          "summary": "연준 해맥 '이제 행동을 시작할 때'…현재 금리 경제 제약 미미",
-          "chat": "김치터미널",
-          "link": null,
-          "tickers": []
-        },
-        {
-          "timeKst": "2026-08-11T03:55:11+09:00",
-          "summary": "해맥 '몇 차례 금리 인상 필요'하나 횟수·최종금리는 미정",
-          "chat": "김치터미널",
-          "link": null,
-          "tickers": []
-        },
-        {
-          "timeKst": "2026-08-11T06:58:53+09:00",
-          "summary": "트럼프, 워시 의장과 잦은 소통설 부인·금리 인하 희망 재강조",
+          "timeKst": "2026-08-12T05:20:06+09:00",
+          "summary": "CoreWeave, 2분기 매출 26억·조정EBITDA 15억 달러로 상회, 수주잔고 약 1040억 달러",
           "chat": "미국 주식 인사이더",
           "link": null,
           "tickers": []
+        },
+        {
+          "timeKst": "2026-08-12T05:15:02+09:00",
+          "summary": "루멘텀, CY2Q26 실적·가이던스 모두 상회…AI 광통신 수요 수혜",
+          "chat": "[메리츠 Tech]",
+          "link": null,
+          "tickers": [
+            "LITE"
+          ]
         }
       ]
     },
     {
-      "title": "인텔, 150억 달러 유상증자 발표에 주가 약세",
-      "importance": "주요",
+      "title": "개별 기업 실적: Sea·On Holding·엘빗",
+      "importance": "참고",
       "region": "US",
-      "summary": "인텔이 AI 컴퓨팅 투자 확대와 재무건전성 방어를 위해 150억 달러(최대 172.5억) 규모 보통주 증자를 발표하고 2026년 Capex를 200억 달러 이상으로 상향. 희석 우려로 장중 -4% 안팎 하락, 다만 청약은 초과 청약된 것으로 알려졌다.",
+      "summary": "Sea Limited는 2분기 매출 77.9억 달러(+48.1%)로 컨센서스를 상회하며 테이크레이트 개선을 보였고, On Holding은 매출·이익 성장 속 연간 가이던스를 상향했다. 이스라엘 방산기업 엘빗 시스템스는 매출 15.9% 증가·사상 최대 수주잔고를 기록했다.",
       "events": [
         {
-          "timeKst": "2026-08-10T22:11:43+09:00",
-          "summary": "인텔 150억 달러 공모 및 2026 Capex 180억→200억 상향, 프리마켓 -4%",
-          "chat": "민구의 뉴스",
-          "link": "https://www.wsj.com/tech/intel-to-offer-15-billion-of-common-stock-e426bc45",
-          "tickers": [
-            "INTC"
-          ]
-        },
-        {
-          "timeKst": "2026-08-10T22:41:52+09:00",
-          "summary": "주관사 JPM·GS·MS·Citi, 최대 172.5억 달러까지 증자 가능",
-          "chat": "에테르의 일본&미국 리서치",
-          "link": "https://buly.kr/58Urrsr",
-          "tickers": [
-            "INTC",
-            "JPM",
-            "GS",
-            "MS",
-            "C"
-          ]
-        },
-        {
-          "timeKst": "2026-08-11T04:54:02+09:00",
-          "summary": "인텔 주식 매각 여러 번 초과 청약된 것으로 알려져",
-          "chat": "김치터미널",
+          "timeKst": "2026-08-11T21:33:10+09:00",
+          "summary": "Sea Limited, 2분기 매출 77.9억 달러(+48.1%)·GMV 383억 달러(+28.4%)로 상회",
+          "chat": "Ghost Research",
           "link": null,
           "tickers": [
-            "INTC"
+            "SE"
+          ]
+        },
+        {
+          "timeKst": "2026-08-11T21:52:25+09:00",
+          "summary": "On Holding, 2분기 견조한 실적·GPM 최소 65%로 상향",
+          "chat": "Ghost Research",
+          "link": null,
+          "tickers": [
+            "ONON"
+          ]
+        },
+        {
+          "timeKst": "2026-08-11T22:54:30+09:00",
+          "summary": "엘빗 시스템스, 2분기 매출 +15.9%·수주잔고 320억 달러로 사상 최대",
+          "chat": "Ghost Research",
+          "link": null,
+          "tickers": [
+            "ESLT"
           ]
         }
       ]
     },
     {
-      "title": "애플, 제프리스 투자의견 '언더퍼폼' 하향",
-      "importance": "주요",
-      "region": "US",
-      "summary": "제프리스가 애플 투자의견을 보유에서 언더퍼폼으로 하향, 목표가 263.66달러로 인하. 올글래스 아이폰 취소와 메모리 가격 급등에 따른 마진 압박, 첫 폴더블 아이폰 출시 예상 등이 배경. 주가는 -2.5%.",
-      "events": [
-        {
-          "timeKst": "2026-08-10T20:21:15+09:00",
-          "summary": "제프리스, 애플 '보유→언더퍼폼' 하향·목표가 285.56→263.66달러",
-          "chat": "김치터미널",
-          "link": null,
-          "tickers": [
-            "AAPL"
-          ]
-        },
-        {
-          "timeKst": "2026-08-10T22:11:37+09:00",
-          "summary": "트렌드포스, 아이폰18 Pro BOM 원가 38% 상승 전망…마진 축소 검토",
-          "chat": "민구의 뉴스",
-          "link": "https://www.trendforce.com/presscenter/news/20260810-13172.html",
-          "tickers": [
-            "AAPL"
-          ]
-        },
-        {
-          "timeKst": "2026-08-11T00:40:51+09:00",
-          "summary": "애플, 생산 수율 문제로 올글래스 아이폰(ASP $2,600) 출시 취소",
-          "chat": "김치터미널",
-          "link": null,
-          "tickers": [
-            "AAPL"
-          ]
-        }
-      ]
-    },
-    {
-      "title": "메모리·반도체 업황 및 자체 AI칩 동향",
-      "importance": "주요",
-      "region": "US",
-      "summary": "TSMC 7월 매출 +45%·Capex 사상 최고 상향, 마이크론은 DRAM 수급 타이트·SCA 장기계약 강화로 강세 전망. 반면 마이크로소프트는 자체 AI칩 Maia 300을 9월 공개·내년 대량 생산 추진.",
-      "events": [
-        {
-          "timeKst": "2026-08-10T22:28:12+09:00",
-          "summary": "MS, 자체 AI칩 Maia 300 9월 공개·내년 생산 대폭 확대, TSMC와 협상",
-          "chat": "에테르의 일본&미국 리서치",
-          "link": "https://www.theinformation.com/articles/microsofts-homegrown-ai-chip-effort-shows-signs-life-slow-start",
-          "tickers": [
-            "MSFT",
-            "TSM"
-          ]
-        },
-        {
-          "timeKst": "2026-08-10T23:04:34+09:00",
-          "summary": "TSMC 7월 매출 +45%($145억), 2026 Capex 600~640억 달러로 상향",
-          "chat": "김치터미널",
-          "link": null,
-          "tickers": [
-            "TSM"
-          ]
-        },
-        {
-          "timeKst": "2026-08-10T23:09:23+09:00",
-          "summary": "골드만, AI 초대형기업 임차약정 1.5조 달러 집계…재무제표 밖 1조",
-          "chat": "민구의 뉴스",
-          "link": "https://www.ft.com/content/a0a07cce-6d19-4b1e-a73b-9855a06ba7b3",
-          "tickers": [
-            "GS",
-            "META",
-            "GOOG",
-            "MSFT",
-            "AMZN",
-            "NVDA",
-            "ORCL",
-            "MS"
-          ]
-        },
-        {
-          "timeKst": "2026-08-10T23:29:55+09:00",
-          "summary": "마이크론, 데이터센터 수요 강세로 가격 비탄력·수요 수년간 지속 전망",
-          "chat": "에테르의 일본&미국 리서치",
-          "link": "https://x.com/wallstengine/status/2086820285240729937?s=20",
-          "tickers": [
-            "MU"
-          ]
-        },
-        {
-          "timeKst": "2026-08-11T06:32:32+09:00",
-          "summary": "마이크론 SCA 220억 달러 체결(현금 180억)·2027년 수급 초과 전망",
-          "chat": "카이에 de market",
-          "link": null,
-          "tickers": [
-            "MU"
-          ]
-        },
-        {
-          "timeKst": "2026-08-11T05:33:35+09:00",
-          "summary": "반도체 약세(엔비디아 -2.86%, 인텔 -4.06%), 샌디스크 +2.12%",
-          "chat": "사제콩이_서상영",
-          "link": null,
-          "tickers": [
-            "NVDA",
-            "AVGO",
-            "AMD",
-            "INTC",
-            "TSM",
-            "MU",
-            "WDC",
-            "STX"
-          ]
-        }
-      ]
-    },
-    {
-      "title": "엔·BOJ 환율 동향",
+      "title": "Sony-TSMC 일본 이미지센서 합작사 설립",
       "importance": "참고",
       "region": "아시아",
-      "summary": "BOJ의 9월 금리 인상 시사에도 엔화는 달러 대비 0.7% 하락하며 일본 개입 효과가 절반가량 소멸. 미국은 과도한 엔 약세가 인플레·글로벌 금리 상승을 유발할 수 있다며 공동 개입 지지 입장.",
+      "summary": "소니 반도체 솔루션과 TSMC가 일본 구마모토현에 약 1조 엔 규모의 합작사(소니 약 60%·TSMC 약 40%)를 설립해 2029년 스마트폰용 차세대 CMOS 이미지센서 양산을 목표로 한다. 소니의 팹라이트 전략 일환으로 평가된다.",
       "events": [
         {
-          "timeKst": "2026-08-10T21:09:36+09:00",
-          "summary": "미국, BOJ 9월 인상 시사에 공동 엔화 매수 개입 지지",
-          "chat": "김치터미널",
-          "link": null,
-          "tickers": []
-        },
-        {
-          "timeKst": "2026-08-10T22:32:35+09:00",
-          "summary": "엔화 -0.7%, 일본 투자자 외국채 매수 지속…BOJ 인상이 엔 지지 전망",
-          "chat": "김치터미널",
-          "link": null,
+          "timeKst": "2026-08-11T22:03:33+09:00",
+          "summary": "소니-TSMC, 구마모토 합작사 설립…소니 4650억 엔·TSMC 2820억 엔 투자, 2029년 양산",
+          "chat": "하나 중국/신흥국 전략 김경환",
+          "link": "https://money.udn.com/money/story/5612/9685285",
           "tickers": [
-            "JPY=X"
+            "TSM",
+            "SONY"
           ]
         }
       ]
     },
     {
-      "title": "주요 M&A·실적·기업 이슈",
+      "title": "금값 사상 최고·엔화 약세 등 자산시장",
       "importance": "참고",
-      "region": "US",
-      "summary": "보잉-아처, 텔레다인-Varex 등 M&A와 로켓랩·힘스앤허스 등 실적, 트럼프 미디어 부진, OpenAI 신규 모델 출시 등 개별 기업 소식.",
+      "region": "글로벌",
+      "summary": "금 가격이 온스당 4350달러를 돌파했고 중앙은행들이 2분기 289톤을 매입했다. 엔화 환율은 다시 160엔에 육박하며 미일 개입 효과 소멸 우려가 제기됐고, 노르웨이 국부펀드 CEO는 현 시장을 '비정상적'으로 평가했다.",
       "events": [
         {
-          "timeKst": "2026-08-10T21:13:27+09:00",
-          "summary": "아처 에비에이션, 보잉 위스크 에어로 등 인수 발표에 +16%",
-          "chat": "미국 주식 인사이더",
+          "timeKst": "2026-08-11T21:48:39+09:00",
+          "summary": "엔화 약세 심화, 일본 당국 환율 개입 가능성 제기",
+          "chat": "김치터미널",
           "link": null,
-          "tickers": [
-            "ACHR",
-            "BA"
-          ]
+          "tickers": []
         },
         {
-          "timeKst": "2026-08-10T21:16:25+09:00",
-          "summary": "Varex Imaging, Teledyne에 주당 18.90달러 피인수 합의 +50%",
-          "chat": "미국 주식 인사이더",
+          "timeKst": "2026-08-11T23:03:54+09:00",
+          "summary": "노르웨이 국부펀드 CEO, 현 시장 '비정상적'·큰 손실 감당 가능성 경고",
+          "chat": "김치터미널",
           "link": null,
-          "tickers": [
-            "VREX",
-            "TDY"
-          ]
+          "tickers": []
         },
         {
-          "timeKst": "2026-08-11T05:14:18+09:00",
-          "summary": "모건스탠리, 1.5조 달러 규모 미국 혁신 인프라(AI·인프라·방산) 이니셔티브 출범",
+          "timeKst": "2026-08-12T02:12:19+09:00",
+          "summary": "금 4350달러 돌파, 중앙은행 2분기 289톤 매입",
+          "chat": "타점 읽어주는 여자",
+          "link": "https://www.tokenpost.kr/news/market/388603",
+          "tickers": []
+        },
+        {
+          "timeKst": "2026-08-12T06:44:02+09:00",
+          "summary": "엔화 다시 160엔 육박, 미일 동시개입 효과 소멸 우려",
+          "chat": "타점 읽어주는 여자",
+          "link": "https://www.yna.co.kr/view/AKR20260811140000073",
+          "tickers": []
+        }
+      ]
+    },
+    {
+      "title": "틱톡 규제 해제·시타델 수급 전망",
+      "importance": "참고",
+      "region": "US",
+      "summary": "트럼프 행정부가 오라클·실버레이크 컨소시엄으로의 지배구조 이전 후 연방 정부기기 틱톡 사용 제한을 해제했다. 시타델 증권은 시스템매매 투자자들이 주식 비중을 다시 늘릴 준비를 하고 있어 증시 반등 가능성을 뒷받침한다고 평가했다.",
+      "events": [
+        {
+          "timeKst": "2026-08-11T23:58:42+09:00",
+          "summary": "트럼프 행정부, 오라클 컨소시엄 전환 후 연방기기 틱톡 사용 제한 해제",
           "chat": "김치터미널",
           "link": null,
           "tickers": [
-            "MS"
+            "ORCL"
           ]
         },
         {
-          "timeKst": "2026-08-11T05:55:21+09:00",
-          "summary": "로켓랩 2분기 매출 +62%($2.34억) 사상 최대, 수주잔고 +137%",
-          "chat": "미국 주식 인사이더",
-          "link": null,
-          "tickers": [
-            "RKLB"
-          ]
-        },
-        {
-          "timeKst": "2026-08-11T05:57:20+09:00",
-          "summary": "힘스앤허스 2분기 매출 +38%($7.53억), 연간 전망 31~33억 상향",
-          "chat": "미국 주식 인사이더",
-          "link": null,
-          "tickers": [
-            "HIMS"
-          ]
-        },
-        {
-          "timeKst": "2026-08-11T05:33:57+09:00",
-          "summary": "트럼프 미디어 2분기 매출 170만 달러·순손실 2.38억 달러",
-          "chat": "김치터미널",
-          "link": null,
-          "tickers": [
-            "DJT"
-          ]
-        },
-        {
-          "timeKst": "2026-08-11T02:20:02+09:00",
-          "summary": "OpenAI, GPT-5.6-Cyber 공개 및 기업용 프리미엄 좌석(월 $125) 출시",
-          "chat": "김치터미널",
-          "link": null,
+          "timeKst": "2026-08-12T06:53:28+09:00",
+          "summary": "시타델, 시스템 투자자 주식 비중 확대 준비…증시 반등 여건 형성 평가",
+          "chat": "카이에 de market",
+          "link": "https://finance.yahoo.com/markets/stocks/articles/citadel-securities-says-prepare-reload-172028206.html",
           "tickers": []
         }
       ]
     }
   ],
   "stats": {
-    "collected": 389,
-    "afterFilter": 360,
-    "geminiItems": 232
+    "collected": 474,
+    "afterFilter": 461,
+    "geminiItems": 283
   }
 }
