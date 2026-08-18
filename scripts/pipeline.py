@@ -70,8 +70,17 @@ def run(run_date: date, out_path: str, force: bool = False):
 
     kept = [m for m in msgs if not config.is_denied_channel(m.get("chat_name", ""))]
     print(f"[2/4] 채널 1차필터 후 {len(kept)}건 → Gemini 요약")
-    items = gemini.summarize(kept)
+    items, gstats = gemini.summarize(kept)
     print(f"      Gemini 관련 항목 {len(items)}건")
+
+    # 청크가 많이 유실되면 요약이 반쪽이다. 빈/부실한 브리핑을 덮어쓰느니 실패시켜
+    # 기존 data.json(어제치)을 남긴다 — 대시보드에 '뉴스 없음'이 뜨는 게 더 나쁨.
+    failed, chunks = gstats["failed"], max(1, gstats["chunks"])
+    if failed and (not items or failed / chunks >= 0.3):
+        raise RuntimeError(
+            f"Gemini 청크 {failed}/{chunks} 유실 — 요약이 불완전해 중단(data.json 보존). "
+            f"API 키 쿼터/결제 한도(https://ai.studio/spend) 확인."
+        )
 
     if not items:
         out = {**base, "status": "ok", "headline": ["밤사이 주요 미장·매크로 뉴스가 확인되지 않았습니다."], "topics": []}
@@ -86,7 +95,8 @@ def run(run_date: date, out_path: str, force: bool = False):
         "status": "ok",
         "headline": curated.get("headline", []),
         "topics": curated.get("topics", []),
-        "stats": {"collected": len(msgs), "afterFilter": len(kept), "geminiItems": len(items)},
+        "stats": {"collected": len(msgs), "afterFilter": len(kept), "geminiItems": len(items),
+                  "geminiChunks": gstats["chunks"], "geminiFailedChunks": gstats["failed"]},
     }
     print(f"[4/4] 기록: 주제 {len(out['topics'])}개, 헤드라인 {len(out['headline'])}개")
     _write(out, out_path)

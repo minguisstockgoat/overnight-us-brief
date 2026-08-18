@@ -4,12 +4,16 @@ search_telegram_messages(query, chat, since, until, limit) 를 호출.
 - 결과는 최신순 UTC, 한 응답 최대 200건 → 창을 시간분할 재귀로 전량 수집 후 dedup.
 """
 import json
+import time
 from datetime import datetime, timezone
 import httpx
 import config
 
 CAP = 200            # 서버 응답 상한(관측값)
 MIN_SLICE_SEC = 120  # 이보다 짧은 창은 더 쪼개지 않음
+
+RETRIES = 4          # Mac mini 가 절전/네트워크 플랩으로 잠깐 안 잡히는 일이 있어 재시도
+CONNECT_TIMEOUT = 20.0
 
 def _call(args, timeout=60):
     body = {"jsonrpc": "2.0", "id": 1, "method": "tools/call",
@@ -19,8 +23,23 @@ def _call(args, timeout=60):
         "Content-Type": "application/json",
         "Accept": "application/json, text/event-stream",
     }
-    r = httpx.post(config.ARCHIVE_URL(), json=body, headers=headers,
-                   timeout=httpx.Timeout(timeout, connect=10.0))
+    for attempt in range(RETRIES):
+        try:
+            r = httpx.post(config.ARCHIVE_URL(), json=body, headers=headers,
+                           timeout=httpx.Timeout(timeout, connect=CONNECT_TIMEOUT))
+            if r.status_code >= 500:
+                raise httpx.HTTPError(f"archive {r.status_code}: {r.text[:200]}")
+            break
+        except (httpx.TransportError, httpx.HTTPError) as e:
+            if attempt == RETRIES - 1:
+                raise RuntimeError(
+                    f"archive 접속 실패({RETRIES}회 재시도, {config.ARCHIVE_URL()}): "
+                    f"{type(e).__name__}: {e} — Mac mini 전원/절전, Tailscale 상태 확인"
+                ) from e
+            wait = 5 * (2 ** attempt)   # 5s, 10s, 20s
+            print(f"      [warn] archive 재시도 {attempt + 1}/{RETRIES - 1} "
+                  f"({type(e).__name__}: {e}) — {wait}s 후 재시도")
+            time.sleep(wait)
     r.raise_for_status()
     obj = r.json()
     if "error" in obj:

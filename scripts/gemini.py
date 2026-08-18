@@ -29,6 +29,12 @@ SYS = (
     "반드시 유효한 JSON 배열만 출력."
 )
 
+QUOTA_MARKERS = ("spending cap", "quota", "billing", "exceeded your current quota")
+
+def _is_quota_exhausted(body: str) -> bool:
+    low = (body or "").lower()
+    return any(k in low for k in QUOTA_MARKERS)
+
 def _endpoint():
     return (f"https://generativelanguage.googleapis.com/v1beta/models/"
             f"{config.GEMINI_MODEL()}:generateContent")
@@ -52,19 +58,25 @@ def _call_gemini(prompt):
         "generationConfig": {"responseMimeType": "application/json", "temperature": 0.2},
     }
     headers = {"x-goog-api-key": config.GEMINI_API_KEY(), "Content-Type": "application/json"}
-    # 병렬 호출이라 429/5xx 가능성이 커짐 → 짧게 재시도
+    # 병렬 호출이라 429/5xx 가능성이 커짐 → 짧게 재시도.
+    # 실패 시 None 반환(= 청크 유실). 빈 배열([] = 관련 항목 없음)과 반드시 구분한다.
     for attempt in range(3):
         try:
             r = httpx.post(_endpoint(), json=payload, headers=headers,
                            timeout=httpx.Timeout(120.0, read=100.0, connect=10.0))
             if r.status_code == 429 or r.status_code >= 500:
-                raise httpx.HTTPError(f"gemini {r.status_code}: {r.text[:200]}")
+                snippet = r.text[:300]
+                # 결제 상한·일일 쿼터 소진은 재시도해도 안 풀림 → 즉시 포기
+                if r.status_code == 429 and _is_quota_exhausted(snippet):
+                    print(f"      [error] Gemini 쿼터/결제 한도 소진: {snippet}")
+                    return None
+                raise httpx.HTTPError(f"gemini {r.status_code}: {snippet}")
             r.raise_for_status()
             break
         except httpx.HTTPError as e:
             if attempt == 2:
                 print(f"      [warn] Gemini 청크 실패(재시도 소진): {e}")
-                return []
+                return None
             time.sleep(3 * (attempt + 1))
     data = r.json()
     try:
@@ -82,7 +94,10 @@ def _call_gemini(prompt):
         return []
 
 def summarize(messages):
-    """messages: archive 원본 리스트. returns 정규화 항목 리스트(시계열 순)."""
+    """messages: archive 원본 리스트.
+
+    returns (정규화 항목 리스트(시계열 순), {"chunks": n, "failed": n}).
+    """
     # 인덱스 부여 + 프롬프트용 라인 구성
     enriched = []
     for idx, m in enumerate(messages):
@@ -101,8 +116,15 @@ def summarize(messages):
     with ThreadPoolExecutor(max_workers=workers) as ex:
         results = list(ex.map(_call_gemini, prompts))  # 입력 순서 유지
 
+    failed = sum(1 for arr in results if arr is None)
+    stats = {"chunks": len(results), "failed": failed}
+    if failed:
+        print(f"      [warn] Gemini 청크 {failed}/{len(results)}개 유실")
+
     items = []
     for arr in results:
+        if not arr:          # None(실패) / [] (관련 없음) 모두 스킵
+            continue
         for it in arr:
             if not isinstance(it, dict):
                 continue
@@ -118,7 +140,7 @@ def summarize(messages):
             items.append(it)
 
     items.sort(key=lambda x: x.get("time_kst", ""))
-    return items
+    return items, stats
 
 def _extract_link(text):
     if not text:
