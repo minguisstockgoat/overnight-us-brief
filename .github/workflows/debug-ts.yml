@@ -1,0 +1,23 @@
+name: Debug Tailscale
+on:
+  workflow_dispatch:
+jobs:
+  debug:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+      - uses: tailscale/github-action@v3
+        with:
+          authkey: ${{ secrets.TS_AUTHKEY }}
+      - name: Diagnose
+        run: |
+          set +e
+          echo "== status =="; tailscale status
+          echo "== whois self =="; tailscale status --json | jq -r '.Self | {HostName,TailscaleIPs,Online,Tags}'
+          echo "== dns =="; getent hosts macmini.taila0cca3.ts.net; nslookup macmini.taila0cca3.ts.net
+          echo "== ping disco =="; timeout 20 tailscale ping --c 3 macmini
+          echo "== ping tsmp =="; timeout 20 tailscale ping --tsmp --c 3 macmini
+          echo "== nc 443 by IP =="; timeout 15 nc -vz 100.79.156.121 443
+          echo "== curl by name =="; timeout 20 curl -sv --max-time 15 -o /dev/null https://macmini.taila0cca3.ts.net/ 2>&1 | tail -20
+          echo "== netcheck =="; timeout 30 tailscale netcheck
+          echo "done"
