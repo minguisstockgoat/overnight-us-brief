@@ -1,512 +1,578 @@
 {
-  "generatedAt": "2026-09-22T08:09:07.370313+09:00",
+  "generatedAt": "2026-09-23T09:26:16.670272+09:00",
   "window": {
-    "startKst": "2026-09-21T20:00:00+09:00",
-    "endKst": "2026-09-22T07:00:00+09:00",
-    "prevTradingDay": "2026-09-21"
+    "startKst": "2026-09-22T20:00:00+09:00",
+    "endKst": "2026-09-23T07:00:00+09:00",
+    "prevTradingDay": "2026-09-22"
   },
   "status": "ok",
   "headline": [
-    "나스닥 2.3% 급등 사상 최고치…메타 AI '뮤즈' 흥행에 AMD 시총 1조 달러 돌파, 필라델피아 반도체 +4.29%",
-    "국제유가 급락(WTI -4.5%, 브렌트 100달러 하회)…미-이란 외교 기대·사우디 공급 확대, 다만 美 디젤 6.51달러 사상 최고",
-    "연준 매파 지속…무살렘·굴스비 '수요·공급발 인플레'로 추가 금리인상 시사, 10년물 4.95%로 하락",
-    "비트코인 8만6천 달러 돌파(+7%)…MSTR 두 자릿수 강세",
-    "미중 무역휴전 6개월 연장 논의·AI 핫라인 합의 임박, 트럼프-시진핑 정상회담 기대"
+    "나스닥 이틀 연속 사상 최고치…반도체·AI 강세 vs 금융주 급락에 다우 0.36% 하락",
+    "연준 콜린스·바킨, 지난주 금리인상 지지…인플레 상방 위험 재차 경고",
+    "국제유가 5거래일 연속 하락해 배럴당 100달러 하회…美-이란 회담·사우디 송유관 재가동",
+    "메모리·반도체 랠리 지속: 마이크론 +5%, 샌디스크 +7%, 필라델피아 반도체지수 +2%",
+    "메타 AI '뮤즈' 흥행·바이킹 비만약 임상 홈런에 개별주 급등"
   ],
   "topics": [
     {
-      "title": "미국 증시 AI·반도체 랠리, 나스닥 사상 최고치",
+      "title": "미국 증시 마감: 나스닥 사상 최고 vs 다우 하락",
       "importance": "핵심",
       "region": "US",
-      "summary": "메타의 AI 에이전트 '뮤즈' 흥행을 계기로 CPU·AI 반도체가 급등하며 나스닥이 2.26% 상승, 사상 최고치를 경신했다. AMD가 미국 반도체 기업 중 4번째로 시총 1조 달러를 돌파했고 ARM·인텔·퀄컴이 두 자릿수 급등했다. 다우 +0.71%, S&P500 +1.49%, 필라델피아 반도체 +4.29%.",
+      "summary": "반도체·AI 강세로 나스닥이 이틀 연속 사상 최고치를 경신했으나, 금융주 급락으로 다우는 하락하며 지수별 차별화가 심화됐다. S&P500 보합, 러셀2000 소폭 상승.",
       "events": [
         {
-          "timeKst": "2026-09-21T22:34",
-          "summary": "뉴욕증시 AI주 강세로 상승 출발, 나스닥 0.77% 개장",
-          "chat": "단독 & 속보 뉴스 콜렉터",
-          "link": "https://n.news.naver.com/mnews/article/003/0014206294",
-          "tickers": [
-            "^IXIC"
-          ]
-        },
-        {
-          "timeKst": "2026-09-21T23:17",
-          "summary": "AMD 시가총액 사상 첫 1조 달러 돌파",
+          "timeKst": "2026-09-22T22:31:40+09:00",
+          "summary": "개장 직후 S&P500 +0.10%, 나스닥 +0.19%, 다우 +0.36%로 3대 지수 상승 출발.",
           "chat": "김치터미널",
           "link": null,
           "tickers": [
-            "AMD"
+            "SPY",
+            "QQQ",
+            "DIA"
           ]
         },
         {
-          "timeKst": "2026-09-22T00:36",
-          "summary": "오펜하이머, 메타 AI 'Muse' 유료화 시 2027 EPS $38.83(컨센 +15%) 전망",
-          "chat": "타점 읽어주는 여자",
+          "timeKst": "2026-09-23T02:37:09+09:00",
+          "summary": "금융주 매도세로 다우 0.5% 하락, S&P500 부진. 투자자들은 호르무즈·사우디 파이프라인·금리 상승세 주시.",
+          "chat": "김치터미널",
           "link": null,
           "tickers": [
-            "META"
+            "SPX",
+            "DJI"
           ]
         },
         {
-          "timeKst": "2026-09-22T05:01",
-          "summary": "뉴욕증시 마감: 나스닥 +2.30%, S&P500 +1.52%, 다우 +0.79%",
-          "chat": "단독 & 속보 뉴스 콜렉터",
+          "timeKst": "2026-09-23T05:00:55+09:00",
+          "summary": "나스닥 종합 +0.45% 27,245.24, S&P500 보합 7,765, 다우 -0.36%. 반도체 강세가 은행주 매도세 상쇄.",
+          "chat": "김치터미널",
           "link": null,
           "tickers": [
-            "^IXIC",
-            "^SPX",
-            "^DJI"
+            "NDX",
+            "SPX"
           ]
         },
         {
-          "timeKst": "2026-09-22T05:21",
-          "summary": "뮤즈 앱 다운로드 1위 효과로 ARM +17.16%, 인텔 +12.17%, AMD +9.95%, 필라델피아 반도체 +4.29%",
-          "chat": "사제콩이_서상영",
+          "timeKst": "2026-09-23T06:12:53+09:00",
+          "summary": "S&P500 상위 10개 기업 시총 비중 약 40%로 사상 최고 근접(2000년 닷컴 정점 27% 상회), 집중도 위험 부각.",
+          "chat": "미국 주식 인사이더",
+          "link": null,
+          "tickers": []
+        }
+      ]
+    },
+    {
+      "title": "연준 인사 매파 발언·금리 상승",
+      "importance": "핵심",
+      "region": "US",
+      "summary": "콜린스·바킨 등 연준 인사들이 지난주 금리 인상을 지지하며 인플레이션 상방 위험을 재차 경고. 추가 긴축 가능성을 열어두며 국채금리 상승세가 시장에 압박.",
+      "events": [
+        {
+          "timeKst": "2026-09-22T22:33:29+09:00",
+          "summary": "콜린스 총재, 지난주 금리 인상 지지 입장 표명.",
+          "chat": "김치터미널",
+          "link": null,
+          "tickers": []
+        },
+        {
+          "timeKst": "2026-09-22T22:35:19+09:00",
+          "summary": "콜린스, 인플레이션 상승 위험 커졌으나 노동시장은 다소 더 견고. 제한적 금리가 물가 목표 회귀에 도움.",
+          "chat": "김치터미널",
+          "link": null,
+          "tickers": []
+        },
+        {
+          "timeKst": "2026-09-23T02:31:15+09:00",
+          "summary": "바킨 총재, 현재 상황이 1990년대 중반 중간주기 조정과 유사하길 희망.",
+          "chat": "김치터미널",
+          "link": null,
+          "tickers": []
+        },
+        {
+          "timeKst": "2026-09-23T03:17:49+09:00",
+          "summary": "바킨, '감당할 수 있는 수준보다 더 많은 물가 압력을 보고 있다'며 기업의 가격결정력 잔존 지적.",
+          "chat": "김치터미널",
+          "link": null,
+          "tickers": []
+        },
+        {
+          "timeKst": "2026-09-23T05:45:43+09:00",
+          "summary": "윌리엄스·제퍼슨·바킨, 통화정책 운영·유동성·9월 25bp 인상 배경 및 인플레 위험 언급.",
+          "chat": "YIELD & SPREAD",
+          "link": null,
+          "tickers": []
+        }
+      ]
+    },
+    {
+      "title": "국제유가 하락: 美-이란 회담·사우디 송유관 재가동",
+      "importance": "핵심",
+      "region": "글로벌",
+      "summary": "미-이란 협상 재개 기대와 사우디 동서 송유관 재가동, 호르무즈 해협 재개방 제안 등으로 유가가 5거래일 연속 하락해 100달러를 하회. WTI는 90달러 아래로 마감.",
+      "events": [
+        {
+          "timeKst": "2026-09-22T20:15:36+09:00",
+          "summary": "사우디, 드론 피격으로 중단됐던 동서 송유관 가동 재개 및 얀부항 수출 재개 가능성.",
+          "chat": "하나증권/에너지화학",
+          "link": "https://www.reuters.com/business/energy/saudi-arabia-restarts-east-west-oil-pipeline-resume-exports-yanbu-sources-say-2026-09-22/",
+          "tickers": []
+        },
+        {
+          "timeKst": "2026-09-22T22:13:02+09:00",
+          "summary": "BofA, 2026년 하반기 브렌트유 전망 배럴당 83→95달러로 상향.",
+          "chat": "김치터미널",
           "link": null,
           "tickers": [
-            "META",
-            "ARM",
-            "INTC",
-            "AMD",
+            "BAC"
+          ]
+        },
+        {
+          "timeKst": "2026-09-23T03:31:27+09:00",
+          "summary": "NYMEX WTI 10월물 94.59달러(-1.24%) 마감, 브렌트 99.25달러(-1.09%).",
+          "chat": "김치터미널",
+          "link": null,
+          "tickers": []
+        },
+        {
+          "timeKst": "2026-09-23T05:55:22+09:00",
+          "summary": "WTI 11월물 -2.80% 89.78달러. 미-이란 직접 대화 재개로 지정학 프리미엄 축소.",
+          "chat": "미국 주식 인사이더",
+          "link": null,
+          "tickers": [
+            "CL=F"
+          ]
+        },
+        {
+          "timeKst": "2026-09-23T05:47:03+09:00",
+          "summary": "美 API 원유재고 +178.6만 배럴로 예상(-50만) 상회, 경유 -216.4만, 쿠싱 +208.2만.",
+          "chat": "김치터미널",
+          "link": null,
+          "tickers": []
+        }
+      ]
+    },
+    {
+      "title": "AI·메모리 반도체 랠리",
+      "importance": "핵심",
+      "region": "US",
+      "summary": "AI 데이터센터 수요 확대 기대로 필라델피아 반도체지수 6거래일 연속 상승. 마이크론·샌디스크 등 메모리주가 강세를 주도하며 수혜가 광통신·패키징으로 확산.",
+      "events": [
+        {
+          "timeKst": "2026-09-22T20:09:19+09:00",
+          "summary": "로젠블랫, 샌디스크를 AI 인프라 핵심 수혜주로 평가하며 목표가 2400달러 제시.",
+          "chat": "단독 & 속보",
+          "link": null,
+          "tickers": [
+            "SNDK"
+          ]
+        },
+        {
+          "timeKst": "2026-09-22T23:37:16+09:00",
+          "summary": "마이크론 2GB GDDR7 단종으로 RTX50 GDDR7 공급이 삼성·SK하이닉스에 집중.",
+          "chat": "에테르",
+          "link": null,
+          "tickers": [
+            "MU",
+            "NVDA"
+          ]
+        },
+        {
+          "timeKst": "2026-09-23T05:22:34+09:00",
+          "summary": "엔비디아·마이크론 상승으로 나스닥100 +0.8%, 6월 이후 첫 사상 최고치. 반도체지수 6일 연속 상승.",
+          "chat": "김치터미널",
+          "link": null,
+          "tickers": [
+            "NDX",
             "NVDA",
-            "QCOM",
-            "MRVL"
+            "MU"
           ]
         },
         {
-          "timeKst": "2026-09-22T06:11",
-          "summary": "웰스파고, 뮤즈 초기지표 호조에 메타 목표가 640→796달러 상향",
-          "chat": "플렉서블 리서치",
+          "timeKst": "2026-09-23T06:00:40+09:00",
+          "summary": "마이크론 +5%, 샌디스크·시게이트 강세. Citi, Co-Packaged Optics를 AI 핵심 구조 변화로 평가.",
+          "chat": "미국 주식 인사이더",
           "link": null,
           "tickers": [
-            "META"
+            "SMH",
+            "SNDK",
+            "MU",
+            "STX"
           ]
         },
         {
-          "timeKst": "2026-09-22T06:36",
-          "summary": "뮤즈, 출시 12일간 280만 다운로드로 챗GPT 초기 속도 추월",
+          "timeKst": "2026-09-23T06:38:03+09:00",
+          "summary": "네비우스 토큰팩토리, 엔비디아 GPU 전용 임대가 16~20% 인상(H100/H200/B200/B300).",
+          "chat": "카이에 de market",
+          "link": null,
+          "tickers": [
+            "NVDA",
+            "NBIS"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "엔비디아 밸류에이션 논쟁",
+      "importance": "주요",
+      "region": "US",
+      "summary": "엔비디아 예상 PER이 17배를 밑돌며 10여년 최저 수준. 메모리 가격 급등에 따른 수익성 우려와 거대해진 규모가 밸류에이션 역설을 야기했으나, 설비투자 둔화 징후는 없다는 시각도 존재.",
+      "events": [
+        {
+          "timeKst": "2026-09-22T23:00:20+09:00",
+          "summary": "엔비디아 12개월 예상 PER 17배 미만으로 10년래 최저. 올해 상승률 22%로 SOX(76%) 대비 부진.",
+          "chat": "이상헌 부장 iM",
+          "link": "https://www.edaily.co.kr/News/Read?newsId=05966326645582744&mediaCodeNo=257",
+          "tickers": [
+            "NVDA"
+          ]
+        },
+        {
+          "timeKst": "2026-09-23T00:07:25+09:00",
+          "summary": "엔비디아 밸류에이션 하락하며 이익 성장 지속성에 경고음.",
+          "chat": "단독 & 속보",
+          "link": "https://www.newspim.com/news/view/20260923000002",
+          "tickers": [
+            "NVDA"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "트럼프 UN 연설·美-이란 협상",
+      "importance": "주요",
+      "region": "글로벌",
+      "summary": "트럼프가 UN 총회 연설에서 이란 핵무기 불허·경제고립을 촉구하는 한편, 위트코프·쿠슈너가 이란 대표단과 3시간 회담을 진행. 트럼프는 '매우 생산적'이었다며 합의 모멘텀을 언급했으나 쟁점 합의는 불발.",
+      "events": [
+        {
+          "timeKst": "2026-09-22T23:44:11+09:00",
+          "summary": "트럼프, 미 중간선거 직후 이란과 합의할 것으로 기대한다고 발언.",
+          "chat": "단독 & 속보",
+          "link": null,
+          "tickers": []
+        },
+        {
+          "timeKst": "2026-09-23T00:03:20+09:00",
+          "summary": "트럼프, AI 경고는 '조작'이라며 글로벌 AI 통제 계획 거부, 'Super Intelligence' 명칭 제안.",
+          "chat": "김치터미널",
+          "link": null,
+          "tickers": []
+        },
+        {
+          "timeKst": "2026-09-23T02:53:45+09:00",
+          "summary": "트럼프, 미국 관리들이 이란 대표단과 3시간 회담했다고 확인.",
+          "chat": "김치터미널",
+          "link": null,
+          "tickers": []
+        },
+        {
+          "timeKst": "2026-09-23T04:29:40+09:00",
+          "summary": "이란, 위트코프 특사와 회담서 해상봉쇄 해제·동결자산 반환·전쟁 종식 등 '엄격한' 조건 전달.",
+          "chat": "김치터미널",
+          "link": null,
+          "tickers": []
+        },
+        {
+          "timeKst": "2026-09-23T06:11:31+09:00",
+          "summary": "美-이란 유엔본부 3시간 회담. 트럼프 '아주 잘 됐다', 23일 추가 회담 예정.",
+          "chat": "이상헌 부장 iM",
+          "link": "https://www.yna.co.kr/view/AKR20260923005352071?input=1195m",
+          "tickers": []
+        }
+      ]
+    },
+    {
+      "title": "바이킹 테라퓨틱스 비만약 임상 호조",
+      "importance": "주요",
+      "region": "US",
+      "summary": "바이킹의 GLP-1/GIP 작용제 VK2735가 유지요법에서 격주·월1회 투여로도 체중감량 효과 최대 97% 유지를 입증하며 주가가 35% 폭등.",
+      "events": [
+        {
+          "timeKst": "2026-09-22T20:50:08+09:00",
+          "summary": "VK2735 유지요법 효과 발표에 개장 전 40% 급등.",
+          "chat": "단독 & 속보",
+          "link": null,
+          "tickers": [
+            "VKTX"
+          ]
+        },
+        {
+          "timeKst": "2026-09-23T00:26:19+09:00",
+          "summary": "브라일리, '홈런급 데이터'로 평가하며 목표가 85달러 재확인. 33주차 위약보정 체중감소 22%.",
+          "chat": "트릴리온",
+          "link": "https://ir.vikingtherapeutics.com/2026-09-22-Viking-Therapeutics-Announces-Positive-Topline-Results-from-Maintenance-Study-of-GLP-1-GIP-Agonist-VK2735",
+          "tickers": [
+            "VKTX"
+          ]
+        },
+        {
+          "timeKst": "2026-09-23T05:29:32+09:00",
+          "summary": "임상 결과 '압도적' 평가에 주가 35% 폭등 마감.",
+          "chat": "단독 & 속보",
+          "link": "https://www.mediapen.com/news/view/1125542",
+          "tickers": [
+            "VKTX"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "메타 AI '뮤즈' 흥행",
+      "importance": "주요",
+      "region": "US",
+      "summary": "메타의 AI 에이전트 '뮤즈'가 출시 4일 만에 미국 앱스토어 1위를 차지하며 메타 주가가 9월 약 30% 급등. 페이팔·쇼피파이와 결제·쇼핑 파트너십 체결. 다만 아마존은 보안 우려로 접속 차단.",
+      "events": [
+        {
+          "timeKst": "2026-09-22T21:04:22+09:00",
+          "summary": "BofA, 메타 '매수'·목표가 810달러. 뮤즈 iOS 생산성 1위, 누적 250만 다운로드.",
           "chat": "루팡",
           "link": null,
           "tickers": [
             "META"
           ]
-        }
-      ]
-    },
-    {
-      "title": "국제유가 급락·에너지 시장, 미-이란 외교 기대",
-      "importance": "핵심",
-      "region": "글로벌",
-      "summary": "트럼프의 UN 총회 계기 이란 대통령 회동 가능성과 사우디의 호르무즈 통과 공급 확대로 WTI가 4.5% 급락하며 95달러대, 브렌트유는 100달러를 하회했다. 다만 미국 디젤은 갤런당 6.51달러로 사상 최고치를 기록했고 전략비축유(SPR)는 1982년 이후 최저를 기록해 인플레 압력은 잔존.",
-      "events": [
-        {
-          "timeKst": "2026-09-21T20:05",
-          "summary": "미국 디젤 갤런당 6.51달러로 사상 최고치(1년 전 3.70달러)",
-          "chat": "김치터미널",
-          "link": null,
-          "tickers": []
         },
         {
-          "timeKst": "2026-09-21T23:20",
-          "summary": "사우디 공급 차질 면하며 브렌트유 -2.6% 101.18달러, WTI 98달러 하회",
-          "chat": "김치터미널",
-          "link": null,
-          "tickers": []
-        },
-        {
-          "timeKst": "2026-09-21T23:28",
-          "summary": "美 전략비축유(SPR) 2억8,460만 배럴로 1982년 이후 최저",
-          "chat": "김치터미널",
-          "link": null,
-          "tickers": []
-        },
-        {
-          "timeKst": "2026-09-22T01:21",
-          "summary": "프랑스 주유소 16% 연료 부족, 경유 사상 최고가…유럽 에너지 위기 심화",
-          "chat": "트릴리온",
-          "link": null,
-          "tickers": []
-        },
-        {
-          "timeKst": "2026-09-22T03:31",
-          "summary": "WTI 10월물 -4.51% 95.78달러, 브렌트 -3.4% 100.34달러 마감",
-          "chat": "김치터미널",
-          "link": null,
+          "timeKst": "2026-09-22T22:11:16+09:00",
+          "summary": "뮤즈 앱스토어 1위·9월 주가 약 30% 급등. 아마존은 개인정보·보안 우려로 접속 차단.",
+          "chat": "이상헌 부장 iM",
+          "link": "https://v.daum.net/v/20260922205909942",
           "tickers": [
-            "CL=F",
-            "LCO=F"
+            "META",
+            "AMZN"
           ]
         },
         {
-          "timeKst": "2026-09-22T06:05",
-          "summary": "국제유가(WTI) 4.51% 급락 마감",
-          "chat": "단독 & 속보 뉴스 콜렉터",
-          "link": "https://www.etoday.co.kr/news/flashnews/flash_view?idxno=2628225",
-          "tickers": [
-            "CL=F"
-          ]
-        }
-      ]
-    },
-    {
-      "title": "연준·금리·인플레이션 (매파 기조 지속)",
-      "importance": "핵심",
-      "region": "US",
-      "summary": "굴스비·무살렘 등 연준 인사들이 에너지·관세 공급충격과 강한 수요가 동시에 인플레를 압박한다며 추가 금리인상 가능성을 시사했다. 무살렘은 '조기·점진적' 인상을 선호. 다만 유가 급락에 기대인플레 완화되며 10년물 금리는 4.95%로 하락. JP모건·모건스탠리는 에너지·채권 변동성에 단기 조정(2~7%) 리스크를 경고.",
-      "events": [
-        {
-          "timeKst": "2026-09-21T21:35",
-          "summary": "굴스비, 인플레 정점 2027년으로 지연 우려…'행동 시나리오' 근접 언급",
-          "chat": "YIELD & SPREAD",
-          "link": null,
-          "tickers": []
-        },
-        {
-          "timeKst": "2026-09-21T21:08",
-          "summary": "에테르/JP모건, 미 증시 전술적 중립…긴장 고조 시 2~3% 하락 전망",
-          "chat": "에테르의 일본&미국 리서치",
-          "link": null,
-          "tickers": []
-        },
-        {
-          "timeKst": "2026-09-21T22:24",
-          "summary": "모건스탠리 윌슨, 에너지·채권 변동성에 S&P 단기 7% 조정 위험 경고(연말 목표 8,000)",
-          "chat": "하나 중국/신흥국 전략",
-          "link": "https://wallstreetcn.com/articles/3782230",
-          "tickers": [
-            "^GSPC"
-          ]
-        },
-        {
-          "timeKst": "2026-09-22T03:20",
-          "summary": "무살렘, 인플레 3%로 '너무 높음'…추가 금리인상 필요, '조기 점진적' 선호",
-          "chat": "김치터미널",
-          "link": null,
-          "tickers": []
-        },
-        {
-          "timeKst": "2026-09-22T05:08",
-          "summary": "10년물 국채수익률 4.95%로 하락",
-          "chat": "김치터미널",
-          "link": null,
-          "tickers": []
-        }
-      ]
-    },
-    {
-      "title": "미중 관계·무역휴전 연장·AI 협력",
-      "importance": "주요",
-      "region": "글로벌",
-      "summary": "미국이 무역휴전 6개월 연장을 제시했고 중국은 더 긴 연장을 요구. 양국은 AI 공식 대화채널·사고 대응 핫라인 구축에 합의했고 2개월 내 선전에서 추가 협의 예정. 중국은 미국산 LNG 15% 관세 철폐 계획. USTR은 협상을 긍정 평가하며 대두·희토류·보잉 구매 진전을 언급. 트럼프-시진핑 정상회담(국빈)이 예정.",
-      "events": [
-        {
-          "timeKst": "2026-09-21T21:10",
-          "summary": "베센트 재무장관, 중국과 AI 대화체계 공식화·비전략품목 관세 인하 논의",
-          "chat": "김치터미널",
-          "link": null,
-          "tickers": []
-        },
-        {
-          "timeKst": "2026-09-21T21:40",
-          "summary": "USTR 그리어, 미중 무역휴전 3~6개월 연장 가능성 시사",
-          "chat": "김치터미널",
-          "link": null,
-          "tickers": []
-        },
-        {
-          "timeKst": "2026-09-21T21:43",
-          "summary": "중국, 미국산 LNG 15% 관세 철폐 계획",
-          "chat": "트릴리온",
-          "link": null,
-          "tickers": []
-        },
-        {
-          "timeKst": "2026-09-21T23:25",
-          "summary": "NYT: 미국, 무역휴전 6개월 연장 제안…중국은 더 긴 연장 압박",
-          "chat": "김치터미널",
-          "link": null,
-          "tickers": []
-        },
-        {
-          "timeKst": "2026-09-22T06:05",
-          "summary": "미중, AI 안보위협 '핫라인' 합의 논의…정상회담서 발표 가능성",
-          "chat": "단독 & 속보 뉴스 콜렉터",
-          "link": "https://www.yna.co.kr/view/AKR20260922007000071",
-          "tickers": []
-        }
-      ]
-    },
-    {
-      "title": "비트코인·암호화폐 강세",
-      "importance": "주요",
-      "region": "글로벌",
-      "summary": "비트코인이 8만6천 달러를 돌파하며 약 7개월 만에 최고치(+7%). 마이크로스트래티지(MSTR)가 장중 10% 급등했고 지난주 BTC 950개를 추가 매수. 코인베이스는 개인투자자 IPO 참여 서비스를 출시.",
-      "events": [
-        {
-          "timeKst": "2026-09-21T21:02",
-          "summary": "MSTR, 지난주 BTC 950개(7,570만 달러) 추가 매수…총 84.6만 BTC 보유",
+          "timeKst": "2026-09-23T02:37:05+09:00",
+          "summary": "쇼피파이, 메타와 뮤즈 AI 파트너십 발표 후 7.3% 급등.",
           "chat": "김치터미널",
           "link": null,
           "tickers": [
-            "MSTR",
-            "BTC"
+            "SHOP",
+            "META"
           ]
         },
         {
-          "timeKst": "2026-09-21T22:41",
-          "summary": "MSTR 장중 10% 안팎 상승",
-          "chat": "단독 & 속보 뉴스 콜렉터",
-          "link": "https://www.tokenpost.kr/news/breaking/411663",
-          "tickers": [
-            "MSTR"
-          ]
-        },
-        {
-          "timeKst": "2026-09-22T05:08",
-          "summary": "비트코인 +6.99% 8만6,737달러 기록",
+          "timeKst": "2026-09-23T06:05:13+09:00",
+          "summary": "JP모건, 메타 'Overweight'·목표가 820달러. 페이팔도 뮤즈 결제 지원.",
           "chat": "미국 주식 인사이더",
           "link": null,
           "tickers": [
-            "BTC"
-          ]
-        },
-        {
-          "timeKst": "2026-09-22T06:38",
-          "summary": "비트코인 뉴욕장 8만6천 달러 돌파, 7개월여 만 최고",
-          "chat": "단독 & 속보 뉴스 콜렉터",
-          "link": "https://n.news.naver.com/mnews/article/421/0009184862",
-          "tickers": [
-            "BTC-USD"
+            "META",
+            "PYPL"
           ]
         }
       ]
     },
     {
-      "title": "노보 노디스크 급락·제약 바이오",
+      "title": "알리바바 AI 칩·클라우드 확장",
       "importance": "주요",
-      "region": "US",
-      "summary": "노보 노디스크가 위고비 이후 장기 성장 전략 실망에 ADR 기준 7~8% 하락. 다만 CagriSema는 임상에서 릴리 티르제파타이드 대비 체중감량 우월성을 입증. 일라이 릴리는 경구 비만약 점유율 확대와 65억 달러 신규 공장 착공 소식에 강세.",
+      "region": "아시아",
+      "summary": "알리바바가 엔비디아에 도전하는 신형 AI칩 '젠우(쩐우) V900'을 공개하고 2032년까지 20GW 데이터센터 구축 계획을 발표. 월가는 장기 매출 여력을 긍정 평가하며 주가 상승.",
       "events": [
         {
-          "timeKst": "2026-09-21T22:49",
-          "summary": "노보 노디스크, 위고비 이후 성장전략 실망에 -5%",
+          "timeKst": "2026-09-22T20:56:37+09:00",
+          "summary": "알리바바, 신형 AI칩 '젠우 V900' 공개하며 엔비디아에 도전.",
+          "chat": "단독 & 속보",
+          "link": "https://www.sedaily.com/NewsView/20094239",
+          "tickers": [
+            "BABA",
+            "NVDA"
+          ]
+        },
+        {
+          "timeKst": "2026-09-22T21:55:25+09:00",
+          "summary": "골드만·씨티·UBS, 알리바바 클라우드 20GW 목표(약 1600~1700억 달러 매출 여력) 긍정 평가.",
+          "chat": "하나 중국/신흥국",
+          "link": "https://wallstreetcn.com/articles/3782305",
+          "tickers": [
+            "BABA"
+          ]
+        },
+        {
+          "timeKst": "2026-09-23T05:29:27+09:00",
+          "summary": "차세대 AI칩·대형모델 공개에 주가 상승했으나 공급망 제약이 부담.",
+          "chat": "단독 & 속보",
+          "link": "https://www.edaily.co.kr/news/read?newsId=01902406645583072",
+          "tickers": [
+            "BABA"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "미중 정상회담 앞두고 기대·경계 공존",
+      "importance": "참고",
+      "region": "글로벌",
+      "summary": "트럼프-시진핑 정상회담을 앞두고 무역휴전 연장·AI·희토류가 주요 의제로 부상. WSJ은 시진핑이 CEO 대표단을 동반할 가능성이 낮아 대형 합의 기대는 낮다고 보도.",
+      "events": [
+        {
+          "timeKst": "2026-09-22T21:11:07+09:00",
+          "summary": "WSJ, 정상회담서 대형 비즈니스 협정 기대 낮아져. 무역휴전·AI·희토류 집중 전망.",
+          "chat": "김치터미널",
+          "link": null,
+          "tickers": []
+        },
+        {
+          "timeKst": "2026-09-23T04:06:17+09:00",
+          "summary": "美 상원의원들, 트럼프에 중국의 첨단 칩 접근 차단 촉구.",
+          "chat": "김치터미널",
+          "link": null,
+          "tickers": []
+        }
+      ]
+    },
+    {
+      "title": "소프트뱅크 대규모 채권 발행·CDS 상승",
+      "importance": "참고",
+      "region": "아시아",
+      "summary": "소프트뱅크가 OpenAI 투자 자금 마련을 위해 110억 달러 이상 채권 발행을 추진, 초기 수요 200억 달러 상회. 잠재 수익률 최고 약 10%로 AI 투자에 따른 신용 리스크 부각.",
+      "events": [
+        {
+          "timeKst": "2026-09-22T20:28:33+09:00",
+          "summary": "소프트뱅크 110억 달러 채권 발행, 초기 수요 200억 달러 상회. OpenAI 투자 자금.",
+          "chat": "하나 중국/신흥국",
+          "link": "https://wallstreetcn.com/articles/3782300",
+          "tickers": [
+            "SFTBY"
+          ]
+        },
+        {
+          "timeKst": "2026-09-22T22:42:58+09:00",
+          "summary": "소프트뱅크 5년 CDS가 올해 최고치 378.46 기록 후 소폭 하락.",
+          "chat": "이상헌 부장 iM",
+          "link": "https://news.einfomax.co.kr/news/articleView.html?idxno=4436149",
+          "tickers": [
+            "SFTBY"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "애플 신제품·시총 5조 달러 기대",
+      "importance": "참고",
+      "region": "US",
+      "summary": "애플이 M5/M6 실리콘 탑재 신형 맥 미니·스튜디오를 출시하고 아이폰 신제품 기대감이 겹치며 주가 강세. 시가총액 5조 달러 돌파 전망.",
+      "events": [
+        {
+          "timeKst": "2026-09-22T22:03:57+09:00",
+          "summary": "애플, M5 Max/Ultra·M6 등 탑재 신형 맥 미니·스튜디오 출시.",
+          "chat": "김치터미널",
+          "link": null,
+          "tickers": [
+            "AAPL"
+          ]
+        },
+        {
+          "timeKst": "2026-09-23T03:06:13+09:00",
+          "summary": "기술주 안전자산 부각·신제품 기대에 애플 강세, 시총 5조 달러 임박.",
+          "chat": "단독 & 속보",
+          "link": "https://www.edaily.co.kr/news/read?newsId=01318566645583072",
+          "tickers": [
+            "AAPL"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "기타 개별종목 이슈",
+      "importance": "참고",
+      "region": "US",
+      "summary": "버크셔의 매입 소식에 레나 급등, 오토존 실적·자사주 매입 종목 상승, 테슬라 첫 투자적격 등급, 넷플릭스 투자의견 하향 등 개별 종목 이슈 다수.",
+      "events": [
+        {
+          "timeKst": "2026-09-23T02:59:52+09:00",
+          "summary": "레나, 버크셔 해서웨이 270만주 매입 소식에 6% 급등.",
+          "chat": "단독 & 속보",
+          "link": "https://n.news.naver.com/mnews/article/018/0006374644",
+          "tickers": [
+            "LEN",
+            "BRK.B"
+          ]
+        },
+        {
+          "timeKst": "2026-09-23T00:45:59+09:00",
+          "summary": "오토존, 2분기 EPS 컨센 상회·상업용 동일매장 +8.6%로 주가 5.9% 상승.",
+          "chat": "FundEasy",
+          "link": null,
+          "tickers": [
+            "AZO"
+          ]
+        },
+        {
+          "timeKst": "2026-09-22T23:14:28+09:00",
+          "summary": "딕스스포팅굿즈, 풋락커 인수 완료로 연매출 218억 달러 규모 도약.",
+          "chat": "단독 & 속보",
+          "link": "https://www.mk.co.kr/news/stock/12159872",
+          "tickers": [
+            "DKS",
+            "FL"
+          ]
+        },
+        {
+          "timeKst": "2026-09-23T04:23:38+09:00",
+          "summary": "테슬라, 피치로부터 첫 'BBB' 투자적격 신용등급 부여에 주가 강세.",
+          "chat": "단독 & 속보",
+          "link": "https://www.edaily.co.kr/news/read?newsId=01535046645583072",
+          "tickers": [
+            "TSLA"
+          ]
+        },
+        {
+          "timeKst": "2026-09-23T00:32:14+09:00",
+          "summary": "넷플릭스, 연이은 투자의견 하향에 주가 하락.",
+          "chat": "단독 & 속보",
+          "link": "https://www.newspim.com/news/view/20260923000013",
+          "tickers": [
+            "NFLX"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "그레일 암 진단검사 FDA 허가 청신호",
+      "importance": "참고",
+      "region": "US",
+      "summary": "삼성이 투자한 그레일의 다중암 조기진단 검사 '갤러리'에 대해 FDA가 중대한 우려를 제기하지 않으며 허가 청신호가 켜져 주가 34% 폭등.",
+      "events": [
+        {
+          "timeKst": "2026-09-22T20:06:17+09:00",
+          "summary": "그레일, FDA 허가 청신호에 주가 33.56% 폭등. 허가 시 보험 적용 확대 기대.",
+          "chat": "이상헌 부장 iM",
+          "link": "https://www.hankyung.com/article/2026092217141",
+          "tickers": [
+            "Grail"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "글로벌 원자재: 구리 사상 최고·중국 금 매집",
+      "importance": "참고",
+      "region": "글로벌",
+      "summary": "AI·데이터센터 수요로 구리 선물이 사상 최고치를 경신하며 원자재 인플레 압력 부각. 중국은 8개월간 금 1000톤을 매집.",
+      "events": [
+        {
+          "timeKst": "2026-09-23T03:00:10+09:00",
+          "summary": "중국, 8개월간 금 1000톤 매입해 216조원 투입.",
+          "chat": "단독 & 속보",
+          "link": "https://www.g-enews.com/article/Global-Biz/2026/09/2026092220143177789a1f309431_1",
+          "tickers": []
+        },
+        {
+          "timeKst": "2026-09-23T06:21:24+09:00",
+          "summary": "구리 선물 사상 최고치, 올해 +22%·2025년1월 이후 +70%. AI 수요·인플레 압력.",
           "chat": "타점 읽어주는 여자",
-          "link": "https://www.edaily.co.kr/news/read?newsId=04464086645582416",
-          "tickers": [
-            "NVO"
-          ]
-        },
-        {
-          "timeKst": "2026-09-21T23:15",
-          "summary": "CagriSema 저용량, 티르제파타이드 대비 체중감량 우월성 입증(-12.4% vs -9.1%)",
-          "chat": "그로쓰리서치",
-          "link": "https://t.me/growthbio",
-          "tickers": [
-            "NVO"
-          ]
-        },
-        {
-          "timeKst": "2026-09-22T03:11",
-          "summary": "노보노디스크, 장기 성장목표 실망에 -8%",
-          "chat": "단독 & 속보 뉴스 콜렉터",
-          "link": "https://www.edaily.co.kr/news/read?newsId=01279206645582744",
-          "tickers": [
-            "NVO"
-          ]
-        },
-        {
-          "timeKst": "2026-09-22T06:57",
-          "summary": "일라이 릴리, 휴스턴에 65억 달러 신규 생산시설 착공",
-          "chat": "미국 주식 인사이더",
           "link": null,
           "tickers": [
-            "LLY"
-          ]
-        }
-      ]
-    },
-    {
-      "title": "파라마운트-워너브라더스 810억 달러 합병 청신호",
-      "importance": "주요",
-      "region": "US",
-      "summary": "파라마운트가 워너브라더스 디스커버리(WBD) 인수를 막던 미국 주정부 반독점 소송에 합의하며 규제 장애물을 해소, 810억 달러 규모 합병이 가시화됐다. WBD 주가는 장중 11% 상승. 미국 내 영화 제작 최소 15억 달러 추가 투자 등이 조건.",
-      "events": [
-        {
-          "timeKst": "2026-09-21T22:58",
-          "summary": "WBD·PARA, 810억 달러 합병 돌파구 기대에 동반 상승",
-          "chat": "단독 & 속보 뉴스 콜렉터",
-          "link": "https://www.edaily.co.kr/news/read?newsId=05471046645582416",
-          "tickers": [
-            "WBD",
-            "PARA"
-          ]
-        },
-        {
-          "timeKst": "2026-09-22T02:43",
-          "summary": "파라마운트, 주정부 반독점 소송 합의·모든 승인 완료",
-          "chat": "김치터미널",
-          "link": null,
-          "tickers": [
-            "PARA",
-            "WBD"
-          ]
-        },
-        {
-          "timeKst": "2026-09-22T03:03",
-          "summary": "합병 걸림돌 해소 기대에 WBD 11% 상승",
-          "chat": "단독 & 속보 뉴스 콜렉터",
-          "link": "https://www.edaily.co.kr/news/read?newsId=01252966645582744",
-          "tickers": [
-            "PARA",
-            "WBD"
-          ]
-        }
-      ]
-    },
-    {
-      "title": "지정학·중동, 대이란 제재 강화",
-      "importance": "주요",
-      "region": "글로벌",
-      "summary": "미국이 9월 23일부터 전 세계 이란 항공사 운항을 중단시키는 제재를 발표. 트럼프는 사우디 요청에도 후티 반군 공습을 유가 급등 우려로 보류했고, 후티는 바브엘만데브 해협 폐쇄 의도가 없음을 확답. 우크라이나 드론 공격으로 러시아 모스크바 정유소가 가동 중단.",
-      "events": [
-        {
-          "timeKst": "2026-09-21T21:13",
-          "summary": "미 재무장관, 9/23부터 전 세계 이란 항공사 운항 중단 발표",
-          "chat": "김치터미널",
-          "link": null,
-          "tickers": []
-        },
-        {
-          "timeKst": "2026-09-21T22:59",
-          "summary": "트럼프, 사우디 요청에도 후티 공습 보류…유가 급등 우려 반영",
-          "chat": "에테르의 일본&미국 리서치",
-          "link": null,
-          "tickers": []
-        },
-        {
-          "timeKst": "2026-09-22T00:21",
-          "summary": "우크라 드론 공격에 가즈프롬네프트 모스크바 정유소 가동 중단",
-          "chat": "김치터미널",
-          "link": null,
-          "tickers": []
-        },
-        {
-          "timeKst": "2026-09-22T04:11",
-          "summary": "미국, 걸프 에너지 인프라 재건에 50억 달러 출자·총 100억 달러 기금 구상",
-          "chat": "김치터미널",
-          "link": null,
-          "tickers": []
-        }
-      ]
-    },
-    {
-      "title": "HP 실적 가이던스 실망·PC 시장 둔화",
-      "importance": "참고",
-      "region": "US",
-      "summary": "HP가 2027년 PC 출하량 감소 전망과 연간 가이던스 불확실성에 주가 4% 하락. AI 랠리 속 PC 하드웨어 수요 둔화 우려가 부각.",
-      "events": [
-        {
-          "timeKst": "2026-09-21T21:24",
-          "summary": "HP, 2027년 PC 출하 전망 실망에 개장 전 4% 하락",
-          "chat": "단독 & 속보 뉴스 콜렉터",
-          "link": "https://www.edaily.co.kr/news/read?newsId=05047926645582416",
-          "tickers": [
-            "HPQ"
-          ]
-        },
-        {
-          "timeKst": "2026-09-22T02:36",
-          "summary": "HP, PC 출하 감소·가이던스 불확실성에 4% 하락",
-          "chat": "단독 & 속보 뉴스 콜렉터",
-          "link": "https://www.edaily.co.kr/news/read?newsId=01230006645582744",
-          "tickers": [
-            "HPQ"
-          ]
-        }
-      ]
-    },
-    {
-      "title": "소프트웨어·AI 인프라 애널리스트 상향 및 협력",
-      "importance": "참고",
-      "region": "US",
-      "summary": "캔터 피츠제럴드가 MSFT(608달러)·NOW·TEAM 목표가를 상향. 액센추어는 앤트로픽과 협력·10억 달러+ 투자 발표에 상승. 마벨은 2나노 광인터커넥트 기술 공개. AWS는 xAI Grok을 Bedrock에서 제공.",
-      "events": [
-        {
-          "timeKst": "2026-09-21T21:44",
-          "summary": "캔터, MSFT 목표가 522→608달러 상향",
-          "chat": "단독 & 속보 뉴스 콜렉터",
-          "link": "https://www.edaily.co.kr/news/read?newsId=05149606645582416",
-          "tickers": [
-            "MSFT"
-          ]
-        },
-        {
-          "timeKst": "2026-09-21T22:49",
-          "summary": "액센추어, 앤트로픽과 AI 협력·10억 달러+ 투자에 주가 상승",
-          "chat": "단독 & 속보 뉴스 콜렉터",
-          "link": "https://www.edaily.co.kr/news/read?newsId=05428406645582416",
-          "tickers": [
-            "ACN"
-          ]
-        },
-        {
-          "timeKst": "2026-09-22T03:21",
-          "summary": "마벨, 업계 최초 2나노 광학기술 공개로 AI 데이터센터 리더십",
-          "chat": "단독 & 속보 뉴스 콜렉터",
-          "link": "https://www.mk.co.kr/news/stock/12158774",
-          "tickers": [
-            "MRVL"
-          ]
-        }
-      ]
-    },
-    {
-      "title": "유럽·글로벌 매크로",
-      "importance": "참고",
-      "region": "글로벌",
-      "summary": "폭스바겐이 유럽 우량주(유로스톡스50) 지수에서 퇴출(노키아·엔지 편입). 프랑스 5년물 CDS가 2020년 3월 이후 최고. 캐나다 중앙은행 총재는 유가 100달러 유지 시 인플레 상승·4분기 성장률 0.75% 하향을 경고. 도이체방크는 글로벌 금리 인상폭 과소평가 가능성 지적.",
-      "events": [
-        {
-          "timeKst": "2026-09-21T22:21",
-          "summary": "도이체방크, 시장의 글로벌 금리 인상폭 과소평가 경고(브렌트 ~100달러)",
-          "chat": "하나 중국/신흥국 전략",
-          "link": null,
-          "tickers": [
-            "^GSPC"
-          ]
-        },
-        {
-          "timeKst": "2026-09-21T23:57",
-          "summary": "프랑스 5년물 CDS 45bps 돌파, 2020년 3월 이후 최고",
-          "chat": "김치터미널",
-          "link": null,
-          "tickers": []
-        },
-        {
-          "timeKst": "2026-09-22T01:43",
-          "summary": "캐나다 BOC 총재, 유가 100달러 유지 시 인플레 상승·성장 둔화 우려",
-          "chat": "김치터미널",
-          "link": null,
-          "tickers": []
-        },
-        {
-          "timeKst": "2026-09-22T06:42",
-          "summary": "폭스바겐, 유로스톡스50 지수 퇴출",
-          "chat": "단독 & 속보 뉴스 콜렉터",
-          "link": "https://www.etoday.co.kr/news/flashnews/flash_view?idxno=2628231",
-          "tickers": [
-            "VOW3.DE",
-            "^STOXX50E"
+            "HG"
           ]
         }
       ]
     }
   ],
   "stats": {
-    "collected": 976,
-    "afterFilter": 966,
-    "geminiItems": 511,
-    "geminiChunks": 18,
-    "geminiFailedChunks": 0
+    "collected": 1100,
+    "afterFilter": 1081,
+    "geminiItems": 536,
+    "geminiChunks": 20,
+    "geminiFailedChunks": 1
   }
 }
