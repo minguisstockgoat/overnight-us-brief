@@ -1,11 +1,955 @@
 {
-  "generatedAt": "2026-10-09T11:05:45.518147+09:00",
+  "generatedAt": "2026-10-12T07:03:23.134924+09:00",
   "window": {
     "startKst": "2026-10-08T20:00:00+09:00",
-    "endKst": "2026-10-09T07:00:00+09:00",
+    "endKst": "2026-10-12T07:00:00+09:00",
     "prevTradingDay": "2026-10-08"
   },
-  "status": "휴장",
-  "headline": [],
-  "topics": []
+  "status": "ok",
+  "headline": [
+    "나스닥 1.25% 하락: OpenAI 연환산 매출 논란(순액 500억 vs 총액 700억)에 엔비디아·반도체 급락, S&P500 0.47%↓",
+    "트럼프-푸틴 디젤 480만톤 공급 합의로 대러 제재 일부 완화… 유가 변동성 속 WTI 91달러대, 브렌트 104달러",
+    "미 30년물 국채 5.618% 2000년 8월 이후 최고치, CBO 재정적자 2조달러 육박… 연준 무살렘 매파 발언",
+    "스페이스X 800MHz 주파수 11조원 인수로 통신시장 진출… AT&T·버라이즌·T모바일 6~13% 급락",
+    "중동 리스크 고조: 사우디 리야드 공항 후티 공격 12명 사망·309명 부상, 호르무즈 유조선 연쇄 피격"
+  ],
+  "topics": [
+    {
+      "title": "OpenAI 매출 논란과 AI 반도체 급락·반등",
+      "importance": "핵심",
+      "region": "US",
+      "summary": "FT 보도로 OpenAI 연환산 매출이 기대치(700억달러)보다 낮은 500억달러라는 소식에 AI·반도체주가 급락하며 나스닥이 1.25% 하락. 이후 순매출(500억)/총매출(700억) 회계 기준 차이로 인한 노이즈로 밝혀지며 다음날 반등. 필라델피아 반도체지수는 하루 3%대 급락했다가 회복.",
+      "events": [
+        {
+          "timeKst": "2026-10-09T05:07:06+09:00",
+          "summary": "오픈AI 매출 예상보다 부진, 엔비디아·오라클·코어위브 등 AI 관련주에 충격",
+          "chat": "단독 & 속보 뉴스 콜렉터",
+          "link": "https://www.mediapen.com/news/view/1128921",
+          "tickers": [
+            "NVDA",
+            "ORCL"
+          ]
+        },
+        {
+          "timeKst": "2026-10-09T05:25:30+09:00",
+          "summary": "나스닥100 1.4%, 반도체지수 3.4% 급락. 엔비디아 -2.94%, 마이크론 -4.79%, AMD -3.90%, 인텔 -5.34%, 코히런트 -9.63%",
+          "chat": "사제콩이_서상영",
+          "link": null,
+          "tickers": [
+            "NVDA",
+            "MU",
+            "AMD",
+            "INTC",
+            "AVGO"
+          ]
+        },
+        {
+          "timeKst": "2026-10-09T07:20:08+09:00",
+          "summary": "오픈AI, 투자자 대상 연환산 매출 500억달러 및 3분기 런레이트 77% 성장, 기업고객 107% 증가 발표",
+          "chat": "루팡",
+          "link": "https://www.cnbc.com/2026/10/08/open-ai-revenue-nvidia-oracle-coreweave.html",
+          "tickers": [
+            "OpenAI"
+          ]
+        },
+        {
+          "timeKst": "2026-10-09T08:56:40+09:00",
+          "summary": "FT 정정 보도: OpenAI 순매출 500억·총매출 700억으로 수정, 오라클·MS 주가 하락 혼란 해소",
+          "chat": "루팡",
+          "link": null,
+          "tickers": [
+            "MSFT",
+            "ORCL"
+          ]
+        },
+        {
+          "timeKst": "2026-10-10T05:03:39+09:00",
+          "summary": "다음날 기술주 반등에 3대지수 상승, 아마존·MS 강세 속 AI 반도체는 약세. 엔비디아 0.5% 하락",
+          "chat": "단독 & 속보 뉴스 콜렉터",
+          "link": null,
+          "tickers": [
+            "AMZN",
+            "MSFT",
+            "NVDA"
+          ]
+        },
+        {
+          "timeKst": "2026-10-11T18:56:48+09:00",
+          "summary": "UBS, 엔비디아 매출 FY29 약 9,850억달러 정점 후 FY30 5% 역성장 전망",
+          "chat": "그로쓰리서치",
+          "link": null,
+          "tickers": [
+            "NVDA"
+          ]
+        },
+        {
+          "timeKst": "2026-10-11T20:56:04+09:00",
+          "summary": "엔비디아 부외 약정 5,300억달러로 전분기 대비 180%↑, 향후 1조달러 돌파 가능성(SemiAnalysis)",
+          "chat": "하나 중국/신흥국 전략 김경환",
+          "link": "https://wallstreetcn.com/articles/3783383#from=ios",
+          "tickers": [
+            "NVDA"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "미 증시 마감·시장 구조 우려",
+      "importance": "핵심",
+      "region": "US",
+      "summary": "10/8 S&P500 0.47%↓, 나스닥 1.25%↓, 다우 0.09%↑ 혼조 마감. 10/9는 중동 긴장 완화·AI 우려 완화로 S&P500 0.59%↑, 나스닥 0.64%↑ 반등하며 S&P500 사상 두 번째 높은 종가. 다만 노무라·골드만삭스 등은 지수 상승이 소수 AI 종목에 집중된 '속 빈 강세'를 경고.",
+      "events": [
+        {
+          "timeKst": "2026-10-09T05:03:12+09:00",
+          "summary": "S&P500 7,766.71(-0.45%), 나스닥 27,201.31(-1.23%), 다우 51,227.15(+0.09%) 마감",
+          "chat": "김치터미널",
+          "link": null,
+          "tickers": [
+            "SPX",
+            "IXIC",
+            "DJI"
+          ]
+        },
+        {
+          "timeKst": "2026-10-10T05:03:21+09:00",
+          "summary": "다우 51,656.70(+0.83%), 나스닥 27,371.88(+0.66%), S&P500 7,810.43(+0.58%) 상승 마감",
+          "chat": "김치터미널",
+          "link": null,
+          "tickers": [
+            "DJI",
+            "IXIC",
+            "SPX"
+          ]
+        },
+        {
+          "timeKst": "2026-10-10T04:51:04+09:00",
+          "summary": "장마감 MOC: S&P500 -7.71억달러, 나스닥100 -3.1억달러 매도 우위",
+          "chat": "김치터미널",
+          "link": null,
+          "tickers": [
+            "SPX",
+            "NDX"
+          ]
+        },
+        {
+          "timeKst": "2026-10-11T17:08:42+09:00",
+          "summary": "골드만삭스, 미 증시 상승세 AI 단일 테마 집중 경고… S&P500 1/6 종목 고점 대비 50%↓",
+          "chat": "올바른",
+          "link": "https://wallstreetcn.com/articles/3783355#from=ios",
+          "tickers": [
+            "NVDA",
+            "MU"
+          ]
+        },
+        {
+          "timeKst": "2026-10-10T07:56:16+09:00",
+          "summary": "BofA 하트넷, 금리인하 없이는 MMF 8조달러 대기자금 안 움직여… 중간선거가 ±10% 변동 촉매",
+          "chat": "하나 중국/신흥국 전략 김경환",
+          "link": "https://wallstreetcn.com/articles/3783285#from=ios",
+          "tickers": []
+        },
+        {
+          "timeKst": "2026-10-10T23:14:09+09:00",
+          "summary": "노무라, S&P500 10개 종목이 70% 상승 주도하며 심각하게 왜곡… OpenAI·디젤 충격 경고",
+          "chat": "하나 중국/신흥국 전략 김경환",
+          "link": "https://wallstreetcn.com/articles/3783332#from=ios",
+          "tickers": [
+            "SPX"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "국채금리 급등·재정 우려",
+      "importance": "핵심",
+      "region": "US",
+      "summary": "미 30년물 국채 입찰 수익률 5.618%로 2000년 8월 이후 최고치, 10년물 5.2~5.3%대. 10년물 기간 프리미엄 90bp 돌파(2014년 이후 최고). CBO는 2026 회계연도 재정적자 약 2조달러(GDP 6% 초과) 경고. 연준 무살렘은 추가 긴축 필요성 시사, PIMCO는 10년물 6% 도달 위험 경고.",
+      "events": [
+        {
+          "timeKst": "2026-10-09T02:03:08+09:00",
+          "summary": "미 30년물 국채 입찰 고수익률 5.618%, 응찰률 2.54, 220억달러 낙찰",
+          "chat": "김치터미널",
+          "link": null,
+          "tickers": []
+        },
+        {
+          "timeKst": "2026-10-09T02:50:26+09:00",
+          "summary": "무살렘 연준 총재, 인플레 높아 추가 긴축 필요… AI 투자·재정적자가 수익률 상승 압박",
+          "chat": "김치터미널",
+          "link": null,
+          "tickers": []
+        },
+        {
+          "timeKst": "2026-10-09T03:48:02+09:00",
+          "summary": "CBO, 2026 회계연도 재정적자 12%↑ 약 2조달러로 2021년 이후 최고, GDP 6% 초과 전망",
+          "chat": "김치터미널",
+          "link": null,
+          "tickers": []
+        },
+        {
+          "timeKst": "2026-10-09T13:07:30+09:00",
+          "summary": "PIMCO, 고유가·인플레·공공부채로 미 10년물 6% 도달 위험 경고",
+          "chat": "김치터미널",
+          "link": null,
+          "tickers": []
+        },
+        {
+          "timeKst": "2026-10-10T06:48:04+09:00",
+          "summary": "미 10년물 기간 프리미엄 91.98bp로 2014년 7월 이후 처음 90bp 돌파",
+          "chat": "이상헌 부장 iM",
+          "link": "https://news.einfomax.co.kr/news/articleView.html?idxno=4438510",
+          "tickers": []
+        },
+        {
+          "timeKst": "2026-10-10T09:27:11+09:00",
+          "summary": "CITI, 미 재무부 11월 장기국채 입찰 규모 축소 또는 20년물 발행 취소 가능성 전망",
+          "chat": "하나 중국/신흥국 전략 김경환",
+          "link": null,
+          "tickers": []
+        },
+        {
+          "timeKst": "2026-10-11T22:43:16+09:00",
+          "summary": "베센트 재무장관, 이란 '완전 고립 캠페인' 전환… 암호화폐 압류·해상봉쇄 강화 예고",
+          "chat": "김치터미널",
+          "link": null,
+          "tickers": []
+        }
+      ]
+    },
+    {
+      "title": "트럼프-푸틴 디젤 합의·러시아 제재 완화",
+      "importance": "핵심",
+      "region": "글로벌",
+      "summary": "트럼프가 푸틴과 통화 후 러시아 디젤 총 480만톤 공급 합의 발표, 미 재무부는 2027년 4월까지 러시아 디젤 거래 허용 임시 라이선스 발급. 중간선거 앞두고 유가 안정 목적. 젤렌스키·EU·미 의회(초당적)는 강력 반발. 트럼프는 우크라이나에 러시아 정유시설 공격 중단 요구하며 무기지원 중단 위협, 젤렌스키 교체까지 거론.",
+      "events": [
+        {
+          "timeKst": "2026-10-10T03:47:48+09:00",
+          "summary": "트럼프, 푸틴과 러시아 디젤 480만톤 공급 합의 발표… 디젤 가격 급락 전망",
+          "chat": "김치터미널",
+          "link": null,
+          "tickers": []
+        },
+        {
+          "timeKst": "2026-10-10T03:50:30+09:00",
+          "summary": "미 재무부 OFAC, 러시아 디젤 글로벌 공급 허용 임시 일반 라이선스 발급(2027.4.7까지)",
+          "chat": "김치터미널",
+          "link": null,
+          "tickers": []
+        },
+        {
+          "timeKst": "2026-10-10T04:46:22+09:00",
+          "summary": "젤렌스키, 러시아 디젤 거래 비판… '푸틴에 대한 선물, 전쟁 지속 투자' 경고",
+          "chat": "김치터미널",
+          "link": null,
+          "tickers": []
+        },
+        {
+          "timeKst": "2026-10-11T01:44:51+09:00",
+          "summary": "트럼프, 젤렌스키에 러시아 정유시설 공격 중단 경고 및 우크라 새 지도자 임명 촉구",
+          "chat": "김치터미널",
+          "link": null,
+          "tickers": []
+        },
+        {
+          "timeKst": "2026-10-11T08:32:36+09:00",
+          "summary": "미 공화당 의원들, 러시아산 원유 구매 차단 법안 발의로 트럼프 정책과 충돌",
+          "chat": "트릴리온",
+          "link": null,
+          "tickers": []
+        },
+        {
+          "timeKst": "2026-10-11T23:17:43+09:00",
+          "summary": "트럼프, 러-우 에너지 휴전 즉시 발효 발표… 젤렌스키는 '사전 통보 못 받았다'며 혼선",
+          "chat": "김치터미널",
+          "link": null,
+          "tickers": []
+        },
+        {
+          "timeKst": "2026-10-12T02:04:27+09:00",
+          "summary": "휴전 발표 수시간 만에 러시아, 하르키우 CHP-5 발전소 공격… 에너지 인프라 200회 공격",
+          "chat": "김치터미널",
+          "link": null,
+          "tickers": []
+        }
+      ]
+    },
+    {
+      "title": "중동 지정학·유가 급등",
+      "importance": "핵심",
+      "region": "글로벌",
+      "summary": "호르무즈 해협·오만만에서 유조선 연쇄 피격, 사우디 리야드 공항 후티 공격으로 12명 사망·309명 부상. 미 멕시코만 허리케인 이사이아스로 원유 생산 72% 중단. WTI는 한때 3.6%↑ 91달러대, 브렌트 104~105달러. 트럼프 발언·러시아 디젤 공급으로 상승폭 일부 반납. 유조선 운임 60년래 최고치, 글로벌 원유 재고 역사적 저점.",
+      "events": [
+        {
+          "timeKst": "2026-10-08T21:54:36+09:00",
+          "summary": "유가 105달러 돌파, 미 국채금리 24년 만에 최고치… 뉴욕증시 선물 하락",
+          "chat": "단독 & 속보 뉴스 콜렉터",
+          "link": "https://www.newspim.com/news/view/20261008001386",
+          "tickers": []
+        },
+        {
+          "timeKst": "2026-10-09T03:46:32+09:00",
+          "summary": "브렌트유 4.07%↑ 104.28달러, WTI 3.64%↑ 91.49달러 마감",
+          "chat": "김치터미널",
+          "link": null,
+          "tickers": []
+        },
+        {
+          "timeKst": "2026-10-10T01:49:54+09:00",
+          "summary": "허리케인 이사이아스로 미 멕시코만 원유 생산 71.5%·천연가스 58.8% 중단",
+          "chat": "김치터미널",
+          "link": null,
+          "tickers": []
+        },
+        {
+          "timeKst": "2026-10-11T07:50:22+09:00",
+          "summary": "사우디 리야드 킹칼리드 국제공항 후티 공격으로 12명 사망, 309명 부상",
+          "chat": "하나 중국/신흥국 전략 김경환",
+          "link": null,
+          "tickers": []
+        },
+        {
+          "timeKst": "2026-10-11T13:23:50+09:00",
+          "summary": "미-중국 VLCC 유조선 운임 60년래 최고 배럴당 41달러, 선박 품귀 심화",
+          "chat": "하나 중국/신흥국 전략 김경환",
+          "link": "https://wallstreetcn.com/articles/3783314#from=ios",
+          "tickers": []
+        },
+        {
+          "timeKst": "2026-10-11T14:57:18+09:00",
+          "summary": "골드만삭스, 글로벌 원유 재고 한계 도달·위험 프리미엄 역대 두번째 높은 배럴당 22달러",
+          "chat": "하나 중국/신흥국 전략 김경환",
+          "link": "https://wallstreetcn.com/articles/3783356#from=ios",
+          "tickers": []
+        },
+        {
+          "timeKst": "2026-10-11T09:56:08+09:00",
+          "summary": "UAE 해안서 사우디 원유 200만배럴 적재 VLCC GEM NO.2호 발사체 피격, 이란 소행 추정",
+          "chat": "트릴리온",
+          "link": null,
+          "tickers": []
+        }
+      ]
+    },
+    {
+      "title": "스페이스X 주파수 인수·통신주 급락",
+      "importance": "주요",
+      "region": "US",
+      "summary": "스페이스X가 그레인 매니지먼트로부터 전국 800MHz 저대역 주파수를 약 80억달러(11조원)에 인수, 스타링크 모바일로 미국 이동통신 시장 본격 진출. 이 소식에 AT&T·버라이즌·T모바일 등 통신 3사 6~13% 급락하며 시총 약 80조원 증발, 반면 아메리칸타워·크라운캐슬 등 통신탑주는 급등. FCC는 스타링크 Gen2 위성 15,000기 발사도 승인.",
+      "events": [
+        {
+          "timeKst": "2026-10-09T05:33:37+09:00",
+          "summary": "스페이스X 스펙트럼 인수 여파로 버라이즌 -5.1%, AT&T -5.8%, T모바일 -5.8% 급락",
+          "chat": "김치터미널",
+          "link": null,
+          "tickers": [
+            "VZ",
+            "T",
+            "TMUS"
+          ]
+        },
+        {
+          "timeKst": "2026-10-09T05:19:29+09:00",
+          "summary": "스페이스X, 800MHz 저대역 주파수 인수 및 스타링크 Gen2 위성 15,000기 발사 FCC 승인",
+          "chat": "김치터미널",
+          "link": null,
+          "tickers": []
+        },
+        {
+          "timeKst": "2026-10-10T01:42:30+09:00",
+          "summary": "T모바일 12%대 급락, AST스페이스모바일도 경쟁 우려로 11% 하락",
+          "chat": "단독 & 속보 뉴스 콜렉터",
+          "link": "https://www.newspim.com/news/view/20261010000001",
+          "tickers": [
+            "TMUS",
+            "ASTS"
+          ]
+        },
+        {
+          "timeKst": "2026-10-10T00:28:44+09:00",
+          "summary": "FCC 카 위원, 향후 2년간 1,000억달러 이상 스펙트럼 추가 매각 예상",
+          "chat": "김치터미널",
+          "link": null,
+          "tickers": []
+        },
+        {
+          "timeKst": "2026-10-10T06:31:12+09:00",
+          "summary": "크라운캐슬 15.6% 급등 등 통신탑 운영사 강세, 통신 3사 시총 83조원 증발",
+          "chat": "단독 & 속보 뉴스 콜렉터",
+          "link": "https://www.mediapen.com/news/view/1129018",
+          "tickers": [
+            "T",
+            "VZ",
+            "TMUS"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "광통신·AI 인프라 수요 강세",
+      "importance": "주요",
+      "region": "US",
+      "summary": "루멘텀 CEO가 광학 부품 생산능력이 2029년 초까지 사실상 완판, 일부 제품 수요가 공급 70% 초과라고 밝히며 광통신주 랠리 주도. 코히런트·시에나·코닝 등 동반 강세. BofA는 하이퍼스케일 CY26/27 설비투자 전망을 1.01조/1.39조달러로 상향. 다만 오라클 CDS 사상 최고치 등 AI 자금조달 부담 우려도 병존.",
+      "events": [
+        {
+          "timeKst": "2026-10-09T19:05:40+09:00",
+          "summary": "루멘텀 CEO, 광학 부품 수요 2029년까지 완판·일부 제품 70% 공급부족 전망",
+          "chat": "하나 중국/신흥국 전략 김경환",
+          "link": "https://wallstreetcn.com/articles/3783261#from=ios",
+          "tickers": [
+            "LITE"
+          ]
+        },
+        {
+          "timeKst": "2026-10-10T00:11:48+09:00",
+          "summary": "루멘텀, AI 광통신 부품 공급 부족에 주가 6% 급등하며 광통신주 랠리 주도",
+          "chat": "단독 & 속보 뉴스 콜렉터",
+          "link": "https://www.edaily.co.kr/news/read?newsId=01121766645611608",
+          "tickers": [
+            "LITE",
+            "COHR",
+            "CIEN"
+          ]
+        },
+        {
+          "timeKst": "2026-10-10T08:53:15+09:00",
+          "summary": "오라클 5년물 CDS 사상 최고 261bp, 모건스탠리 2028년 부채 위기 경고",
+          "chat": "하나 중국/신흥국 전략 김경환",
+          "link": "https://wallstreetcn.com/articles/3783306#from=ios",
+          "tickers": [
+            "ORCL"
+          ]
+        },
+        {
+          "timeKst": "2026-10-10T14:28:15+09:00",
+          "summary": "BofA, CY26/27 하이퍼스케일 설비투자 1.01조/1.39조달러로 상향, 최선호 NVDA·MRVL·MU 등",
+          "chat": "에테르의 일본&미국 리서치",
+          "link": null,
+          "tickers": [
+            "NVDA",
+            "MRVL",
+            "MU",
+            "LRCX"
+          ]
+        },
+        {
+          "timeKst": "2026-10-11T10:34:08+09:00",
+          "summary": "BofA, 빅테크 AI 투자 대규모 계약(RPO)으로 뒷받침… 오라클 RPO는 Capex 2.3배",
+          "chat": "그로쓰리서치",
+          "link": null,
+          "tickers": [
+            "MSFT",
+            "ORCL",
+            "GOOGL",
+            "AMZN",
+            "META"
+          ]
+        },
+        {
+          "timeKst": "2026-10-11T10:59:54+09:00",
+          "summary": "번스타인, 2028년 데이터센터 XPU ASIC 시장 전망 2,500억~3,000억달러로 상향",
+          "chat": "카이에 de market",
+          "link": null,
+          "tickers": []
+        }
+      ]
+    },
+    {
+      "title": "엔비디아 M&A·GPU 수급",
+      "importance": "주요",
+      "region": "US",
+      "summary": "엔비디아가 오픈소스 AI 스타트업 리플렉션 AI 인수 또는 지분 확대 협상 중('딥시크 대항마'). AI 칩 경쟁사 D-Matrix 투자도 추진. GPU 용량 부족 지속으로 B200 현물 가격 3월 대비 2배 이상 급등, AMD는 GDDR6 가격 인상. 엔비디아 투자 호주 데이터센터 Firmus Grid는 수요 부진으로 50억달러 IPO 철회.",
+      "events": [
+        {
+          "timeKst": "2026-10-09T02:19:18+09:00",
+          "summary": "엔비디아 지원 Firmus Grid, 투자수요 부진으로 호주 IPO 연기",
+          "chat": "김치터미널",
+          "link": null,
+          "tickers": [
+            "NVDA"
+          ]
+        },
+        {
+          "timeKst": "2026-10-09T08:27:11+09:00",
+          "summary": "엔비디아, AI 칩 경쟁사 D-Matrix 투자 예정(The Information)",
+          "chat": "김치터미널",
+          "link": null,
+          "tickers": [
+            "NVDA"
+          ]
+        },
+        {
+          "timeKst": "2026-10-11T03:17:17+09:00",
+          "summary": "엔비디아, 리플렉션 AI 인수 또는 지분 확대 논의 중(FT)",
+          "chat": "김치터미널",
+          "link": null,
+          "tickers": [
+            "NVDA"
+          ]
+        },
+        {
+          "timeKst": "2026-10-10T20:42:06+09:00",
+          "summary": "엔비디아 B200 현물가 3월 이후 2배 이상 상승, 기업들 GPU 확보 경로 다변화",
+          "chat": "민구의 뉴스",
+          "link": "https://www.cnbc.com/2026/10/10/nvidia-gpus-are-everywhere-heres-how-companies-access-them.html",
+          "tickers": [
+            "NVDA"
+          ]
+        },
+        {
+          "timeKst": "2026-10-11T01:08:09+09:00",
+          "summary": "AMD, GDDR6 메모리 가격 인상… 엔비디아는 GDDR7 인상 보류",
+          "chat": "에테르의 일본&미국 리서치",
+          "link": null,
+          "tickers": [
+            "AMD",
+            "NVDA"
+          ]
+        },
+        {
+          "timeKst": "2026-10-11T19:59:50+09:00",
+          "summary": "GPU 가격 급등 전망, 엔비디아 RTX 5090 생산 중단 및 전문가용 집중 가능성",
+          "chat": "하나 중국/신흥국 전략 김경환",
+          "link": "https://wallstreetcn.com/articles/3783378#from=ios",
+          "tickers": [
+            "NVDA",
+            "AMD"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "TSMC 실적·반도체 공급망",
+      "importance": "주요",
+      "region": "아시아",
+      "summary": "TSMC 3분기 매출 1.49조 대만달러(전년비 50.95%↑)로 분기 사상 최고치, AI GPU·ASIC 수요 견인. 대만 9월 반도체 수출 46.1%↑ 역대 최고. ASML은 EUV·DUV 유지보수 부품 가격 10% 일괄 인상, 삼성·SK하이닉스 수용. 글로벌 PC 출하량은 3분기 20.1% 감소. AMD 리사수 CEO는 서버 CPU 공급 부족 장기화 시사.",
+      "events": [
+        {
+          "timeKst": "2026-10-09T07:15:37+09:00",
+          "summary": "TSMC 3분기 매출 1.49조 대만달러, 전년비 50.95%↑ 분기 사상 최고치",
+          "chat": "하나 중국/신흥국 전략 김경환",
+          "link": "https://www.ctee.com.tw/news/20261009700044-439901",
+          "tickers": [
+            "TSM"
+          ]
+        },
+        {
+          "timeKst": "2026-10-09T13:12:45+09:00",
+          "summary": "IDC, 3분기 글로벌 PC 출하량 전년비 20.1% 감소… 공급 문제·메모리 가격 상승",
+          "chat": "하나 중국/신흥국 전략 김경환",
+          "link": null,
+          "tickers": []
+        },
+        {
+          "timeKst": "2026-10-10T16:27:52+09:00",
+          "summary": "ASML, EUV·DUV 노광장비 부품 가격 10% 인상, 삼성·SK하이닉스 수용(2026.1월 적용)",
+          "chat": "하나 중국/신흥국 전략 김경환",
+          "link": "https://wallstreetcn.com/articles/3783320#from=ios",
+          "tickers": [
+            "ASML"
+          ]
+        },
+        {
+          "timeKst": "2026-10-11T12:47:19+09:00",
+          "summary": "AMD 리사수 CEO, 에이전틱 AI 확산으로 서버 CPU 공급 부족 장기화 시사",
+          "chat": "그로쓰리서치",
+          "link": null,
+          "tickers": [
+            "AMD",
+            "INTC",
+            "TSM"
+          ]
+        },
+        {
+          "timeKst": "2026-10-11T19:23:14+09:00",
+          "summary": "마이크론, 4분기 순이익 377억달러로 애플(298억) 능가… 메모리 가격 결정력 확보",
+          "chat": "하나 중국/신흥국 전략 김경환",
+          "link": null,
+          "tickers": [
+            "MU",
+            "AAPL"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "애플 아이폰18 주문 조정·신제품",
+      "importance": "주요",
+      "region": "US",
+      "summary": "메모리 가격 급등·수요 둔화로 애플이 아이폰18 프로 부품 주문 15~20% 축소(닛케이). 다만 프로 맥스 주문은 확대, 폴더블 '아이폰 듀오' 주문 30% 상향으로 고가 모델 믹스 개선. 애플은 10/13 뉴욕 '웰컴홈' 스마트홈 행사, 10/27 OLED 터치 맥북프로·아이패드 미니 공개 예정.",
+      "events": [
+        {
+          "timeKst": "2026-10-10T04:44:04+09:00",
+          "summary": "아이폰18 프로 수요 부진으로 부품 주문 축소, 애플 주가 하락",
+          "chat": "단독 & 속보 뉴스 콜렉터",
+          "link": "https://www.edaily.co.kr/news/read?newsId=01308726645611608",
+          "tickers": [
+            "AAPL"
+          ]
+        },
+        {
+          "timeKst": "2026-10-09T01:02:44+09:00",
+          "summary": "애플, 10월 13일 뉴욕 '웰컴홈' 신제품 출시 이벤트 발표",
+          "chat": "김치터미널",
+          "link": null,
+          "tickers": [
+            "AAPL"
+          ]
+        },
+        {
+          "timeKst": "2026-10-10T16:25:49+09:00",
+          "summary": "애플, 아이폰 듀오 주문 30% 확대·프로 맥스 비중↑로 고가 모델 믹스 조정",
+          "chat": "하나 중국/신흥국 전략 김경환",
+          "link": null,
+          "tickers": [
+            "AAPL"
+          ]
+        },
+        {
+          "timeKst": "2026-10-11T12:25:00+09:00",
+          "summary": "Largan 실적발표서 아이폰18 수요 우려… 11월 발주 감소 전망",
+          "chat": "[메리츠 Tech]",
+          "link": "https://buly.kr/YhWgcY",
+          "tickers": [
+            "AAPL"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "빅테크 감원·AI 전략",
+      "importance": "참고",
+      "region": "US",
+      "summary": "아마존이 경영직 3만명 감축에 이어 매장부문 추가 감원, 넷플릭스도 전체 5%(800명) 해고. 팬데믹 과잉채용 조정 및 AI 투자 집중. MS 나델라는 AI '비상 브레이크' 필요성 강조. 구글은 기업용 '제미나이 에이전트' 출시 및 Gemini 4 '카본' 테스트 중. 아마존은 AI 스타트업 데카트 70억달러 인수 협상.",
+      "events": [
+        {
+          "timeKst": "2026-10-11T09:35:33+09:00",
+          "summary": "아마존·넷플릭스 수백명 감원 발표… 과잉채용 조정 및 비용 효율화",
+          "chat": "단독 & 속보 뉴스 콜렉터",
+          "link": "https://www.wowtv.co.kr/NewsCenter/News/Read?articleId=AKR20261011014200075",
+          "tickers": [
+            "AMZN",
+            "NFLX"
+          ]
+        },
+        {
+          "timeKst": "2026-10-11T02:02:33+09:00",
+          "summary": "MS 나델라, AI 시스템에 인간 통제 '비상 브레이크' 필요성 강조",
+          "chat": "에테르의 일본&미국 리서치",
+          "link": "https://www.cnbc.com/2026/10/10/microsoft-satya-nadella-ai-emergency-brake-safety.html",
+          "tickers": [
+            "MSFT"
+          ]
+        },
+        {
+          "timeKst": "2026-10-09T21:31:43+09:00",
+          "summary": "구글, 기업용 범용 AI 에이전트 '제미나이 에이전트' 공개(클로드 모델 연동)",
+          "chat": "미국 주식 인사이더",
+          "link": null,
+          "tickers": [
+            "GOOGL"
+          ]
+        },
+        {
+          "timeKst": "2026-10-12T05:56:27+09:00",
+          "summary": "아마존, AI 칩 작업전환 소프트웨어 스타트업 데카트 70억달러 인수 협상(WSJ)",
+          "chat": "단독 & 속보 뉴스 콜렉터",
+          "link": "https://n.news.naver.com/mnews/article/014/0005587512?rc=N&ntype=RANKING&sid=001",
+          "tickers": [
+            "AMZN"
+          ]
+        },
+        {
+          "timeKst": "2026-10-11T00:53:04+09:00",
+          "summary": "구글, Gemini 4 '카본' 내부 테스트 중… 코딩에서 Opus 5.5 수준 평가",
+          "chat": "에테르의 일본&미국 리서치",
+          "link": "https://www.businessinsider.com/google-employees-test-new-gemini-4-model-argon-barium-carbon-2026-10",
+          "tickers": [
+            "GOOG",
+            "GOOGL"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "EU-중국 무역 합의·미중 갈등",
+      "importance": "참고",
+      "region": "글로벌",
+      "summary": "EU와 중국이 희토류·자석 수출 및 하이브리드차 무역에서 원칙적 합의 도달, 중국산 하이브리드차 EU 수출 절반 감축. 중국은 미국 등 14개국 핵심광물 대응에 '필요한 대응 조치' 경고. 슈퍼마이크로 협력업체는 엔비디아 AI 칩 중국 불법 수출 공모 유죄 인정. 미 ITC는 폭스콘 등 20개사 AI 서버 전력시스템 337조 조사.",
+      "events": [
+        {
+          "timeKst": "2026-10-09T22:27:35+09:00",
+          "summary": "EU-중국, 희토류·자석 합의 및 하이브리드차 EU 수출 절반 감축 MOU",
+          "chat": "김치터미널",
+          "link": null,
+          "tickers": []
+        },
+        {
+          "timeKst": "2026-10-11T08:17:50+09:00",
+          "summary": "슈퍼마이크로 협력업체, 엔비디아 AI 칩 중국 불법 수출 공모 유죄 인정",
+          "chat": "하나 중국/신흥국 전략 김경환",
+          "link": null,
+          "tickers": [
+            "SMCI",
+            "NVDA"
+          ]
+        },
+        {
+          "timeKst": "2026-10-11T17:01:14+09:00",
+          "summary": "미 ITC, 폭스콘·델타·콴타·럭스쉐어 등 20개사 AI 서버 전력시스템 337조 조사 착수",
+          "chat": "하나 중국/신흥국 전략 김경환",
+          "link": "https://www.ctee.com.tw/news/20261010700593-430801",
+          "tickers": [
+            "FLEX",
+            "CLS"
+          ]
+        },
+        {
+          "timeKst": "2026-10-10T10:14:59+09:00",
+          "summary": "중국, 미국 등 14개국 핵심광물 대응에 '필요한 대응 조치' 경고",
+          "chat": "트릴리온",
+          "link": null,
+          "tickers": []
+        }
+      ]
+    },
+    {
+      "title": "유럽 재정·ECB",
+      "importance": "참고",
+      "region": "글로벌",
+      "summary": "프랑스 국채금리 급등으로 유로존 전염 우려, 프랑스-독일 스프레드 2011년 이후 최고. 폴 크루그먼은 프랑스를 '구제 불능' 수준으로 경고, 코메르츠은행은 그리스보다 큰 리스크 가능성 지적. ECB는 인플레 우려로 시장 개입(TPI) 주저. IMF는 2028년 글로벌 정부부채가 GDP 100% 도달 경고. 독일은 2026년 성장률 전망 1.3%로 상향.",
+      "events": [
+        {
+          "timeKst": "2026-10-09T02:21:01+09:00",
+          "summary": "Citadel, 프랑스 국채 스프레드 구조적 재평가 가능성 경고",
+          "chat": "Fund Easy",
+          "link": null,
+          "tickers": []
+        },
+        {
+          "timeKst": "2026-10-10T08:57:10+09:00",
+          "summary": "폴 크루그먼, 프랑스 부채 GDP 119%로 '구제 불능' 경고… 유로존 폭발적 위기 우려",
+          "chat": "하나 중국/신흥국 전략 김경환",
+          "link": "https://wallstreetcn.com/articles/3783303#from=ios",
+          "tickers": []
+        },
+        {
+          "timeKst": "2026-10-09T20:37:21+09:00",
+          "summary": "IMF, 2028년까지 글로벌 정부부채 GDP 100% 도달 경고… 선진국이 최대 원인",
+          "chat": "김치터미널",
+          "link": null,
+          "tickers": []
+        },
+        {
+          "timeKst": "2026-10-10T02:36:11+09:00",
+          "summary": "코메르츠은행, 프랑스 부채가 그리스 위기보다 유로존에 더 큰 시스템 리스크 경고",
+          "chat": "김치터미널",
+          "link": null,
+          "tickers": []
+        }
+      ]
+    },
+    {
+      "title": "경제지표·고용",
+      "importance": "참고",
+      "region": "US",
+      "summary": "미 신규 실업수당 청구 19.7만건으로 예상(20만) 하회, 노동시장 견조. 미시간대 10월 소비자심리지수 46.3으로 5개월래 최저, 현재상황지수 역대 최악 수준. 1년 기대인플레 4.7%로 상승. 캐나다 9월 고용 6.8만명 감소로 BOC 금리인상 전망 축소. 연준 10월 금리 동결 확률 83%대.",
+      "events": [
+        {
+          "timeKst": "2026-10-08T21:30:42+09:00",
+          "summary": "미 신규 실업수당 청구 19.7만건으로 예상치 20만건 하회, 노동시장 견조",
+          "chat": "김치터미널",
+          "link": null,
+          "tickers": []
+        },
+        {
+          "timeKst": "2026-10-09T23:42:40+09:00",
+          "summary": "미시간대 소비자심리 5개월래 최저, 1년 기대인플레 4.7%·5년 3.5%로 상승",
+          "chat": "김치터미널",
+          "link": null,
+          "tickers": []
+        },
+        {
+          "timeKst": "2026-10-09T21:31:34+09:00",
+          "summary": "캐나다 9월 고용 6.83만명 감소로 예상 크게 하회, BOC 10월 인상 확률 40→27%",
+          "chat": "김치터미널",
+          "link": null,
+          "tickers": []
+        },
+        {
+          "timeKst": "2026-10-09T02:49:04+09:00",
+          "summary": "Kalshi, 10월 연준 금리 동결 확률 84% 전망",
+          "chat": "김치터미널",
+          "link": null,
+          "tickers": []
+        }
+      ]
+    },
+    {
+      "title": "기업 실적·개별주",
+      "importance": "참고",
+      "region": "US",
+      "summary": "펩시코 3분기 매출·EPS 예상 상회했으나 4분기 가이던스 하향. 델타항공 3분기 매출 역대 최고에도 연료비 69% 급증으로 가이던스 하향. 팔란티어는 골드만삭스 매수 상향에 랠리. 모더나는 나스닥100 편입·암백신 기대에 12%대 급등. 비아트리스는 파시라 16.5억달러 인수. 울프스피드는 미 국방부 15억달러 대출에 급등.",
+      "events": [
+        {
+          "timeKst": "2026-10-08T22:16:37+09:00",
+          "summary": "펩시코 3분기 EPS 2.34·매출 252.7억달러로 예상 상회, 4분기 가이던스 하향",
+          "chat": "FundEasy",
+          "link": null,
+          "tickers": [
+            "PEP"
+          ]
+        },
+        {
+          "timeKst": "2026-10-08T21:15:55+09:00",
+          "summary": "골드만삭스, 팔란티어 매수 상향·목표가 230달러… 4일 연속 랠리",
+          "chat": "루팡",
+          "link": null,
+          "tickers": [
+            "PLTR"
+          ]
+        },
+        {
+          "timeKst": "2026-10-09T21:39:27+09:00",
+          "summary": "델타항공 3분기 매출 역대 최고에도 연료비 69% 급증으로 수익성 압박",
+          "chat": "미국 주식 인사이더",
+          "link": null,
+          "tickers": [
+            "DAL"
+          ]
+        },
+        {
+          "timeKst": "2026-10-10T05:01:46+09:00",
+          "summary": "모더나, 암백신 개발 가속화 정책·나스닥100 편입에 12.75% 급등",
+          "chat": "이상헌 부장 iM",
+          "link": "https://www.mediapen.com/news/view/1129012",
+          "tickers": [
+            "MRNA"
+          ]
+        },
+        {
+          "timeKst": "2026-10-08T21:39:16+09:00",
+          "summary": "울프스피드, 미 국방부 15억달러 조건부 대출 약정 확보에 급등",
+          "chat": "단독 & 속보 뉴스 콜렉터",
+          "link": "https://www.edaily.co.kr/news/read?newsId=07170086645610952",
+          "tickers": [
+            "WOLF"
+          ]
+        },
+        {
+          "timeKst": "2026-10-11T22:14:11+09:00",
+          "summary": "마벨, AI 추론 비중 60% 넘어 2~3년내 90% 근접 전망, CSP 투자 2030년 3조달러",
+          "chat": "프리라이프",
+          "link": null,
+          "tickers": [
+            "MRVL"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "암호화폐·금 등 자산 동향",
+      "importance": "참고",
+      "region": "글로벌",
+      "summary": "비트코인 현물 ETF 순유출, 이더리움 ETF 9거래일 연속 순유출. 비트코인은 8만1천~8만4천달러 등락. 금은 온스당 4,100~4,220달러로 상승, 은·플래티넘·팔라듐 동반 강세. 구리는 칠레 파업·데이터센터 수요로 사상 최고치 근접. OKX는 250억달러 밸류에이션 투자 유치. 미 재무부는 이란 연계 암호화폐 10억달러 추가 압수 예고.",
+      "events": [
+        {
+          "timeKst": "2026-10-10T10:43:05+09:00",
+          "summary": "현물 금 온스당 4,173달러로 약 1% 상승, 안전자산 수요 지속",
+          "chat": "김치터미널",
+          "link": null,
+          "tickers": []
+        },
+        {
+          "timeKst": "2026-10-11T04:51:15+09:00",
+          "summary": "구리 가격 사상 최고치 근접, 칠레 센티넬라 광산 파업으로 공급 우려",
+          "chat": "하나 중국/신흥국 전략 김경환",
+          "link": "https://wallstreetcn.com/articles/3783288#from=ios",
+          "tickers": []
+        },
+        {
+          "timeKst": "2026-10-09T20:22:43+09:00",
+          "summary": "암호화폐 거래소 OKX, 250억달러 밸류에이션으로 Circle·Ripple 등 투자 유치",
+          "chat": "김치터미널",
+          "link": null,
+          "tickers": []
+        },
+        {
+          "timeKst": "2026-10-11T18:38:36+09:00",
+          "summary": "CoinShares, 비트코인 가격에 연준보다 채권시장이 더 중요한 동인 될 수 있다 분석",
+          "chat": "김치터미널",
+          "link": null,
+          "tickers": [
+            "BTC"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "국내 투자자 미국주식 쏠림",
+      "importance": "참고",
+      "region": "US",
+      "summary": "한국 개인투자자가 3분기 국내 주식 5.5~5.6조원을 순매도하고 미국 주식 10조원을 순매수. 국내 코스피 부진 대비 미국·대만 증시 신고점 경신으로 자금 이동 가속화. 서학개미 순매수 상위는 SOXL·SGOV·엔비디아·알파벳·AMD 등.",
+      "events": [
+        {
+          "timeKst": "2026-10-11T06:05:06+09:00",
+          "summary": "개인투자자, 하반기 국내 주식 5.5조 매도·미국 주식 10조 매수",
+          "chat": "단독 & 속보 뉴스 콜렉터",
+          "link": "https://www.wowtv.co.kr/NewsCenter/News/Read?articleId=AKR20261010021900008",
+          "tickers": []
+        },
+        {
+          "timeKst": "2026-10-11T17:30:09+09:00",
+          "summary": "글로벌 AI 투자 열풍 속 한국 증시 부진, 미국·대만은 신고점 경신",
+          "chat": "프리라이프",
+          "link": "https://www.bloomberg.com/news/articles/2026-10-11/once-hot-ai-trade-leaves-korean-stocks-struggling-for-buyers",
+          "tickers": []
+        }
+      ]
+    },
+    {
+      "title": "미국 정책·규제",
+      "importance": "참고",
+      "region": "US",
+      "summary": "트럼프 행정부가 MS·어도비 등 9개 빅테크의 외국인 노동자 영주권(PERM) 신청 배제, 하버드 등 대학 비자 조사. 미 법무부는 ABC·CBS·CNN·NBC·FOX 등 5대 방송사의 트럼프 취재 거부에 반독점 조사. 트럼프는 OPT 수수료 7만달러 인상 제안. 백악관은 AI 기업에 보안사고 보고 의무화.",
+      "events": [
+        {
+          "timeKst": "2026-10-08T23:47:11+09:00",
+          "summary": "밴스 부통령, MS·어도비 등 IT기업 PERM 중단 및 H-1B·J-1 비자 개편 추진",
+          "chat": "김치터미널",
+          "link": null,
+          "tickers": [
+            "MSFT",
+            "ADBE"
+          ]
+        },
+        {
+          "timeKst": "2026-10-11T09:06:10+09:00",
+          "summary": "미 법무부, ABC·CBS·CNN·NBC·FOX 5대 뉴스 네트워크 반독점 조사 착수",
+          "chat": "김치터미널",
+          "link": null,
+          "tickers": [
+            "DIS",
+            "PARA",
+            "WBD",
+            "CMCSA",
+            "FOX"
+          ]
+        },
+        {
+          "timeKst": "2026-10-11T08:12:22+09:00",
+          "summary": "백악관, Anthropic 정부시스템 무단접근 계기로 AI 기업 보안사고 보고 의무화",
+          "chat": "하나 중국/신흥국 전략 김경환",
+          "link": null,
+          "tickers": []
+        }
+      ]
+    }
+  ],
+  "stats": {
+    "collected": 5080,
+    "afterFilter": 5039,
+    "geminiItems": 2027,
+    "geminiChunks": 101,
+    "geminiFailedChunks": 0
+  }
 }
