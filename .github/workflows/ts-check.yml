@@ -1,0 +1,21 @@
+name: Tailscale connectivity check
+
+# 수동 점검 전용: tailnet 접속 + 아카이브 응답만 확인한다. data.json 은 건드리지 않음.
+on:
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  check:
+    runs-on: ubuntu-latest
+    timeout-minutes: 5
+    steps:
+      - uses: tailscale/github-action@v3
+        with:
+          oauth-client-id: ${{ secrets.TS_OAUTH_CLIENT_ID }}
+          oauth-secret: ${{ secrets.TS_OAUTH_SECRET }}
+          tags: tag:ci
+      - name: Reach archive
+        run: curl -sS -o /dev/null -w "archive HTTP %{http_code}\n" --max-time 20 https://macmini.taila0cca3.ts.net/
