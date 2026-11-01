@@ -3,11 +3,13 @@ name: Overnight US Market Brief
 # 평일 07:10 KST(= 22:10 UTC 일~목) 자동 실행 → data.json 갱신 → Pages 반영.
 #
 # 아카이브(macmini.taila0cca3.ts.net)는 Tailscale tailnet 전용 주소라 클라우드에서 바로 못 닿음.
-# → Actions가 tailnet에 조인해야 함. 그러려면 Tailscale 인증키를 시크릿 TS_AUTHKEY 로 추가:
-#   Tailscale admin(https://login.tailscale.com/admin/settings/keys) → Generate auth key
-#   (Reusable + Ephemeral 권장, tag 부여) → 아래 명령으로 등록:
-#     gh secret set TS_AUTHKEY --repo minguisstockgoat/overnight-us-brief
-#   TS_AUTHKEY 가 없으면 이 워크플로우는 '실패 없이' 스킵됩니다(경고만). 그 경우 Mac launchd로 실행.
+# → Actions가 tailnet에 조인해야 함. 인증은 Tailscale OAuth 클라이언트(만료 없음)를 쓴다:
+#   1) 접근 제어(ACL)의 tagOwners 에 "tag:ci" 추가
+#   2) https://login.tailscale.com/admin/settings/oauth → Generate OAuth client
+#      (Keys > Auth Keys: Write, 태그 tag:ci)
+#   3) 시크릿 TS_OAUTH_CLIENT_ID / TS_OAUTH_SECRET 등록
+# 예전 인증키(TS_AUTHKEY)는 최대 90일이면 만료돼 2026-10-20부터 매일 실패했음.
+# OAuth 시크릿이 없으면 TS_AUTHKEY 로, 둘 다 없으면 '실패 없이' 스킵(경고만).
 on:
   schedule:
     # GitHub 예약 크론은 지연·누락이 잦아 아침에 여러 번 재시도(모두 07:00 KST 이후, 09:00 개장 전).
@@ -33,20 +35,33 @@ jobs:
     steps:
       - uses: actions/checkout@v4
 
-      - name: Gate on Tailscale key
+      - name: Gate on Tailscale credentials
         id: gate
         env:
+          OAUTH_ID: ${{ secrets.TS_OAUTH_CLIENT_ID }}
+          OAUTH_SECRET: ${{ secrets.TS_OAUTH_SECRET }}
           TS: ${{ secrets.TS_AUTHKEY }}
         run: |
-          if [ -n "$TS" ]; then
-            echo "run=true" >> "$GITHUB_OUTPUT"
+          if [ -n "$OAUTH_ID" ] && [ -n "$OAUTH_SECRET" ]; then
+            echo "run=true" >> "$GITHUB_OUTPUT"; echo "auth=oauth" >> "$GITHUB_OUTPUT"
+          elif [ -n "$TS" ]; then
+            echo "run=true" >> "$GITHUB_OUTPUT"; echo "auth=key" >> "$GITHUB_OUTPUT"
+            echo "::warning::TS_AUTHKEY 로 접속합니다(최대 90일 만료). TS_OAUTH_CLIENT_ID/TS_OAUTH_SECRET 등록을 권장."
           else
             echo "run=false" >> "$GITHUB_OUTPUT"
-            echo "::warning::TS_AUTHKEY 시크릿이 없어 클라우드 실행을 건너뜁니다. Tailscale 인증키를 추가하거나 Mac mini launchd로 실행하세요."
+            echo "::warning::Tailscale 자격증명 시크릿이 없어 클라우드 실행을 건너뜁니다."
           fi
 
-      - name: Connect to Tailscale
-        if: steps.gate.outputs.run == 'true'
+      - name: Connect to Tailscale (OAuth)
+        if: steps.gate.outputs.auth == 'oauth'
+        uses: tailscale/github-action@v3
+        with:
+          oauth-client-id: ${{ secrets.TS_OAUTH_CLIENT_ID }}
+          oauth-secret: ${{ secrets.TS_OAUTH_SECRET }}
+          tags: tag:ci
+
+      - name: Connect to Tailscale (auth key)
+        if: steps.gate.outputs.auth == 'key'
         uses: tailscale/github-action@v3
         with:
           authkey: ${{ secrets.TS_AUTHKEY }}
