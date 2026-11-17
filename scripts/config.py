@@ -22,10 +22,11 @@ ARCHIVE_TOKEN = lambda: os.environ.get("ARCHIVE_TOKEN", "")
 # 모델
 GEMINI_MODEL = lambda: os.environ.get("GEMINI_MODEL", "gemini-2.5-flash")
 GEMINI_API_KEY = lambda: os.environ.get("GEMINI_API_KEY", "")
-OPUS_MODEL = lambda: os.environ.get("OPUS_MODEL", "claude-opus-4-8")
+# 기존 환경변수 이름 OPUS_MODEL은 호환성을 위해 유지한다.
+OPUS_MODEL = lambda: os.environ.get("OPUS_MODEL", "claude-sonnet-5-5")
 ANTHROPIC_API_KEY = lambda: os.environ.get("ANTHROPIC_API_KEY", "")
 
-# 국장 개별종목/공시 위주 채널 — 1차 제외(부분일치). 미장·매크로 최종 판단은 Opus가 함.
+# 국장 개별종목/공시 위주 채널 — 1차 제외(부분일치). 미장·매크로 최종 판단은 Claude가 함.
 CHANNEL_DENY_KEYWORDS = ["급등", "신고가", "AWAKE", "해피엔딩"]
 
 def is_denied_channel(name: str) -> bool:

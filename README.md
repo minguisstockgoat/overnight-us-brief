@@ -10,12 +10,13 @@
 
 ```
 창 계산(krx_calendar) → 아카이브 수집(archive) → 채널 1차필터
-   → Gemini 1차 요약(gemini) → Opus 4.8 큐레이션(opus) → data.json → 프런트(index.html)
+   → Gemini 1차 요약(gemini) → Sonnet 5.5 큐레이션(opus) → data.json → 프런트(index.html)
 ```
 
 - **데이터 소스**: Mac mini SQLite 아카이브를 감싸는 HTTP MCP 서버(`search_telegram_messages`).
 - **Gemini**(`gemini-2.5-flash`): 밤사이 메시지를 정규화 항목으로 요약·1차 선별(httpx REST 직접 호출).
-- **Opus 4.8**(`claude-opus-4-8`): 미장/매크로만 남기고 주제 클러스터·시계열·중요도(핵심/주요/참고)·headline 생성.
+- **Sonnet 5.5**(`claude-sonnet-5-5`): 미장/매크로만 남기고 주제 클러스터·시계열·중요도(핵심/주요/참고)·headline 생성.
+- 큐레이션은 `effort=low`, `thinking=between_tools`로 실행해 답변 전 별도 추론을 생략한다. `OPUS_MODEL`은 기존 환경변수 이름을 유지한 것이다.
 - 발송 없음 — 대시보드만 갱신.
 
 ## 로컬 실행 (Windows 개발, `py` 런처)
@@ -86,6 +87,6 @@ PC/Mac 무관하게 돌지만, 아카이브(`macmini.taila0cca3.ts.net`)가 **Ta
 
 - **KRX 휴장일은 `scripts/krx_calendar.py` 에 하드코딩** → 매년 갱신 필요. 휴장일엔 `status:"휴장"` 만 기록.
 - **일본 뉴스 등 아시아**는 참고로 포함될 수 있으나 초점은 미장·글로벌 매크로.
-- 국장 전용 채널(급등/신고가/공시)은 `config.CHANNEL_DENY_KEYWORDS` 로 1차 제외 + Opus 최종 필터.
+- 국장 전용 채널(급등/신고가/공시)은 `config.CHANNEL_DENY_KEYWORDS` 로 1차 제외 + Claude 최종 필터.
 - 모델은 `.env` 의 `GEMINI_MODEL` / `OPUS_MODEL` 로 교체 가능.
 - 아카이브 응답 상한(200건)은 `archive.py` 가 시간분할로 자동 전량 수집.

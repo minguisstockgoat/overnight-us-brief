@@ -1,6 +1,6 @@
 """전날 미장 시황 브리핑 파이프라인.
 
-창 계산 → 아카이브 수집 → 채널 1차필터 → Gemini 요약 → Opus 큐레이션 → data.json.
+창 계산 → 아카이브 수집 → 채널 1차필터 → Gemini 요약 → Claude 큐레이션 → data.json.
 
 사용:
   py scripts/pipeline.py                 # 오늘(KST) 기준
@@ -87,7 +87,7 @@ def run(run_date: date, out_path: str, force: bool = False):
         _write(out, out_path)
         return out
 
-    print(f"[3/4] Opus 큐레이션({config.OPUS_MODEL()})")
+    print(f"[3/4] Claude 큐레이션({config.OPUS_MODEL()})")
     curated = opus.curate(items, win)
 
     out = {

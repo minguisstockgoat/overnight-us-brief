@@ -1,4 +1,4 @@
-"""Opus 4.8 큐레이션 — Anthropic Messages API(httpx REST, 구조화 출력).
+"""Sonnet 5.5 큐레이션 — Anthropic Messages API(httpx REST, 구조화 출력).
 
 Gemini 정규화 항목 → 미장/매크로만 남기고 주제 클러스터·시계열·중요도·headline 생성.
 """
@@ -83,8 +83,8 @@ def curate(items, window):
     payload = {
         "model": config.OPUS_MODEL(),
         "max_tokens": 16000,
-        "thinking": {"type": "adaptive"},
-        "output_config": {"effort": "high", "format": {"type": "json_schema", "schema": SCHEMA}},
+        "thinking": {"type": "between_tools"},
+        "output_config": {"effort": "low", "format": {"type": "json_schema", "schema": SCHEMA}},
         "system": SYS,
         "messages": [{"role": "user", "content": user}],
     }
@@ -99,8 +99,8 @@ def curate(items, window):
         raise RuntimeError(f"Anthropic {r.status_code}: {r.text[:800]}")
     data = r.json()
     if data.get("stop_reason") == "refusal":
-        raise RuntimeError(f"Opus refusal: {data.get('stop_details')}")
+        raise RuntimeError(f"Claude refusal: {data.get('stop_details')}")
     text = next((b["text"] for b in data.get("content", []) if b.get("type") == "text"), None)
     if not text:
-        raise RuntimeError("Opus: no text block in response")
+        raise RuntimeError("Claude: no text block in response")
     return json.loads(text)

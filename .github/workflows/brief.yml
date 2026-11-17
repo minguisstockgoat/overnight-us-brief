@@ -84,7 +84,7 @@ jobs:
           GEMINI_MODEL: gemini-2.5-flash
           GEMINI_CONCURRENCY: "12"
           ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}
-          OPUS_MODEL: claude-opus-4-8
+          OPUS_MODEL: claude-sonnet-5-5
         # -u: 출력 버퍼링 끔 → 진행 로그가 실행 중에도 Actions 화면에 바로 보임
         run: python -u scripts/pipeline.py --out data.json
 
